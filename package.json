@@ -2,6 +2,7 @@
   "name": "element-theme",
   "version": "1.0.0",
   "scripts": {
+    "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
