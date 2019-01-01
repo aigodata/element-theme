@@ -7,23 +7,22 @@
           </li>
           <li class="nav-item"><a>开发指南</a>
             <ul class="pure-menu-list sub-nav">
-              <li class="nav-item"><a href="#/zh-CN/installation"
-                                      class="router-link-exact-active active">安装</a></li>
-              <li class="nav-item"><a href="#/zh-CN/quickstart" class="">快速上手</a></li>
-              <li class="nav-item"><a href="#/zh-CN/i18n" class="">国际化</a></li>
-              <li class="nav-item"><a href="#/zh-CN/custom-theme" class="">自定义主题</a></li>
-              <li class="nav-item"><a href="#/zh-CN/transition" class="">内置过渡动画</a></li>
+              <li class="nav-item"><a href="#/zh-CN/installation" class="router-link-exact-active active">安装</a></li>
+              <!--<li class="nav-item"><a href="#/zh-CN/quickstart" class="">快速上手</a></li>-->
+              <!--<li class="nav-item"><a href="#/zh-CN/i18n" class="">国际化</a></li>-->
+              <!--<li class="nav-item"><a href="#/zh-CN/custom-theme" class="">自定义主题</a></li>-->
+              <!--<li class="nav-item"><a href="#/zh-CN/transition" class="">内置过渡动画</a></li>-->
             </ul>
           </li>
           <li class="nav-item"><a>组件</a>
             <div class="nav-group">
               <div class="nav-group__title">Basic</div>
               <ul class="pure-menu-list">
-                <li class="nav-item"><a href="#/zh-CN/layout" class="">Layout 布局</a></li>
-                <li class="nav-item"><a href="#/zh-CN/container" class="">Container 布局容器</a></li>
+                <!--<li class="nav-item"><a href="#/zh-CN/layout" class="">Layout 布局</a></li>-->
+                <!--<li class="nav-item"><a href="#/zh-CN/container" class="">Container 布局容器</a></li>-->
                 <li class="nav-item"><a href="#/zh-CN/color" class="">Color 色彩</a></li>
-                <li class="nav-item"><a href="#/zh-CN/typography" class="">Typography 字体</a></li>
-                <li class="nav-item"><a href="#/zh-CN/icon" class="">Icon 图标</a></li>
+                <!--<li class="nav-item"><a href="#/zh-CN/typography" class="">Typography 字体</a></li>-->
+                <!--<li class="nav-item"><a href="#/zh-CN/icon" class="">Icon 图标</a></li>-->
                 <li class="nav-item"><a href="#/zh-CN/button" class="">Button 按钮</a></li>
               </ul>
             </div>
