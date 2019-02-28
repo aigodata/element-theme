@@ -21,6 +21,7 @@
 
 <script>
   import '@/assets/docs.css'
+  import '@/assets/zh-CN.css'
   import appHeader from '@/components/app-header.vue'
   import appSidebar from '@/components/app-sidebar.vue'
 

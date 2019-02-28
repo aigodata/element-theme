@@ -363,7 +363,6 @@
   white-space: nowrap;
   cursor: pointer;
   background: #fff;
-  border: 1px solid #dcdfe6;
   color: #606266;
   text-align: center;
   -webkit-box-sizing: border-box;
@@ -373,9 +372,9 @@
   -webkit-transition: .1s;
   transition: .1s;
   -webkit-user-select: none;
-  padding: 12px 20px;
-  font-size: 14px;
-  border-radius: 4px
+  padding: 14px 18px;
+  font-size: 13px;
+  border-radius: 3px
 }
 
 .el-button + .el-button {
@@ -465,8 +464,7 @@
 
 .el-button--primary {
   color: #fff;
-  background-color: #409EFF;
-  border-color: #409EFF
+  background: linear-gradient(to right, #2aa1ef , #3eb1fc);
 }
 
 .el-button--primary:focus, .el-button--primary:hover {
