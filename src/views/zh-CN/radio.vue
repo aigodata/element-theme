@@ -67,6 +67,7 @@
             <el-radio-button label="深圳"></el-radio-button>
           </el-radio-group>
         </div>
+
         <div style="margin-top: 20px">
           <el-radio-group v-model="radio5" size="small">
             <el-radio-button label="上海"></el-radio-button>
