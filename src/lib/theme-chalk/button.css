@@ -21,6 +21,7 @@
   font-size: 13px;
   border-radius: 3px;
   border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   background: linear-gradient(to top, #f7f7f7 , #fff)
 }
@@ -52,6 +53,7 @@
 .el-button.is-plain {
   color: #333333;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
   box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
   border: 1px solid #dbdbdb
 }
@@ -120,6 +122,7 @@
 .el-button--primary {
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
@@ -148,6 +151,7 @@
 .el-button--primary.is-plain {
   color: #2aa1ef;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
   border: 1px solid #2aa1ef
 }
@@ -175,6 +179,7 @@
 .el-button--success {
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
   box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
   background: linear-gradient(to top, #45c130 , #63ce4a)
 }
@@ -202,6 +207,7 @@
 .el-button--success.is-plain {
   color: #55c83d;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.1);
   box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.1);
   border: 1px solid #55c83d
 }
@@ -229,6 +235,7 @@
 .el-button--warning {
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
   box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
   background: linear-gradient(to top, #fd8824 , #fd9a44)
 }
@@ -256,6 +263,7 @@
 .el-button--warning.is-plain {
   color: #f67a0f;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.1);
   box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.1);
   border: 1px solid #f67a0f
 }
@@ -283,6 +291,7 @@
 .el-button--danger {
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
   box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
   background: linear-gradient(to top, #f85d63 , #fd787d)
 }
@@ -310,6 +319,7 @@
 .el-button--danger.is-plain {
   color: #fb5258;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.1);
   box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.1);
   border: 1px solid #fb5258
 }
@@ -337,6 +347,7 @@
 .el-button--info {
   color: #fff;
   border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
   box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
   background: linear-gradient(to top, #585b69 , #74767e)
 }
@@ -364,6 +375,7 @@
 .el-button--info.is-plain {
   color: #545866;
   background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.1);
   box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.1);
   border: 1px solid #545866
 }
@@ -432,6 +444,7 @@
   background: 0 0;
   padding-left: 0;
   padding-right: 0;
+  -webkit-box-shadow: none;
   box-shadow: none
 }
 

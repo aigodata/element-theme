@@ -59,7 +59,7 @@
 
 .el-radio-button__orig-radio:checked + .el-radio-button__inner {
   color: #fff;
-  background-color: #409EFF;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   border-color: #409EFF;
   -webkit-box-shadow: -1px 0 0 0 #409EFF;
   box-shadow: -1px 0 0 0 #409EFF

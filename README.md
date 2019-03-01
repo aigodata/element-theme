@@ -1,6 +1,34 @@
 # element-theme
 基于ElementUI的定制主题
 
+## 页面模板
+
+    <template>
+      <div class="page-user_log">
+        <el-button>aaa</el-button>
+      </div>
+    </template>
+    
+    <script>
+      import permission from '@/components/mixin/permission';
+      export default {
+        mixins: [permission],
+        name: 'user_log',
+        data() {
+          return {}
+        },
+        methods: {},
+        mounted() {
+        }
+      }
+    </script>
+    
+    <style>
+      .page-user_log {
+    
+      }
+    </style>
+
 ## Project setup
 
       正常安装
