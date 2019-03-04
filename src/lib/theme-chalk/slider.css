@@ -729,7 +729,9 @@
   background-color: #409EFF;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
-  position: absolute
+  position: absolute;
+  --webkit-box-shadow: 0px 2px 8px rgba(51, 169, 246, 0.4);
+  box-shadow: 0px 2px 8px rgba(51, 169, 246, 0.4);
 }
 
 .el-slider__button-wrapper {
@@ -764,10 +766,11 @@
   cursor: grabbing
 }
 
+/* 按钮 */
 .el-slider__button {
-  width: 16px;
-  height: 16px;
-  border: 2px solid #409EFF;
+  width: 8px;
+  height: 8px;
+  border: 8px solid #409EFF;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: .2s;
@@ -775,7 +778,10 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none
+  user-select: none;
+  /* 阴影 */
+  --webkit-box-shadow: 0px 2px 8px rgba(51, 169, 246, 0.4);
+  box-shadow: 0px 2px 8px rgba(51, 169, 246, 0.4);
 }
 
 .el-slider__button.dragging, .el-slider__button.hover, .el-slider__button:hover {
@@ -884,3 +890,4 @@
 .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__decrease, .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__increase {
   border-color: #409EFF
 }
+
