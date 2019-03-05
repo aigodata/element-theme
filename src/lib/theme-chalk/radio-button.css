@@ -2,7 +2,9 @@
 .el-radio-button, .el-radio-button__inner {
   display: inline-block;
   position: relative;
-  outline: 0
+  outline: 0;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
 }
 
 .el-radio-button__inner {
