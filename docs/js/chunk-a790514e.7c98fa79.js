@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-a790514e"],{"66fb":function(n,e,a){"use strict";var o=a("e6aa"),t=a.n(o);t.a},7749:function(n,e,a){"use strict";a.r(e);var o=function(){var n=this,e=n.$createElement,a=n._self._c||e;return a("section",{staticClass:"page-color"},[n._v("\n  color\n")])},t=[],c={name:"color"},s=c,r=(a("66fb"),a("2877")),i=Object(r["a"])(s,o,t,!1,null,"0b3a1bab",null);i.options.__file="color.vue";e["default"]=i.exports},e6aa:function(n,e,a){}}]);
-//# sourceMappingURL=chunk-a790514e.7c98fa79.js.map

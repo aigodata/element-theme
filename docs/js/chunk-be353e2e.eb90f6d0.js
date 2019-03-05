@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-be353e2e"],{"084b":function(e,n,s){},"186c":function(e,n,s){"use strict";var t=s("084b"),a=s.n(t);a.a},bf20:function(e,n,s){"use strict";s.r(n);var t=function(){var e=this,n=e.$createElement,s=e._self._c||n;return s("section",{staticClass:"page-message"},[e._v("\n  message\n")])},a=[],c={name:"message"},i=c,u=(s("186c"),s("2877")),o=Object(u["a"])(i,t,a,!1,null,"3ca336bf",null);o.options.__file="message.vue";n["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-be353e2e.eb90f6d0.js.map

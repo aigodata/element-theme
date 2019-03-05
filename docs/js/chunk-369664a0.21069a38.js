@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-369664a0"],{"42a2":function(n,e,a){"use strict";a.r(e);var t=function(){var n=this,e=n.$createElement,a=n._self._c||e;return a("section",{staticClass:"page-upload"},[n._v("\n  upload\n")])},u=[],o={name:"upload"},s=o,c=(a("9df4"),a("2877")),i=Object(c["a"])(s,t,u,!1,null,"0b1de559",null);i.options.__file="upload.vue";e["default"]=i.exports},"9df4":function(n,e,a){"use strict";var t=a("bd8e"),u=a.n(t);u.a},bd8e:function(n,e,a){}}]);
-//# sourceMappingURL=chunk-369664a0.21069a38.js.map

@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-c49dfaf0"],{"1f8d":function(c,e,n){"use strict";var t=n("c166"),o=n.n(t);o.a},c166:function(c,e,n){},ff7e:function(c,e,n){"use strict";n.r(e);var t=function(){var c=this,e=c.$createElement,n=c._self._c||e;return n("section",{staticClass:"page-checkbox"},[c._v("\n  checkbox\n")])},o=[],a={name:"checkbox"},s=a,f=(n("1f8d"),n("2877")),i=Object(f["a"])(s,t,o,!1,null,"640c63da",null);i.options.__file="checkbox.vue";e["default"]=i.exports}}]);
-//# sourceMappingURL=chunk-c49dfaf0.2934c668.js.map

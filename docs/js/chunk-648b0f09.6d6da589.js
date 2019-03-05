@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-648b0f09"],{1538:function(n,t,a){"use strict";var e=a("1a32"),s=a.n(e);s.a},"1a32":function(n,t,a){},"528a":function(n,t,a){"use strict";a.r(t);var e=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("section",{staticClass:"page-tabs"},[n._v("\n  tabs\n")])},s=[],c={name:"tabs"},i=c,u=(a("1538"),a("2877")),o=Object(u["a"])(i,e,s,!1,null,"a455e13c",null);o.options.__file="tabs.vue";t["default"]=o.exports}}]);
-//# sourceMappingURL=chunk-648b0f09.6d6da589.js.map

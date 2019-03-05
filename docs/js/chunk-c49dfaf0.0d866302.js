@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-c49dfaf0"],{"1f8d":function(c,n,e){"use strict";var t=e("c166"),a=e.n(t);a.a},c166:function(c,n,e){},ff7e:function(c,n,e){"use strict";e.r(n);var t=function(){var c=this,n=c.$createElement,e=c._self._c||n;return e("section",{staticClass:"page-checkbox"},[c._v("\n  checkbox\n")])},a=[],f=(e("cadf"),e("551c"),e("f751"),e("097d"),{name:"checkbox"}),s=f,o=(e("1f8d"),e("2877")),u=Object(o["a"])(s,t,a,!1,null,"640c63da",null);n["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-c49dfaf0.0d866302.js.map

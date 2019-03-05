@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-13c35a05"],{"3d4b":function(n,e,o){"use strict";o.r(e);var t=function(){var n=this,e=n.$createElement,o=n._self._c||e;return o("section",{staticClass:"page-dropdown"},[n._v("\n  dropdown\n")])},a=[],c={name:"dropdown"},s=c,d=(o("b4e7"),o("2877")),r=Object(d["a"])(s,t,a,!1,null,"16b1fa29",null);r.options.__file="dropdown.vue";e["default"]=r.exports},b4e7:function(n,e,o){"use strict";var t=o("bbed"),a=o.n(t);a.a},bbed:function(n,e,o){}}]);
-//# sourceMappingURL=chunk-13c35a05.d56907d2.js.map

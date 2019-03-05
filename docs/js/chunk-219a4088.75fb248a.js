@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-219a4088"],{"934f":function(c,n,e){},b7ca:function(c,n,e){"use strict";var o=e("934f"),t=e.n(o);t.a},bc81:function(c,n,e){"use strict";e.r(n);var o=function(){var c=this,n=c.$createElement,e=c._self._c||n;return e("section",{staticClass:"page-color-picker"},[c._v("\n  color-picker\n")])},t=[],a={name:"color-picker"},r=a,i=(e("b7ca"),e("2877")),s=Object(i["a"])(r,o,t,!1,null,"7a89ba34",null);s.options.__file="color-picker.vue";n["default"]=s.exports}}]);
-//# sourceMappingURL=chunk-219a4088.75fb248a.js.map

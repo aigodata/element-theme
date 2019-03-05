@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-7c242a66"],{8253:function(n,c,e){"use strict";var t=e("98d4"),i=e.n(t);i.a},"98d4":function(n,c,e){},f58c:function(n,c,e){"use strict";e.r(c);var t=function(){var n=this,c=n.$createElement,e=n._self._c||c;return e("section",{staticClass:"page-icon"},[n._v("\n  icon\n")])},i=[],o={name:"icon"},s=o,a=(e("8253"),e("2877")),u=Object(a["a"])(s,t,i,!1,null,"b080821e",null);u.options.__file="icon.vue";c["default"]=u.exports}}]);
-//# sourceMappingURL=chunk-7c242a66.847c82b5.js.map

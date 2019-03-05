@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-742e2747"],{"19d3":function(e,n,a){},9433:function(e,n,a){"use strict";a.r(n);var c=function(){var e=this,n=e.$createElement,a=e._self._c||n;return a("section",{staticClass:"page-carousel"},[e._v("\n  carousel\n")])},s=[],t={name:"carousel"},u=t,o=(a("a939"),a("2877")),r=Object(o["a"])(u,c,s,!1,null,"1b88f0bc",null);r.options.__file="carousel.vue";n["default"]=r.exports},a939:function(e,n,a){"use strict";var c=a("19d3"),s=a.n(c);s.a}}]);
-//# sourceMappingURL=chunk-742e2747.6d72f3da.js.map

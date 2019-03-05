@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-1a5a8608"],{"288b":function(c,n,e){},"5c6c":function(c,n,e){"use strict";var a=e("288b"),s=e.n(a);s.a},aca5:function(c,n,e){"use strict";e.r(n);var a=function(){var c=this,n=c.$createElement,e=c._self._c||n;return e("section",{staticClass:"page-collapse"},[c._v("\n  collapse\n")])},s=[],t={name:"collapse"},l=t,o=(e("5c6c"),e("2877")),i=Object(o["a"])(l,a,s,!1,null,"2d23b556",null);i.options.__file="collapse.vue";n["default"]=i.exports}}]);
-//# sourceMappingURL=chunk-1a5a8608.6996ee7f.js.map

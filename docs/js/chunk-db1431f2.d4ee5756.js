@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-db1431f2"],{7545:function(n,t,e){"use strict";var a=e("ad25"),s=e.n(a);s.a},ad25:function(n,t,e){},ff09:function(n,t,e){"use strict";e.r(t);var a=function(){var n=this,t=n.$createElement,e=n._self._c||t;return e("section",{staticClass:"page-table"},[n._v("\n  table\n")])},s=[],c={name:"table"},i=c,l=(e("7545"),e("2877")),u=Object(l["a"])(i,a,s,!1,null,"13f986aa",null);u.options.__file="table.vue";t["default"]=u.exports}}]);
-//# sourceMappingURL=chunk-db1431f2.d4ee5756.js.map
