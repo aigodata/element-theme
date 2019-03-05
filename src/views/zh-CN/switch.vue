@@ -89,11 +89,8 @@
   #switch-kai-guan{
     color:#36aafc;
   }
-  /* h3{
-    margin-top: 30px;
+  h3{
+    margin: 55px 0 20px;
   }
-  .wen-zi-miao-shu{
-    padding-bottom: 20px;
-  } */
 
 </style>

@@ -15,11 +15,11 @@
 @import "./radio.css";
 @import "./radio-group.css";
 @import "./radio-button.css";
-/*@import "./checkbox.css";*/
-/*@import "./checkbox-button.css";*/
-/*@import "./checkbox-group.css";*/
-/*@import "./switch.css";*/
-/*@import "./select.css";*/
+@import "./checkbox.css";
+/* @import "./checkbox-button.css";
+@import "./checkbox-group.css"; */
+@import "./switch.css";
+@import "./select.css";
 @import "./button.css";
 @import "./button-group.css";
 /*@import "./table.css";*/
@@ -40,7 +40,7 @@
 /*@import "./tree.css";*/
 /*@import "./alert.css";*/
 /*@import "./notification.css";*/
-/*@import "./slider.css";*/
+@import "./slider.css";
 /*@import "./loading.css";*/
 /*@import "./row.css";*/
 /*@import "./col.css";*/
