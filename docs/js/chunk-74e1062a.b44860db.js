@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-74e1062a"],{"23e3":function(n,e,a){},"72e3":function(n,e,a){"use strict";a.r(e);var c=function(){var n=this,e=n.$createElement,a=n._self._c||e;return a("section",{staticClass:"page-changelog"},[n._v("\n  changelog\n")])},t=[],o={name:"changelog"},s=o,i=(a("a3d7"),a("2877")),l=Object(i["a"])(s,c,t,!1,null,"dbafbc50",null);l.options.__file="changelog.vue";e["default"]=l.exports},a3d7:function(n,e,a){"use strict";var c=a("23e3"),t=a.n(c);t.a}}]);
+//# sourceMappingURL=chunk-74e1062a.b44860db.js.map

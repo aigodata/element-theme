@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-239f04de"],{"0c2b":function(e,n,c){"use strict";var a=c("e1ea"),t=c.n(a);t.a},c819:function(e,n,c){"use strict";c.r(n);var a=function(){var e=this,n=e.$createElement,c=e._self._c||n;return c("section",{staticClass:"page-card"},[e._v("\n  card\n")])},t=[],s={name:"card"},r=s,i=(c("0c2b"),c("2877")),u=Object(i["a"])(r,a,t,!1,null,"54be9fac",null);u.options.__file="card.vue";n["default"]=u.exports},e1ea:function(e,n,c){}}]);
+//# sourceMappingURL=chunk-239f04de.45326326.js.map

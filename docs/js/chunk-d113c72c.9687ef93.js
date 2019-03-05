@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-d113c72c"],{ccdd:function(n,c,t){"use strict";var e=t("f3cd"),a=t.n(e);a.a},f3cd:function(n,c,t){},fab4:function(n,c,t){"use strict";t.r(c);var e=function(){var n=this,c=n.$createElement,t=n._self._c||c;return t("section",{staticClass:"page-transfer"},[n._v("\n  transfer\n")])},a=[],s={name:"transfer"},r=s,f=(t("ccdd"),t("2877")),i=Object(f["a"])(r,e,a,!1,null,"4a3d14ca",null);i.options.__file="transfer.vue";c["default"]=i.exports}}]);
+//# sourceMappingURL=chunk-d113c72c.9687ef93.js.map

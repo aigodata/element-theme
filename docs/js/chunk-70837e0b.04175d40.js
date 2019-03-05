@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-70837e0b"],{"0255":function(n,t,i){"use strict";var o=i("0753"),e=i.n(o);e.a},"0753":function(n,t,i){},2014:function(n,t,i){"use strict";i.r(t);var o=function(){var n=this,t=n.$createElement,i=n._self._c||t;return i("section",{staticClass:"page-notification"},[n._v("\n  notification\n")])},e=[],c={name:"notification"},a=c,s=(i("0255"),i("2877")),u=Object(s["a"])(a,o,e,!1,null,"3b12349b",null);u.options.__file="notification.vue";t["default"]=u.exports}}]);
+//# sourceMappingURL=chunk-70837e0b.04175d40.js.map
