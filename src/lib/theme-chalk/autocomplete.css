@@ -549,7 +549,10 @@
 }
 
 .el-autocomplete-suggestion li.highlighted, .el-autocomplete-suggestion li:hover {
-  background-color: #f5f7fa
+  color: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-autocomplete-suggestion li.divider {

@@ -2,7 +2,7 @@
 /*@import "./base.css";*/
 /*@import "./pagination.css";*/
 /*@import "./dialog.css";*/
-/*@import "./autocomplete.css";*/
+@import "./autocomplete.css";
 /*@import "./dropdown.css";*/
 /*@import "./dropdown-menu.css";*/
 /*@import "./dropdown-item.css";*/
@@ -10,7 +10,7 @@
 /*@import "./submenu.css";*/
 /*@import "./menu-item.css";*/
 /*@import "./menu-item-group.css";*/
-/*@import "./input.css";*/
+@import "./input.css";
 /*@import "./input-number.css";*/
 @import "./radio.css";
 @import "./radio-group.css";

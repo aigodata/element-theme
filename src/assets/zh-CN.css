@@ -1375,6 +1375,9 @@ ul.language-list li {
   font-size: 12px;
   color: #b4b4b4;
 }
+.el-autocomplete-suggestion.my-autocomplete li:hover .addr {
+  color: #93d4ff;
+}
 .el-autocomplete-suggestion.my-autocomplete li .highlighted .addr {
   color: #ddd;
 }

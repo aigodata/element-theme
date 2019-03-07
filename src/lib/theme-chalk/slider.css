@@ -12,6 +12,8 @@
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
   width: 100%;
   font-size: inherit;
   color: #606266;
@@ -36,12 +38,16 @@
 }
 
 .el-textarea__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea__inner:focus {
   outline: 0;
-  border-color: #409EFF
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea.is-disabled .el-textarea__inner {
@@ -153,7 +159,9 @@
 }
 
 .el-input__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-input.is-active .el-input__inner, .el-input__inner:focus {

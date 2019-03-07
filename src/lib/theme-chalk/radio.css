@@ -24,7 +24,7 @@
 }
 
 .el-radio.is-bordered {
-  padding: 9px 20px 0 10px;
+  padding: 12px 20px 0 10px;
   border-radius: 24px;
   border: 1px solid #dcdfe6;
   -webkit-box-sizing: border-box;
@@ -143,8 +143,8 @@
 .el-radio__inner {
   border: 1px solid #dcdfe6;
   border-radius: 100%;
-  width: 20px;
-  height: 20px;
+  width: 14px;
+  height: 14px;
   background-color: #fff;
   cursor: pointer;
   -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
@@ -160,8 +160,8 @@
 }
 
 .el-radio__inner::after {
-  width: 6px;
-  height: 6px;
+  width: 4px;
+  height: 4px;
   border-radius: 100%;
   background-color: #fff;
   content: "";

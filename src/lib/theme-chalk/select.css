@@ -166,6 +166,8 @@
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
   width: 100%;
   font-size: inherit;
   color: #606266;
@@ -190,12 +192,16 @@
 }
 
 .el-textarea__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea__inner:focus {
   outline: 0;
-  border-color: #409EFF
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea.is-disabled .el-textarea__inner {
@@ -270,9 +276,11 @@
   background-color: #fff;
   background-image: none;
   border-radius: 4px;
-  border: 1px solid #dcdfe6;
+  border: 1px solid #dbdbdb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
   color: #606266;
   display: inline-block;
   font-size: inherit;
@@ -312,7 +320,9 @@
 }
 
 .el-input__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
@@ -669,11 +679,14 @@
 }
 
 .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-  background-color: #f5f7fa
+  color: #fff;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-select-dropdown__item.selected {
-  color: #409EFF;
+  color: #606266;
   font-weight: 700
 }
 

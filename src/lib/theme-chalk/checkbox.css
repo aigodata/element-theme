@@ -24,7 +24,7 @@
 
 .el-checkbox.is-bordered {
   padding: 9px 20px 9px 10px;
-  border-radius: 4px;
+  border-radius: 24px;
   border: 1px solid #dcdfe6;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -47,7 +47,7 @@
 
 .el-checkbox.is-bordered.el-checkbox--medium {
   padding: 7px 20px 7px 10px;
-  border-radius: 4px;
+  border-radius: 24px;
   height: 36px
 }
 
@@ -63,7 +63,7 @@
 
 .el-checkbox.is-bordered.el-checkbox--small {
   padding: 5px 15px 5px 10px;
-  border-radius: 3px;
+  border-radius: 23px;
   height: 32px
 }
 
@@ -84,7 +84,7 @@
 
 .el-checkbox.is-bordered.el-checkbox--mini {
   padding: 3px 15px 3px 10px;
-  border-radius: 3px;
+  border-radius: 23px;
   height: 28px
 }
 
@@ -125,7 +125,9 @@
 
 .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner {
   background-color: #f2f6fc;
-  border-color: #dcdfe6
+  border-color: #dcdfe6;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
 }
 
 .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner::after {
@@ -144,7 +146,9 @@
 
 .el-checkbox__input.is-checked .el-checkbox__inner, .el-checkbox__input.is-indeterminate .el-checkbox__inner {
   background-color: #409EFF;
-  border-color: #409EFF
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-checkbox__input.is-disabled + span.el-checkbox__label {
@@ -189,6 +193,8 @@
   border-radius: 2px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   width: 14px;
   height: 14px;
   background-color: #fff;
@@ -235,7 +241,9 @@
 
 .el-checkbox-button, .el-checkbox-button__inner {
   display: inline-block;
-  position: relative
+  position: relative;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
 }
 
 .el-checkbox__label {
@@ -298,7 +306,7 @@
 
 .el-checkbox-button.is-checked .el-checkbox-button__inner {
   color: #fff;
-  background-color: #409EFF;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   border-color: #409EFF;
   -webkit-box-shadow: -1px 0 0 0 #8cc5ff;
   box-shadow: -1px 0 0 0 #8cc5ff

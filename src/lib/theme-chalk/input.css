@@ -12,6 +12,8 @@
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
   width: 100%;
   font-size: inherit;
   color: #606266;
@@ -36,12 +38,16 @@
 }
 
 .el-textarea__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea__inner:focus {
   outline: 0;
-  border-color: #409EFF
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea.is-disabled .el-textarea__inner {
@@ -116,9 +122,11 @@
   background-color: #fff;
   background-image: none;
   border-radius: 4px;
-  border: 1px solid #dcdfe6;
+  border: 1px solid #dbdbdb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
   color: #606266;
   display: inline-block;
   font-size: inherit;
@@ -153,11 +161,15 @@
 }
 
 .el-input__inner:hover {
-  border-color: #c0c4cc
+  border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
   border-color: #409EFF;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2);
   outline: 0
 }
 
@@ -201,7 +213,9 @@
   background-color: #f5f7fa;
   border-color: #e4e7ed;
   color: #c0c4cc;
-  cursor: not-allowed
+  cursor: not-allowed;
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset,0px 4px 8px rgba(204, 204, 204, 0.2)
 }
 
 .el-input.is-disabled .el-input__inner::-webkit-input-placeholder {
@@ -281,7 +295,7 @@
 }
 
 .el-input-group__append, .el-input-group__prepend {
-  background-color: #f5f7fa;
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   color: #909399;
   vertical-align: middle;
   display: table-cell;
@@ -290,6 +304,8 @@
   border-radius: 4px;
   padding: 0 20px;
   width: 1px;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   white-space: nowrap
 }
 
@@ -317,7 +333,10 @@
   background-color: transparent;
   color: inherit;
   border-top: 0;
-  border-bottom: 0
+  border-bottom: 0;
+  border-left: 0;
+  border-right: 0;
+  box-shadow: none
 }
 
 .el-input-group__append .el-button, .el-input-group__append .el-input, .el-input-group__prepend .el-button, .el-input-group__prepend .el-input {
