@@ -367,9 +367,11 @@
   width: 40px;
   height: auto;
   text-align: center;
-  background: #f5f7fa;
   color: #606266;
   cursor: pointer;
+  background: linear-gradient(to top, #f7f7f7 , #fff);
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   font-size: 13px
 }
 
@@ -382,11 +384,13 @@
 }
 
 .el-input-number__decrease.is-disabled, .el-input-number__increase.is-disabled {
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   color: #c0c4cc;
   cursor: not-allowed
 }
 
 .el-input-number__increase {
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   right: 1px;
   border-radius: 0 4px 4px 0;
   border-left: 1px solid #dcdfe6
@@ -399,6 +403,7 @@
 }
 
 .el-input-number.is-disabled .el-input-number__decrease, .el-input-number.is-disabled .el-input-number__increase {
+  background: #f5f7fa;
   border-color: #e4e7ed;
   color: #e4e7ed
 }
@@ -484,6 +489,8 @@
 }
 
 .el-input-number.is-controls-right .el-input-number__increase {
+  -webkit-box-shadow: none;
+  box-shadow: none;
   border-radius: 0 4px 0 0;
   border-bottom: 1px solid #dcdfe6
 }
