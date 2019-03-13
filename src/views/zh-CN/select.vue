@@ -128,6 +128,29 @@
         </el-select>
       </div>
     </div>
+
+    <h3 id="fen-zu">
+      <a href="#fen-zu" aria-hidden="true" class="header-anchor">¶</a>
+      分组
+    </h3>
+    <p>备选项进行分组展示</p>
+    <div class="demo-block demo-zh-CN demo-select">
+      <div class="source">
+        <el-select v-model="value7" placeholder="请选择">
+          <el-option-group
+            v-for="group in options3"
+            :key="group.label"
+            :label="group.label">
+            <el-option
+              v-for="item in group.options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+            </el-option>
+          </el-option-group>
+        </el-select>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -200,7 +223,34 @@
           value: 'Guangzhou',
           label: '广州'
         }],
-        value6: ''
+        value6: '',
+        // 分组
+        options3: [{
+          label: '热门城市',
+          options: [{
+            value: 'Shanghai',
+            label: '上海'
+          }, {
+            value: 'Beijing',
+            label: '北京'
+          }]
+        }, {
+          label: '城市名',
+          options: [{
+            value: 'Chengdu',
+            label: '成都'
+          }, {
+            value: 'Shenzhen',
+            label: '深圳'
+          }, {
+            value: 'Guangzhou',
+            label: '广州'
+          }, {
+            value: 'Dalian',
+            label: '大连'
+          }]
+        }],
+        value7: ''
       }
     }
   }

@@ -37,14 +37,14 @@
 
 .el-tooltip__popper[x-placement^=top] .popper__arrow {
   bottom: -6px;
-  border-top-color: #303133;
+  border-top-color: #2aa1ef;
   border-bottom-width: 0
 }
 
 .el-tooltip__popper[x-placement^=top] .popper__arrow::after {
   bottom: 1px;
   margin-left: -5px;
-  border-top-color: #303133;
+  border-top-color: #2aa1ef;
   border-bottom-width: 0
 }
 
@@ -55,14 +55,14 @@
 .el-tooltip__popper[x-placement^=bottom] .popper__arrow {
   top: -6px;
   border-top-width: 0;
-  border-bottom-color: #303133
+  border-bottom-color: #2aa1ef
 }
 
 .el-tooltip__popper[x-placement^=bottom] .popper__arrow::after {
   top: 1px;
   margin-left: -5px;
   border-top-width: 0;
-  border-bottom-color: #303133
+  border-bottom-color: #2aa1ef
 }
 
 .el-tooltip__popper[x-placement^=right] {
@@ -71,14 +71,14 @@
 
 .el-tooltip__popper[x-placement^=right] .popper__arrow {
   left: -6px;
-  border-right-color: #303133;
+  border-right-color: #2aa1ef;
   border-left-width: 0
 }
 
 .el-tooltip__popper[x-placement^=right] .popper__arrow::after {
   bottom: -5px;
   left: 1px;
-  border-right-color: #303133;
+  border-right-color: #2aa1ef;
   border-left-width: 0
 }
 
@@ -89,7 +89,7 @@
 .el-tooltip__popper[x-placement^=left] .popper__arrow {
   right: -6px;
   border-right-width: 0;
-  border-left-color: #303133
+  border-left-color: #2aa1ef
 }
 
 .el-tooltip__popper[x-placement^=left] .popper__arrow::after {
@@ -97,21 +97,21 @@
   bottom: -5px;
   margin-left: -5px;
   border-right-width: 0;
-  border-left-color: #303133
+  border-left-color: #2aa1ef
 }
 
 .el-tooltip__popper.is-dark {
-  background: #303133;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   color: #fff
 }
 
 .el-tooltip__popper.is-light {
   background: #fff;
-  border: 1px solid #303133
+  border: 1px solid #2aa1ef
 }
 
 .el-tooltip__popper.is-light[x-placement^=top] .popper__arrow {
-  border-top-color: #303133
+  border-top-color: #2aa1ef
 }
 
 .el-tooltip__popper.is-light[x-placement^=top] .popper__arrow::after {
@@ -119,7 +119,7 @@
 }
 
 .el-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow {
-  border-bottom-color: #303133
+  border-bottom-color: #2aa1ef
 }
 
 .el-tooltip__popper.is-light[x-placement^=bottom] .popper__arrow::after {
@@ -127,7 +127,7 @@
 }
 
 .el-tooltip__popper.is-light[x-placement^=left] .popper__arrow {
-  border-left-color: #303133
+  border-left-color: #2aa1ef
 }
 
 .el-tooltip__popper.is-light[x-placement^=left] .popper__arrow::after {
@@ -135,7 +135,7 @@
 }
 
 .el-tooltip__popper.is-light[x-placement^=right] .popper__arrow {
-  border-right-color: #303133
+  border-right-color: #2aa1ef
 }
 
 .el-tooltip__popper.is-light[x-placement^=right] .popper__arrow::after {

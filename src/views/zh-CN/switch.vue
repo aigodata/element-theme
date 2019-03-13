@@ -9,7 +9,7 @@
       <a href="#ji-ben-yong-fa" aria-hidden="true" class="header-anchor">¶</a>
       基本用法
     </h3>
-    <div class="demo-block demo-zh-CN demo-input">
+    <div class="demo-block demo-zh-CN demo-switch">
       <div class="source">
         <el-switch v-model="value2"></el-switch>
       </div>
@@ -20,7 +20,7 @@
       <a href="#wen-zi-miao-shu" aria-hidden="true" class="header-anchor">¶</a>
       文字描述
     </h3>
-    <div class="demo-block demo-zh-CN demo-input">
+    <div class="demo-block demo-zh-CN demo-switch">
       <div class="source">
         <el-switch
           v-model="value3"
@@ -31,6 +31,7 @@
           style="display: block"
           v-model="value4"
           active-color="#13ce66"
+          inactive-color="#ff4949"
           active-text="按月付费"
           inactive-text="按年付费">
         </el-switch>
@@ -41,7 +42,7 @@
       <a href="#kuo-zhan" aria-hidden="true" class="header-anchor">¶</a>
       扩展的value类型
     </h3>
-    <div class="demo-block demo-zh-CN demo-input">
+    <div class="demo-block demo-zh-CN demo-switch">
       <div class="source">
         <el-tooltip :content="'Switch value: ' + value5" placement="top">
           <el-switch
@@ -57,7 +58,7 @@
       <a href="#jin-yong-zhuang-tai" aria-hidden="true" class="header-anchor">¶</a>
       禁用状态
     </h3>
-    <div class="demo-block demo-zh-CN demo-input">
+    <div class="demo-block demo-zh-CN demo-switch">
       <div class="source">
         <el-switch
           v-model="value6"
@@ -92,6 +93,10 @@
 <style scoped>
   .page-switch {
 
+  }
+
+  .page-switch .demo-block.demo-switch .el-switch {
+    margin: 20px 20px 20px 0;
   }
 
 </style>
