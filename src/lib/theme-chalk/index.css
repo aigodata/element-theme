@@ -24,7 +24,7 @@
 @import "./button-group.css";
 /*@import "./table.css";*/
 /*@import "./table-column.css";*/
-/*@import "./date-picker.css";*/
+@import "./date-picker.css";
 @import "./time-select.css";
 @import "./time-picker.css";
 /*@import "./popover.css";*/
