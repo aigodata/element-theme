@@ -238,15 +238,25 @@
 }
 
 .el-color-dropdown__link-btn {
+  position: relative;
+  top: 1px;
+  height: 26px;
+  line-height: 26px;
   cursor: pointer;
-  color: #409EFF;
+  color: #2aa1ef;
   text-decoration: none;
-  padding: 15px;
-  font-size: 12px
+  padding: 0 20px;
+  margin-right: -5px;
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  border: 1px solid #2aa1ef
 }
 
 .el-color-dropdown__link-btn:hover {
-  color: tint(#409EFF, 20%)
+  color: #fff;
+  border-color: #1d98e9;
+  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
 }
 
 .el-color-picker {

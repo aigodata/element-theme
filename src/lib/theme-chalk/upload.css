@@ -173,14 +173,20 @@
 }
 
 .el-upload--picture-card {
-  background-color: #fbfdff;
-  border: 1px dashed #c0ccda;
-  border-radius: 6px;
+  bborder-radius: 3px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f9f9f9 , #fff);
   box-sizing: border-box;
   width: 148px;
   height: 148px;
   line-height: 146px;
   vertical-align: top
+}
+
+.el-upload--picture-card:hover i {
+  color: #36aafc
 }
 
 .el-upload--picture-card i {
@@ -258,11 +264,16 @@
   font-size: 14px;
   color: #606266;
   line-height: 1.8;
-  margin-top: 5px;
+  margin-top: 10px;
   position: relative;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-radius: 4px;
+  padding: 2px;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   width: 100%
 }
 
@@ -288,17 +299,20 @@
 }
 
 .el-upload-list__item .el-icon-upload-success {
-  color: #67c23a
+  color: #5ccb44
 }
 
 .el-upload-list__item .el-icon-close {
+  background-color: #808080;
   display: none;
+  border-radius: 50%;
   position: absolute;
-  top: 5px;
-  right: 5px;
+  top: 9px;
+  right: 6px;
   cursor: pointer;
   opacity: .75;
-  color: #606266
+  font-size: 12px;
+  color: #fff
 }
 
 .el-upload-list__item .el-icon-close:hover {
@@ -321,6 +335,12 @@
 }
 
 .el-upload-list__item:hover .el-icon-close {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  top: 10px;
+  right: 10px;
+  text-align: center;
   display: inline-block
 }
 
@@ -372,7 +392,7 @@
 .el-upload-list__item-status-label {
   position: absolute;
   right: 5px;
-  top: 0;
+  top: 3px;
   line-height: inherit;
   display: none
 }
@@ -524,6 +544,7 @@
 }
 
 .el-upload-list--picture .el-upload-list__item .el-icon-check, .el-upload-list--picture .el-upload-list__item .el-icon-circle-check {
+  margin-top: 0;
   color: #fff
 }
 
@@ -574,23 +595,23 @@
 
 .el-upload-list--picture .el-upload-list__item-status-label {
   position: absolute;
-  right: -17px;
-  top: -7px;
-  width: 46px;
-  height: 26px;
-  background: #13ce66;
+  right: 10px;
+  top: 10px;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  background: #67c23a;
   text-align: center;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-box-shadow: 0 1px 1px #ccc;
-  box-shadow: 0 1px 1px #ccc
+  border-radius: 50%;
+  -webkit-transform: none;
+  transform: none
 }
 
 .el-upload-list--picture .el-upload-list__item-status-label i {
   font-size: 12px;
   margin-top: 12px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg)
+  -webkit-transform: none;
+  transform: none
 }
 
 .el-upload-list--picture .el-progress {
@@ -639,8 +660,8 @@
 .el-upload-cover__label i {
   font-size: 12px;
   margin-top: 11px;
-  -webkit-transform: rotate(-45deg);
-  transform: rotate(-45deg);
+  -webkit-transform: none;
+  transform: none;
   color: #fff
 }
 
@@ -733,4 +754,38 @@
   opacity: 0;
   position: relative;
   z-index: 1
+}
+
+.avatar-uploader .el-upload {
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f9f9f9 , #fff);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden
+}
+
+.avatar-uploader .el-upload:hover {
+  border-color: #409EFF
+}
+.avatar-uploader .el-upload:hover .avatar-uploader-icon {
+  color: #409EFF
+}
+
+
+.avatar-uploader-icon {
+  font-size: 28px;
+  color: #8c939d;
+  width: 178px;
+  height: 178px;
+  line-height: 178px;
+  text-align: center
+}
+
+.avatar {
+  width: 178px;
+  height: 178px;
+  display: block
 }

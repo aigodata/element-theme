@@ -44,13 +44,13 @@
 /*@import "./loading.css";*/
 /*@import "./row.css";*/
 /*@import "./col.css";*/
-/*@import "./upload.css";*/
+@import "./upload.css";
 /*@import "./progress.css";*/
 /*@import "./spinner.css";*/
 /*@import "./message.css";*/
 /*@import "./badge.css";*/
 /*@import "./card.css";*/
-/*@import "./rate.css";*/
+@import "./rate.css";
 /*@import "./steps.css";*/
 /*@import "./step.css";*/
 /*@import "./carousel.css";*/
@@ -59,8 +59,8 @@
 /*@import "./collapse.css";*/
 /*@import "./collapse-item.css";*/
 @import "./cascader.css";
-/*@import "./color-picker.css";*/
-/*@import "./transfer.css";*/
+@import "./color-picker.css";
+@import "./transfer.css";
 @import "./container.css";
 @import "./header.css";
 @import "./aside.css";

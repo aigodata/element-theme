@@ -1,5 +1,8 @@
 .el-date-table td.in-range div, .el-date-table td.in-range div:hover, .el-date-table.is-week-mode .el-date-table__row.current div, .el-date-table.is-week-mode .el-date-table__row:hover div {
-  background-color: #f2f6fc
+  color: #fff;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-date-table {
@@ -73,12 +76,8 @@
 }
 
 .el-date-table td.today span {
-  color: #409EFF;
-  font-weight: normal;
-  border: 1px solid #40a8ed;
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
+  color: #005b9a;
+  font-weight: 700
 }
 
 .el-date-table td.today.end-date span, .el-date-table td.today.start-date span {
@@ -102,7 +101,8 @@
 }
 
 .el-date-table td.end-date span, .el-date-table td.start-date span {
-  background-color: #409EFF
+  background-color: #fff;
+  color: #43b0f7
 }
 
 .el-date-table td.start-date div {
@@ -185,7 +185,11 @@
 }
 
 .el-month-table td .cell:hover, .el-month-table td.current:not(.disabled) .cell {
-  color: #409EFF
+  color: #fff;
+  border-radius: 16px;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-year-table {
@@ -220,7 +224,14 @@
 }
 
 .el-year-table td .cell:hover, .el-year-table td.current:not(.disabled) .cell {
-  color: #409EFF
+  color: #fff;
+  border: 1px solid #2aa1ef;
+  border-radius: 16px;
+  font-weight: 700;
+  box-sizing: border-box;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .fade-in-linear-enter-active, .fade-in-linear-leave-active {
@@ -546,20 +557,32 @@
 
 .el-picker-panel__shortcut {
   display: block;
-  width: 100%;
-  border: 0;
-  background-color: transparent;
-  line-height: 28px;
-  font-size: 14px;
-  color: #606266;
-  padding-left: 12px;
-  text-align: left;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #333333;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   outline: 0;
-  cursor: pointer
+  margin: 0 0 8px 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-user-select: none;
+  padding: 10px 12px;
+  font-size: 13px;
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f7f7f7 , #fff)
 }
 
 .el-picker-panel__shortcut:hover {
-  color: #409EFF
+  color: #fff;
+  border: 1px solid #2aa1ef;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-picker-panel__shortcut.active {
@@ -618,7 +641,7 @@
   border-right: 1px solid #e4e4e4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-top: 6px;
+  padding: 6px 10px 0px 10px;
   background-color: #fff;
   overflow: auto
 }
