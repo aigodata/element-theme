@@ -86,6 +86,45 @@
       </div>
     </div>
 
+    <h3 id="tuo-zhuai-shang-chuan">
+      <a href="#tuo-zhuai-shang-chuan" aria-hidden="true" class="header-anchor">¶</a>
+      拖拽上传
+    </h3>
+    <div class="demo-block demo-zh-CN demo-upload">
+      <div class="source">
+        <el-upload
+          class="upload-demo"
+          drag
+          action="https://jsonplaceholder.typicode.com/posts/"
+          multiple>
+          <i class="el-icon-upload"></i>
+          <div class="el-upload__text">将文件拖到此处，或<em>点击上传</em></div>
+          <div class="el-upload__tip" slot="tip">只能上传jpg/png文件，且不超过500kb</div>
+        </el-upload>
+      </div>
+    </div>
+
+    <h3 id="shou-dong-shang-chuan">
+      <a href="#shou-dong-shang-chuan" aria-hidden="true" class="header-anchor">¶</a>
+      手动上传
+    </h3>
+    <div class="demo-block demo-zh-CN demo-upload">
+      <div class="source">
+        <el-upload
+          class="upload-demo"
+          ref="upload"
+          action="https://jsonplaceholder.typicode.com/posts/"
+          :on-preview="handlePreview"
+          :on-remove="handleRemove"
+          :file-list="fileList"
+          :auto-upload="false">
+          <el-button slot="trigger" size="small" type="primary">选取文件</el-button>
+          <el-button style="margin-left: 10px;" size="small" type="success" @click="submitUpload">上传到服务器</el-button>
+          <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+        </el-upload>
+      </div>
+    </div>
+
   </section>
 </template>
 
@@ -136,6 +175,9 @@
       handlePictureCardPreview(file) {
         this.dialogImageUrl = file.url;
         this.dialogVisible = true;
+      },
+      submitUpload() {
+        this.$refs.upload.submit();
       }
     }
   }

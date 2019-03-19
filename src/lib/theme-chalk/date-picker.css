@@ -90,7 +90,7 @@
 
 .el-date-table td.current:not(.disabled) span {
   color: #fff;
-  border: 1px solid #2aa1ef;
+  border: none;
   background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
@@ -140,9 +140,11 @@
 }
 
 .el-date-table td.selected span {
-  background-color: #409EFF;
   color: #fff;
-  border-radius: 15px
+  border: none;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-date-table td.week {
@@ -185,11 +187,16 @@
 }
 
 .el-month-table td .cell:hover, .el-month-table td.current:not(.disabled) .cell {
+  color: #409EFF
+}
+
+.el-month-table td.current:not(.disabled) .cell {
   color: #fff;
+  border: none;
   border-radius: 16px;
-  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-year-table {
@@ -224,11 +231,13 @@
 }
 
 .el-year-table td .cell:hover, .el-year-table td.current:not(.disabled) .cell {
+  color: #409EFF
+}
+
+.el-year-table td.current:not(.disabled) .cell {
   color: #fff;
-  border: 1px solid #2aa1ef;
+  border: none;
   border-radius: 16px;
-  font-weight: 700;
-  box-sizing: border-box;
   background: linear-gradient(to top, #2aa1ef , #3eb1fc);
   -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
@@ -553,6 +562,34 @@
   background-color: #fff;
   position: relative;
   font-size: 0
+}
+
+.el-picker-panel__footer .el-button--text {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-user-select: none;
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #fff;
+  border: 1px solid #2aa1ef;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+}
+
+.el-picker-panel__footer .el-button--text:focus, .el-picker-panel__footer .el-button--text:hover {
+  color: #fff;
+  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
 }
 
 .el-picker-panel__shortcut {
@@ -1004,4 +1041,14 @@
   margin-left: -6px;
   border-right-width: 0;
   border-left-color: #fff
+}
+
+.el-month-table td.today .cell {
+  color: #005b9a;
+  font-weight: 700
+}
+
+.el-year-table td.today .cell {
+  color: #005b9a;
+  font-weight: 700
 }

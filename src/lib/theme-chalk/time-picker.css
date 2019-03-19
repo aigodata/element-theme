@@ -476,8 +476,6 @@
   line-height: 1;
   white-space: nowrap;
   cursor: pointer;
-  background: #fff;
-  color: #333333;
   text-align: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -486,23 +484,23 @@
   -webkit-transition: .1s;
   transition: .1s;
   -webkit-user-select: none;
-  padding: 4px 8px;
+  padding: 7px 15px;
   font-size: 12px;
   border-radius: 3px;
-  border: 1px solid #e4e4e4;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
-  background: linear-gradient(to top, #f7f7f7 , #fff)
+  color: #fff;
+  border: 1px solid #2aa1ef;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-time-panel__btn + .el-time-panel__btn {
-  margin-left: 10px
+  margin-left: 5px
 }
 
 .el-time-panel__btn:focus, .el-time-panel__btn:hover {
-  color: #333333;
-  border-color: #e4e4e4;
-  background: linear-gradient(to top, #f2f2f2 , #fff)
+  color: #fff;
+  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
 }
 
 .el-time-panel__btn:active {
@@ -520,25 +518,18 @@
 }
 
 .el-time-panel__btn.confirm {
-  color: #fff;
-  border: 1px solid #2aa1ef;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
-}
-
-.el-time-panel__btn.confirm {
-  color: #fff;
-  border: none;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+  color: #333333;
+  background: #fff;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  border: 1px solid #dbdbdb
 }
 
 .el-time-panel__btn.confirm:focus, .el-time-panel__btn.confirm:hover {
-  color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
-
+  background: linear-gradient(to top, #f7f7f7 , #fff);
+  border-color: #dbdbdb;
+  color: #333333
 }
 
 .el-time-panel__btn.confirm.is-active, .el-time-panel__btn.confirm:active {

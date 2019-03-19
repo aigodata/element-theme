@@ -123,6 +123,8 @@
 }
 
 .el-form-item.is-error .el-input__inner, .el-form-item.is-error .el-input__inner:focus, .el-form-item.is-error .el-textarea__inner, .el-form-item.is-error .el-textarea__inner:focus {
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
   border-color: #f56c6c
 }
 
@@ -135,6 +137,8 @@
 }
 
 .el-form-item.is-success .el-input__inner, .el-form-item.is-success .el-input__inner:focus, .el-form-item.is-success .el-textarea__inner, .el-form-item.is-success .el-textarea__inner:focus {
+  -webkit-box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
+  box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
   border-color: #67c23a
 }
 

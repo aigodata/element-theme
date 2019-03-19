@@ -22,7 +22,7 @@
 @import "./select.css";
 @import "./button.css";
 @import "./button-group.css";
-/*@import "./table.css";*/
+@import "./table.css";
 /*@import "./table-column.css";*/
 @import "./date-picker.css";
 @import "./time-select.css";
@@ -32,8 +32,8 @@
 /*@import "./message-box.css";*/
 /*@import "./breadcrumb.css";*/
 /*@import "./breadcrumb-item.css";*/
-/*@import "./form.css";*/
-/*@import "./form-item.css";*/
+@import "./form.css";
+@import "./form-item.css";
 /*@import "./tabs.css";*/
 /*@import "./tab-pane.css";*/
 /*@import "./tag.css";*/
