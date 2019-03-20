@@ -36,8 +36,8 @@
 @import "./form-item.css";
 /*@import "./tabs.css";*/
 /*@import "./tab-pane.css";*/
-/*@import "./tag.css";*/
-/*@import "./tree.css";*/
+@import "./tag.css";
+@import "./tree.css";
 /*@import "./alert.css";*/
 /*@import "./notification.css";*/
 @import "./slider.css";
@@ -45,7 +45,7 @@
 /*@import "./row.css";*/
 /*@import "./col.css";*/
 @import "./upload.css";
-/*@import "./progress.css";*/
+@import "./progress.css";
 /*@import "./spinner.css";*/
 /*@import "./message.css";*/
 /*@import "./badge.css";*/

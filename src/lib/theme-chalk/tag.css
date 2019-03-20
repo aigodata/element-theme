@@ -1,16 +1,18 @@
 .el-tag {
-  background-color: rgba(64, 158, 255, .1);
+  background-color: #fff;
   display: inline-block;
   padding: 0 10px;
   height: 32px;
   line-height: 30px;
   font-size: 12px;
-  color: #409EFF;
+  color: #1e9ff2;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid rgba(64, 158, 255, .2);
-  white-space: nowrap
+  border: 1px solid #1e9ff2;
+  white-space: nowrap;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.2);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.2)
 }
 
 .el-tag .el-icon-close {
@@ -25,7 +27,7 @@
   vertical-align: middle;
   top: -1px;
   right: -5px;
-  color: #409EFF
+  color: #1e9ff2
 }
 
 .el-tag .el-icon-close::before {
@@ -33,82 +35,91 @@
 }
 
 .el-tag .el-icon-close:hover {
-  background-color: #409EFF;
+  background-color: #1e9ff2;
   color: #fff
 }
 
 .el-tag--info, .el-tag--info .el-tag__close {
-  color: #909399
+  color: #585b6a
 }
 
 .el-tag--info {
-  background-color: rgba(144, 147, 153, .1);
-  border-color: rgba(144, 147, 153, .2)
+  background-color: #fff;
+  border-color: #585b6a;
+  color: #585b6a;
+  -webkit-box-shadow: 0px 2px 8px rgba(57, 60, 74, 0.2);
+  box-shadow: 0px 2px 8px rgba(57, 60, 74, 0.2)
 }
 
 .el-tag--info.is-hit {
-  border-color: #909399
+  border-color: #585b6a
 }
 
 .el-tag--info .el-tag__close:hover {
-  background-color: #909399;
+  background-color: #585b6a;
   color: #fff
 }
 
 .el-tag--success {
-  background-color: rgba(103, 194, 58, .1);
-  border-color: rgba(103, 194, 58, .2);
-  color: #67c23a
+  background-color: #fff;
+  border-color: #50ca31;
+  color: #50ca31;
+  -webkit-box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
+  box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2)
 }
 
 .el-tag--success.is-hit {
-  border-color: #67c23a
+  border-color: #50ca31
 }
 
 .el-tag--success .el-tag__close {
-  color: #67c23a
+  color: #50ca31
 }
 
 .el-tag--success .el-tag__close:hover {
-  background-color: #67c23a;
+  background-color: #50ca31;
   color: #fff
 }
 
 .el-tag--warning {
-  background-color: rgba(230, 162, 60, .1);
-  border-color: rgba(230, 162, 60, .2);
-  color: #e6a23c
+  background-color: #fff;
+  border-color: #ff9321;
+  color: #ff9321;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2);
+  box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2)
 }
 
 .el-tag--warning.is-hit {
-  border-color: #e6a23c
+  border-color: #ff9321
 }
 
 .el-tag--warning .el-tag__close {
-  color: #e6a23c
+  color: #ff9321
 }
 
 .el-tag--warning .el-tag__close:hover {
-  background-color: #e6a23c;
+  background-color: #ff9321;
   color: #fff
 }
 
 .el-tag--danger {
-  background-color: rgba(245, 108, 108, .1);
-  border-color: rgba(245, 108, 108, .2);
-  color: #f56c6c
+  background-color: #fff;
+  border-color: #fb5b5f;
+  color: #fb5b5f;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2)
 }
 
 .el-tag--danger.is-hit {
-  border-color: #f56c6c
+  border-color: #fb5b5f
 }
 
 .el-tag--danger .el-tag__close {
-  color: #f56c6c
+  color: #fb5b5f
 }
 
 .el-tag--danger .el-tag__close:hover {
-  background-color: #f56c6c;
+  background-color: #fb5b5f;
   color: #fff
 }
 

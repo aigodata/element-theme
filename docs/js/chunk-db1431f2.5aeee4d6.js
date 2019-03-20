@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-db1431f2"],{7545:function(n,t,a){"use strict";var e=a("ad25"),c=a.n(e);c.a},ad25:function(n,t,a){},ff09:function(n,t,a){"use strict";a.r(t);var e=function(){var n=this,t=n.$createElement,a=n._self._c||t;return a("section",{staticClass:"page-table"},[n._v("\n  table\n")])},c=[],s={name:"table"},u=s,i=(a("7545"),a("2877")),l=Object(i["a"])(u,e,c,!1,null,"13f986aa",null);t["default"]=l.exports}}]);
-//# sourceMappingURL=chunk-db1431f2.5aeee4d6.js.map

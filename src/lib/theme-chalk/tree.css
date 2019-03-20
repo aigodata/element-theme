@@ -518,7 +518,27 @@
 }
 
 .el-tree-node:focus > .el-tree-node__content {
-  background-color: #f5f7fa
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+}
+
+.el-tree-node:focus > .el-tree-node__content .el-tree-node__expand-icon {
+  color: #005b9a
+}
+
+.el-tree-node:focus > .el-tree-node__content .el-tree-node__expand-icon.is-leaf {
+  opacity: 0
+}
+
+.el-tree-node:focus > .el-tree-node__content .el-checkbox__input.is-checked .el-checkbox__inner, .el-tree-node:focus > .el-tree-node__content .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  border-color: #fff
+}
+
+.el-tree-node:focus > .el-tree-node__content .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner, .el-tree-node:focus > .el-tree-node__content .el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner {
+  border-color: #dcdfe6
 }
 
 .el-tree-node.is-drop-inner > .el-tree-node__content .el-tree-node__label {
@@ -546,7 +566,27 @@
 }
 
 .el-tree-node__content:hover {
-  background-color: #f5f7fa
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+}
+
+.el-tree-node__content:hover .el-tree-node__expand-icon {
+  color: #005b9a
+}
+
+.el-tree-node__content:hover .el-tree-node__expand-icon.is-leaf {
+  opacity: 0
+}
+
+.el-tree-node__content:hover .el-checkbox__input.is-checked .el-checkbox__inner, .el-tree-node__content:hover .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  border-color: #fff
+}
+
+.el-tree-node__content:hover .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner, .el-tree-node__content:hover .el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner {
+  border-color: #dcdfe6
 }
 
 .el-tree.is-dragging .el-tree-node__content {
