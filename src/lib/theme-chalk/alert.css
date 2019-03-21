@@ -26,7 +26,8 @@
 }
 
 .el-alert--success {
-  background-color: #f0f9eb;
+  border: 1px solid #c8ffa6;
+  background: linear-gradient(to top, #e5ffd5 , #e9ffdc);
   color: #67c23a
 }
 
@@ -35,8 +36,9 @@
 }
 
 .el-alert--info {
-  background-color: #f4f4f5;
-  color: #909399
+  border: 1px solid #efefef;
+  background: linear-gradient(to top, #f9f9f9 , #f6f6f6);
+  color: #585b6a
 }
 
 .el-alert--info .el-alert__description {
@@ -44,8 +46,9 @@
 }
 
 .el-alert--warning {
-  background-color: #fdf6ec;
-  color: #e6a23c
+  border: 1px solid #fee2c0;
+  background: linear-gradient(to top, #ffefdb , #fff0dd);
+  color: #fd9326
 }
 
 .el-alert--warning .el-alert__description {
@@ -53,8 +56,9 @@
 }
 
 .el-alert--error {
-  background-color: #fef0f0;
-  color: #f56c6c
+  border: 1px solid #fed6d7;
+  background: linear-gradient(to top, #fee7e7 , #ffebeb);
+  color: #fb5b5f
 }
 
 .el-alert--error .el-alert__description {

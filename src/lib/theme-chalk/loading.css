@@ -58,13 +58,17 @@
   animation: loading-dash 1.5s ease-in-out infinite;
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
-  stroke-width: 2;
+  stroke-width: 4;
   stroke: #409EFF;
   stroke-linecap: round
 }
 
 .el-loading-spinner i {
-  color: #409EFF
+  font-size: 26px;
+  font-weight: bold;
+  color: #409EFF;
+  -webkit-text-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  text-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-loading-fade-enter, .el-loading-fade-leave-active {

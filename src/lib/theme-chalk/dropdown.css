@@ -732,8 +732,11 @@
 }
 
 .el-dropdown-menu__item:focus, .el-dropdown-menu__item:not(.is-disabled):hover {
-  background-color: #ecf5ff;
-  color: #66b1ff
+  color: #fff;
+  border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-dropdown-menu__item--divided {
