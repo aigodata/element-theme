@@ -54,6 +54,7 @@
   background-color: #fff;
   border-radius: 4px;
   border: 1px solid #ebeef5;
+  border-top: 4px solid #37acf8;
   font-size: 18px;
   -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
@@ -89,7 +90,8 @@
   margin-bottom: 0;
   font-size: 18px;
   line-height: 1;
-  color: #303133
+  color: #303133;
+  text-shadow: 0px 2px 3px rgba(204, 204, 204, 0.4)
 }
 
 .el-message-box__headerbtn {

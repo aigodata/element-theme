@@ -59,9 +59,13 @@
 }
 
 .el-badge__content--info {
-  background-color: #909399
+  background-color: #909399;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2)
 }
 
 .el-badge__content--danger {
-  background-color: #f56c6c
+  background-color: #f56c6c;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2)
 }
