@@ -204,6 +204,10 @@ export default new Router({
 						{
 							path: 'collapse', name: 'collapse', meta: {name: '折叠面板'},
 							component: () => import('./views/zh-CN/collapse.vue')
+						},
+						{
+							path: 'timeline', name: 'timeline', meta: {name: 'Timeline时间线'},
+							component: () => import('./views/zh-CN/timeline.vue')
 						}
 					]
 				}

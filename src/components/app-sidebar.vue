@@ -88,6 +88,7 @@
                 <li class="nav-item"><a href="#/zh-CN/card" class="">Card 卡片</a></li>
                 <li class="nav-item"><a href="#/zh-CN/carousel" class="">Carousel 走马灯</a></li>
                 <li class="nav-item"><a href="#/zh-CN/collapse" class="">Collapse 折叠面板</a></li>
+                <li class="nav-item"><a href="#/zh-CN/timeline" class="">Timeline 时间线</a></li>
               </ul>
             </div>
           </li>

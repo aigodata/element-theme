@@ -15,6 +15,8 @@
   transition: -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
   transition: transform .3s cubic-bezier(.645, .045, .355, 1);
   transition: transform .3s cubic-bezier(.645, .045, .355, 1), -webkit-transform .3s cubic-bezier(.645, .045, .355, 1);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   list-style: none
 }
 
@@ -212,10 +214,11 @@
 }
 
 .el-tabs--card > .el-tabs__header .el-tabs__item {
-  border-bottom: 1px solid transparent;
+  border-bottom: 1px solid #e4e7ed;
   border-left: 1px solid #e4e7ed;
   -webkit-transition: color .3s cubic-bezier(.645, .045, .355, 1), padding .3s cubic-bezier(.645, .045, .355, 1);
-  transition: color .3s cubic-bezier(.645, .045, .355, 1), padding .3s cubic-bezier(.645, .045, .355, 1)
+  transition: color .3s cubic-bezier(.645, .045, .355, 1), padding .3s cubic-bezier(.645, .045, .355, 1);
+  background: linear-gradient(to top, #f7f7f7 , #fff)
 }
 
 .el-tabs--card > .el-tabs__header .el-tabs__item:first-child {
@@ -228,6 +231,7 @@
 }
 
 .el-tabs--card > .el-tabs__header .el-tabs__item.is-active {
+  background: #fff;
   border-bottom-color: #fff
 }
 
@@ -239,8 +243,8 @@
 .el-tabs--border-card {
   background: #fff;
   border: 1px solid #dcdfe6;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04);
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .12), 0 0 6px 0 rgba(0, 0, 0, .04)
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
 }
 
 .el-tabs--border-card > .el-tabs__content {
@@ -248,7 +252,7 @@
 }
 
 .el-tabs--border-card > .el-tabs__header {
-  background-color: #f5f7fa;
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   border-bottom: 1px solid #e4e7ed;
   margin: 0
 }

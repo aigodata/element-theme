@@ -47,6 +47,7 @@
 }
 
 .el-dialog {
+  border-top: 4px solid #37acf8;
   position: relative;
   margin: 0 auto 50px;
   background: #fff;

@@ -109,20 +109,20 @@
 }
 
 .el-collapse {
-  border-top: 1px solid #ebeef5;
-  border-bottom: 1px solid #ebeef5
+  border: 1px solid #ebeef5
 }
 
 .el-collapse-item__header {
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  background: linear-gradient(to top, #f7f7f7 , #fff);
   height: 48px;
   line-height: 48px;
-  background-color: #fff;
   color: #303133;
   cursor: pointer;
   border-bottom: 1px solid #ebeef5;
@@ -131,6 +131,10 @@
   -webkit-transition: border-bottom-color .3s;
   transition: border-bottom-color .3s;
   outline: 0
+}
+
+.el-collapse-item__header:hover {
+  color: #409eff
 }
 
 .el-collapse-item__arrow {
@@ -165,7 +169,7 @@
 }
 
 .el-collapse-item__content {
-  padding-bottom: 25px;
+  padding: 13px 20px;
   font-size: 13px;
   color: #303133;
   line-height: 1.769230769230769
