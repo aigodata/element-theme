@@ -377,3 +377,11 @@
 .el-step.is-simple:last-of-type .el-step__arrow {
   display: none
 }
+
+.el-steps--simple {
+  border-radius: 3px;
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #fafafa , #fff)
+}

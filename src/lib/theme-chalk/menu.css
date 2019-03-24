@@ -134,10 +134,7 @@
 }
 
 .el-menu.el-menu--horizontal {
-  border: 1px solid #eaeaea;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
-  background: linear-gradient(to top, #fafafa , #fff)
+  border: 1px solid #e6e6e6
 }
 
 .el-menu--horizontal {

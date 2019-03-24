@@ -33,6 +33,63 @@
         </el-table>
       </div>
     </div>
+
+    <h3 id="dai-ban-ma-wen-biao-ge">
+      <a href="#dai-ban-ma-wen-biao-ge" aria-hidden="true" class="header-anchor">¶</a>
+      带斑马纹表格
+    </h3>
+    <p>使用带斑马纹的表格，可以更容易区分出不同行的数据。</p>
+    <div class="demo-block demo-zh-CN demo-table">
+      <div class="source">
+        <el-table
+          :data="tableData"
+          stripe
+          style="width: 100%">
+          <el-table-column
+            prop="date"
+            label="日期"
+            width="180">
+          </el-table-column>
+          <el-table-column
+            prop="name"
+            label="姓名"
+            width="180">
+          </el-table-column>
+          <el-table-column
+            prop="address"
+            label="地址">
+          </el-table-column>
+        </el-table>
+      </div>
+    </div>
+
+    <h3 id="dai-bian-kuang-biao-ge">
+      <a href="#dai-bian-kuang-biao-ge" aria-hidden="true" class="header-anchor">¶</a>
+      带边框表格
+    </h3>
+    <div class="demo-block demo-zh-CN demo-table">
+      <div class="source">
+        <el-table
+          :data="tableData"
+          border
+          style="width: 100%">
+          <el-table-column
+            prop="date"
+            label="日期"
+            width="180">
+          </el-table-column>
+          <el-table-column
+            prop="name"
+            label="姓名"
+            width="180">
+          </el-table-column>
+          <el-table-column
+            prop="address"
+            label="地址">
+          </el-table-column>
+        </el-table>
+      </div>
+    </div>
   </section>
 </template>
 
