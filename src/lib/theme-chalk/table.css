@@ -699,9 +699,16 @@
   overflow: auto;
   border-top: 1px solid #e9e9e9;
   border-bottom: 1px solid #3eb1fc;
-  background: linear-gradient(to top, #fcfcfc , #fff);
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
+  border-right: 1px solid #e9e9e9;
+  background: linear-gradient(to top, #fcfcfc , #fff)
+}
+
+.el-table th:nth-last-child(2) {
+  border-right: none
+}
+
+.el-table.el-table--border th:nth-last-child(2) {
+  border-right: 1px solid #e9e9e9;
 }
 
 .el-table th {
@@ -800,7 +807,7 @@
 }
 
 .el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left ~ .el-table__fixed {
-  /*border-left: 1px solid #fff;*/
+  border-left: 1px solid #fff;
   border-right: 1px solid #ebeef5
 }
 
@@ -900,8 +907,8 @@
 .el-table__header-wrapper {
   position: relative;
   z-index: 9;
-  -webkit-box-shadow: 0px 2px 10px rgba(204, 204, 204, 0.6);
-  box-shadow: 0px 2px 10px rgba(204, 204, 204, 0.6)
+  -webkit-box-shadow: 2px 2px 10px rgba(204, 204, 204, 0.6);
+  box-shadow: 2px 2px 10px rgba(204, 204, 204, 0.6)
 }
 
 .el-table__footer-wrapper, .el-table__header-wrapper {
