@@ -242,8 +242,8 @@
 .el-checkbox-button, .el-checkbox-button__inner {
   display: inline-block;
   position: relative;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4)
+  -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.4)
 }
 
 .el-checkbox__label {
