@@ -260,6 +260,14 @@
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
+.el-cascader-menu__item:focus:not(:active).el-cascader-menu__item--extensible:after, .el-cascader-menu__item:hover.el-cascader-menu__item--extensible:after {
+  color: #fff
+}
+
+.el-cascader-menu, .el-cascader-menu__item.is-disabled:hover.el-cascader-menu__item--extensible:after {
+  color: #bfcbd9
+}
+
 .el-cascader-menu__item.selected {
   color: #fff;
   background-color: #f5f7fa

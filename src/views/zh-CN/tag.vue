@@ -66,7 +66,7 @@
 
     <h3 id="bu-tong-chi-cun">
       <a href="#bu-tong-chi-cun" aria-hidden="true" class="header-anchor">¶</a>
-      动态编辑标签
+      不同尺寸
     </h3>
     <div class="demo-block demo-zh-CN demo-tag">
       <div class="source">

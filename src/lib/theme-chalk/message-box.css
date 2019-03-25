@@ -90,8 +90,7 @@
   margin-bottom: 0;
   font-size: 18px;
   line-height: 1;
-  color: #303133;
-  text-shadow: 0px 2px 3px rgba(204, 204, 204, 0.4)
+  color: #303133
 }
 
 .el-message-box__headerbtn {

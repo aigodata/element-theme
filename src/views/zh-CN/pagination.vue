@@ -2,7 +2,7 @@
   <section class="page-pagination">
     <h2 id="pagination-fen-ye">
       <a href="#pagination-fen-ye" aria-hidden="true" class="header-anchor">¶</a>
-      Tree 树形控件
+      Pagination 分页
     </h2>
     <p>当数据量过多时，使用分页分解数据。</p>
 
