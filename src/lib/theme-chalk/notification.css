@@ -67,7 +67,7 @@
 }
 
 .el-notification__closeBtn:hover {
-  color: #606266
+  color: #409EFF
 }
 
 .el-notification ~ .el-icon-success {

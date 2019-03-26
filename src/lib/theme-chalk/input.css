@@ -12,8 +12,8 @@
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 4px 8px rgba(204, 204, 204, 0.2);
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
   width: 100%;
   font-size: inherit;
   color: #606266;
@@ -125,8 +125,8 @@
   border: 1px solid #dbdbdb;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 4px 8px rgba(204, 204, 204, 0.3);
+  -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
   color: #606266;
   display: inline-block;
   font-size: inherit;
@@ -162,14 +162,14 @@
 
 .el-input__inner:hover {
   border-color: #409EFF;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 3px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
   border-color: #409EFF;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2);
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 3px 8px rgba(62, 172, 249, 0.2);
   outline: 0
 }
 
@@ -214,8 +214,8 @@
   border-color: #e4e7ed;
   color: #c0c4cc;
   cursor: not-allowed;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset,0px 4px 8px rgba(204, 204, 204, 0.2)
+  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset,0px 3px 8px rgba(204, 204, 204, 0.2)
 }
 
 .el-input.is-disabled .el-input__inner::-webkit-input-placeholder {

@@ -28,6 +28,8 @@
 .el-alert--success {
   border: 1px solid #c8ffa6;
   background: linear-gradient(to top, #e5ffd5 , #e9ffdc);
+  -webkit-box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
+  box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
   color: #67c23a
 }
 
@@ -38,6 +40,8 @@
 .el-alert--info {
   border: 1px solid #efefef;
   background: linear-gradient(to top, #f9f9f9 , #f6f6f6);
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   color: #585b6a
 }
 
@@ -48,6 +52,8 @@
 .el-alert--warning {
   border: 1px solid #fee2c0;
   background: linear-gradient(to top, #ffefdb , #fff0dd);
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2);
+  box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2);
   color: #fd9326
 }
 
@@ -58,6 +64,8 @@
 .el-alert--error {
   border: 1px solid #fed6d7;
   background: linear-gradient(to top, #fee7e7 , #ffebeb);
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
   color: #fb5b5f
 }
 
@@ -95,13 +103,17 @@
 }
 
 .el-alert__closebtn {
-  font-size: 12px;
+  font-size: 14px;
   color: #c0c4cc;
   opacity: 1;
   position: absolute;
   top: 12px;
   right: 15px;
   cursor: pointer
+}
+
+.el-alert__closebtn:hover {
+  color: #606266
 }
 
 .el-alert__closebtn.is-customed {

@@ -223,12 +223,13 @@
 }
 
 .el-step.is-horizontal .el-step__line {
-  height: 10px;
-  top: 6px;
+  height: 8px;
+  top: 8px;
   left: 0;
   right: 0;
   background: linear-gradient(to top, #f7f7f7 , #fff);
-  border: 1px solid #eee;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
   box-sizing: border-box
 }
 

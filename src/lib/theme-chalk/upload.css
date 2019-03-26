@@ -228,6 +228,10 @@
   display: inline-block
 }
 
+.el-upload-list__item:focus .el-icon-close {
+  display: inline-block
+}
+
 .el-upload-list__item:hover .el-progress__text {
   display: none
 }
@@ -241,8 +245,8 @@
   cursor: pointer
 }
 
-.el-upload-list__item.is-success:focus:not(:hover) .el-icon-close-tip {
-  display: inline-block
+.el-upload-list__item.is-success:focus:not(:hover) .el-icnoneon-close-tip {
+  display: none
 }
 
 .el-upload-list__item.is-success:active, .el-upload-list__item.is-success:not(.focusing):focus {
