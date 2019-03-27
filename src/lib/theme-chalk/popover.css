@@ -23,6 +23,7 @@
 }
 
 .el-popper[x-placement^=top] .popper__arrow {
+  display: none;
   bottom: -6px;
   left: 50%;
   margin-right: 3px;
@@ -42,6 +43,7 @@
 }
 
 .el-popper[x-placement^=bottom] .popper__arrow {
+  display: none;
   top: -6px;
   left: 50%;
   margin-right: 3px;
@@ -61,6 +63,7 @@
 }
 
 .el-popper[x-placement^=right] .popper__arrow {
+  display: none;
   top: 50%;
   left: -6px;
   margin-bottom: 3px;
@@ -80,6 +83,7 @@
 }
 
 .el-popper[x-placement^=left] .popper__arrow {
+  display: none;
   top: 50%;
   right: -6px;
   margin-bottom: 3px;
