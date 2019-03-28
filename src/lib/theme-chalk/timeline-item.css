@@ -11,9 +11,12 @@
 
 .el-timeline-item__tail {
   position: absolute;
-  left: 4px;
+  left: 3px;
+  width: 2px;
   height: 100%;
-  border-left: 2px solid #E4E7ED
+  background-color: #fafafa;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee
 }
 
 .el-timeline-item__icon {
@@ -23,7 +26,10 @@
 
 .el-timeline-item__node {
   position: absolute;
-  background-color: #E4E7ED;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,14 +44,14 @@
 
 .el-timeline-item__node--normal {
   left: -1px;
-  width: 12px;
-  height: 12px
+  width: 10px;
+  height: 10px
 }
 
 .el-timeline-item__node--large {
   left: -2px;
-  width: 14px;
-  height: 14px
+  width: 12px;
+  height: 12px
 }
 
 .el-timeline-item__node--primary {

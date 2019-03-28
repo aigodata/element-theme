@@ -564,7 +564,7 @@
   font-size: 0
 }
 
-.el-picker-panel__footer .el-button--text {
+.el-picker-panel__footer .el-button.is-plain {
   display: inline-block;
   line-height: 1;
   white-space: nowrap;
@@ -587,9 +587,75 @@
   background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
-.el-picker-panel__footer .el-button--text:focus, .el-picker-panel__footer .el-button--text:hover {
+.el-picker-panel__footer .el-button.is-plain:focus, .el-picker-panel__footer .el-button.is-plain:hover {
   color: #fff;
   background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+}
+
+.el-picker-panel__footer .el-button.is-plain:active {
+  outline: 0
+}
+
+.el-picker-panel__footer .el-button.el-button--text {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0 5px 0 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  -webkit-user-select: none;
+  padding: 7px 15px;
+  font-size: 12px;
+  color: #333333;
+  background: #fff;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  border: 1px solid #dbdbdb
+}
+
+.el-picker-panel__footer .el-button.el-button--text:focus, .el-picker-panel__footer .el-button.el-button--text:hover {
+  background: linear-gradient(to top, #f7f7f7 , #fff);
+  border-color: #dbdbdb;
+  color: #333333
+}
+
+.el-picker-panel__footer .el-button.el-button--text.is-active, .el-picker-panel__footer .el-button.el-button--text:active {
+  color: #fff;
+  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+}
+
+.el-picker-panel__footer .el-button.el-button--text:active {
+  outline: 0
+}
+
+.el-time-panel__btn.cancel {
+  color: #333333;
+  background: #fff;
+  font-weight: 500;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
+  border: 1px solid #dbdbdb
+}
+
+.el-time-panel__btn.cancel:focus, .el-time-panel__btn.cancel:hover {
+  background: linear-gradient(to top, #f7f7f7 , #fff);
+  border-color: #dbdbdb;
+  color: #333333
+}
+
+.el-time-panel__btn.cancel.is-active, .el-time-panel__btn.cancel:active {
+  color: #fff;
+  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+}
+
+.el-time-panel__btn.cancel:active {
+  outline: 0
 }
 
 .el-picker-panel__shortcut {

@@ -187,16 +187,13 @@
 }
 
 .el-upload-list__item .el-icon-close {
-  background-color: #808080;
   display: none;
-  border-radius: 50%;
   position: absolute;
-  top: 9px;
-  right: 6px;
+  top: 5px;
+  right: 5px;
   cursor: pointer;
   opacity: .75;
-  font-size: 12px;
-  color: #fff
+  color: #606266
 }
 
 .el-upload-list__item .el-icon-close:hover {
@@ -207,7 +204,7 @@
   display: none;
   position: absolute;
   top: 9px;
-  right: 5px;
+  right: 25px;
   font-size: 12px;
   cursor: pointer;
   opacity: 1;
