@@ -23,6 +23,21 @@
       </div>
     </div>
 
+    <h3 id="han-zhuang-tai-bu-zou-tiao">
+      <a href="#han-zhuang-tai-bu-zou-tiao" aria-hidden="true" class="header-anchor">¶</a>
+      含状态步骤条
+    </h3>
+    <p>每一步骤显示出该步骤的状态。</p>
+    <div class="demo-block demo-zh-CN demo-steps">
+      <div class="source">
+        <el-steps :space="200" :active="1" finish-status="success">
+          <el-step title="已完成"></el-step>
+          <el-step title="进行中"></el-step>
+          <el-step title="步骤 3"></el-step>
+        </el-steps>
+      </div>
+    </div>
+
     <h3 id="you-miao-shu-de-bu-zou-tiao">
       <a href="#you-miao-shu-de-bu-zou-tiao" aria-hidden="true" class="header-anchor">¶</a>
       有描述的步骤条

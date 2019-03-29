@@ -83,6 +83,24 @@
         </div>
       </div>
     </div>
+
+    <h3 id="shu-ju-xiang-shu-xing-bie-ming">
+      <a href="#shu-ju-xiang-shu-xing-bie-ming" aria-hidden="true" class="header-anchor">¶</a>
+      数据项属性别名
+    </h3>
+    <p>默认情况下，Transfer 仅能识别数据项中的 key、label 和 disabled 字段。如果你的数据的字段名不同，可以使用 props 属性为它们设置别名。</p>
+    <div class="demo-block demo-zh-CN demo-transfer">
+      <div class="source">
+        <el-transfer
+          v-model="value5"
+          :props="{
+            key: 'value',
+            label: 'desc'
+          }"
+          :data="data3">
+        </el-transfer>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -116,6 +134,17 @@
         });
         return data;
       };
+      const generateData3 = _ => {
+        const data = [];
+        for (let i = 1; i <= 15; i++) {
+          data.push({
+            value: i,
+            desc: `备选项 ${ i }`,
+            disabled: i % 4 === 0
+          });
+        }
+        return data;
+      };
       return {
         // 基础用法
         data: generateData(),
@@ -132,7 +161,10 @@
         value4: [1],
         renderFunc(h, option) {
           return <span>{ option.key } - { option.label }</span>;
-        }
+        },
+        // 数据项属性别名
+        data3: generateData3(),
+        value5: []
       }
     },
     methods: {

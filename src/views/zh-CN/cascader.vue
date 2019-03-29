@@ -44,6 +44,89 @@
         ></el-cascader>
       </div>
     </div>
+
+    <h3 id="jin-xian-shi-zui-hou-yi-ji">
+      <a href="#jin-xian-shi-zui-hou-yi-ji" aria-hidden="true" class="header-anchor">¶</a>
+      仅显示最后一级
+    </h3>
+    <p>可以仅在输入框中显示选中项最后一级的标签，而不是选中项所在的完整路径。</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <el-cascader
+          :options="options"
+          :show-all-levels="false"
+        ></el-cascader>
+      </div>
+    </div>
+
+    <h3 id="mo-ren-zhi">
+      <a href="#mo-ren-zhi" aria-hidden="true" class="header-anchor">¶</a>
+      默认值
+    </h3>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <el-cascader
+          :options="options"
+          v-model="selectedOptions3"
+        ></el-cascader>
+      </div>
+    </div>
+
+    <h3 id="xuan-ze-ji-gai-bian">
+      <a href="#xuan-ze-ji-gai-bian" aria-hidden="true" class="header-anchor">¶</a>
+      选择即改变
+    </h3>
+    <p>点击或移入选项即表示选中该项，可用于选择任意一级菜单的选项。</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <el-cascader
+          :options="options"
+          change-on-select
+        ></el-cascader>
+      </div>
+    </div>
+
+    <h3 id="dong-tai-jia-zai-ci-ji-xuan-xiang">
+      <a href="#dong-tai-jia-zai-ci-ji-xuan-xiang" aria-hidden="true" class="header-anchor">¶</a>
+      动态加载次级选项
+    </h3>
+    <p>当选中某一级时，动态加载该级下的选项。</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <el-cascader
+          :options="options2"
+          @active-item-change="handleItemChange"
+          :props="props"
+        ></el-cascader>
+      </div>
+    </div>
+
+    <h3 id="ke-sou-suo">
+      <a href="#ke-sou-suo" aria-hidden="true" class="header-anchor">¶</a>
+      可搜索
+    </h3>
+    <p>可以快捷地搜索选项并选择。</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <div class="block">
+          <span class="demonstration">只可选择最后一级菜单的选项</span>
+          <el-cascader
+            placeholder="试试搜索：指南"
+            :options="options"
+            filterable
+          ></el-cascader>
+        </div>
+        <div class="block">
+          <span class="demonstration">可选择任意一级菜单的选项</span>
+          <el-cascader
+            placeholder="试试搜索：指南"
+            :options="options"
+            filterable
+            change-on-select
+          ></el-cascader>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -446,12 +529,40 @@
             value: 'jiaohu',
             label: '组件交互文档'
           }]
-        }]
+        }],
+        // 默认值
+        selectedOptions3: ['zujian', 'data', 'tag'],
+        // 动态加载次级选项
+        options2: [{
+          label: '江苏',
+          cities: []
+        }, {
+          label: '浙江',
+          cities: []
+        }],
+        props: {
+          value: 'label',
+          children: 'cities'
+        }
       }
     },
     methods: {
       handleChange(value) {
         console.log(value);
+      },
+      handleItemChange(val) {
+        console.log('active item:', val);
+        setTimeout(_ => {
+          if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
+            this.options2[0].cities = [{
+              label: '南京'
+            }];
+          } else if (val.indexOf('浙江') > -1 && !this.options2[1].cities.length) {
+            this.options2[1].cities = [{
+              label: '杭州'
+            }];
+          }
+        }, 300);
       }
     }
   }

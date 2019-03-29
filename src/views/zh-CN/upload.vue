@@ -86,6 +86,24 @@
       </div>
     </div>
 
+    <h3 id="shang-chuan-wen-jian-lie-biao-kong-zhi">
+      <a href="#shang-chuan-wen-jian-lie-biao-kong-zhi" aria-hidden="true" class="header-anchor">¶</a>
+      上传文件列表控制
+    </h3>
+    <p>通过 on-change 钩子函数来对列表进行控制</p>
+    <div class="demo-block demo-zh-CN demo-upload">
+      <div class="source">
+        <el-upload
+          class="upload-demo"
+          action="https://jsonplaceholder.typicode.com/posts/"
+          :on-change="handleChange"
+          :file-list="fileList">
+          <el-button size="small" type="primary">点击上传</el-button>
+          <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+        </el-upload>
+      </div>
+    </div>
+
     <h3 id="tuo-zhuai-shang-chuan">
       <a href="#tuo-zhuai-shang-chuan" aria-hidden="true" class="header-anchor">¶</a>
       拖拽上传
@@ -178,6 +196,9 @@
       },
       submitUpload() {
         this.$refs.upload.submit();
+      },
+      handleChange(file, fileList) {
+        this.fileList = fileList.slice(-3);
       }
     }
   }

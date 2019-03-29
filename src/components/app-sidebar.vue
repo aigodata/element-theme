@@ -101,6 +101,12 @@
 <script>
   export default {
     name: 'app-sidebar',
+    data() {
+      return {}
+    },
+    methods: {
+
+    }
   }
 </script>
 

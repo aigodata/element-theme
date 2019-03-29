@@ -30,6 +30,21 @@
       </div>
     </div>
 
+    <h3 id="she-zhi-zui-da-ye-ma-an-niu-shu">
+      <a href="#she-zhi-zui-da-ye-ma-an-niu-shu" aria-hidden="true" class="header-anchor">¶</a>
+      设置最大页码按钮数
+    </h3>
+    <div class="demo-block demo-zh-CN demo-pagination">
+      <div class="source">
+        <el-pagination
+          :page-size="20"
+          :pager-count="11"
+          layout="prev, pager, next"
+          :total="1000">
+        </el-pagination>
+      </div>
+    </div>
+
     <h3 id="dai-you-bei-jing-se-de-fen-ye">
       <a href="#dai-you-bei-jing-se-de-fen-ye" aria-hidden="true" class="header-anchor">¶</a>
       带有背景色的分页

@@ -250,6 +250,12 @@
   box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
+.el-select:hover .el-input.is-disabled .el-input__inner {
+  border-color: #e4e7ed;
+  -webkit-box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset, 0px 3px 8px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset, 0px 3px 8px rgba(204, 204, 204, 0.2)
+}
+
 .el-select .el-input__inner {
   cursor: pointer;
   padding-right: 35px
@@ -296,6 +302,8 @@
 }
 
 .el-select .el-input.is-disabled .el-input__inner:hover {
+  -webkit-box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset, 0px 3px 8px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset, 0px 3px 8px rgba(204, 204, 204, 0.2);
   border-color: #e4e7ed
 }
 

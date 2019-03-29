@@ -39,6 +39,39 @@
       </div>
     </div>
 
+    <h3 id="zi-ding-yi">
+      <a href="#zi-ding-yi" aria-hidden="true" class="header-anchor">¶</a>
+      自定义
+    </h3>
+    <p>可自定义配置不同内容。</p>
+    <div class="demo-block demo-zh-CN demo-message-box">
+      <div class="source">
+        <el-button type="text" @click="open4">点击打开 Message Box</el-button>
+      </div>
+    </div>
+
+    <h3 id="shi-yong-html-pian-duan">
+      <a href="#shi-yong-html-pian-duan" aria-hidden="true" class="header-anchor">¶</a>
+      使用 HTML 片段
+    </h3>
+    <p>message 属性支持传入 HTML 片段。</p>
+    <div class="demo-block demo-zh-CN demo-message-box">
+      <div class="source">
+        <el-button type="text" @click="open5">点击打开 Message Box</el-button>
+      </div>
+    </div>
+
+    <h3 id="qu-fen-qu-xiao-yu-guan-bi">
+      <a href="#qu-fen-qu-xiao-yu-guan-bi" aria-hidden="true" class="header-anchor">¶</a>
+      区分取消与关闭
+    </h3>
+    <p>有些场景下，点击取消按钮与点击关闭按钮有着不同的含义。</p>
+    <div class="demo-block demo-zh-CN demo-message-box">
+      <div class="source">
+        <el-button type="text" @click="open6">点击打开 Message Box</el-button>
+      </div>
+    </div>
+
     <h3 id="ju-zhong-bu-ju">
       <a href="#ju-zhong-bu-ju" aria-hidden="true" class="header-anchor">¶</a>
       居中布局
@@ -104,6 +137,64 @@
             message: '取消输入'
           });
         });
+      },
+      open4() {
+        const h = this.$createElement;
+        this.$msgbox({
+          title: '消息',
+          message: h('p', null, [
+            h('span', null, '内容可以是 '),
+            h('i', { style: 'color: teal' }, 'VNode')
+          ]),
+          showCancelButton: true,
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          beforeClose: (action, instance, done) => {
+            if (action === 'confirm') {
+              instance.confirmButtonLoading = true;
+              instance.confirmButtonText = '执行中...';
+              setTimeout(() => {
+                done();
+                setTimeout(() => {
+                  instance.confirmButtonLoading = false;
+                }, 300);
+              }, 3000);
+            } else {
+              done();
+            }
+          }
+        }).then(action => {
+          this.$message({
+            type: 'info',
+            message: 'action: ' + action
+          });
+        });
+      },
+      open5() {
+        this.$alert('<strong>这是 <i>HTML</i> 片段</strong>', 'HTML 片段', {
+          dangerouslyUseHTMLString: true
+        });
+      },
+      open6() {
+        this.$confirm('检测到未保存的内容，是否在离开页面前保存修改？', '确认信息', {
+          distinguishCancelAndClose: true,
+          confirmButtonText: '保存',
+          cancelButtonText: '放弃修改'
+        })
+          .then(() => {
+            this.$message({
+              type: 'info',
+              message: '保存修改'
+            });
+          })
+          .catch(action => {
+            this.$message({
+              type: 'info',
+              message: action === 'cancel'
+                ? '放弃保存并离开页面'
+                : '停留在当前页面'
+            })
+          });
       },
       open7() {
         this.$confirm('此操作将永久删除该文件, 是否继续?', '提示', {

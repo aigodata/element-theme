@@ -32,6 +32,21 @@
       </div>
     </div>
 
+    <h3 id="zhi-shi-qi">
+      <a href="#zhi-shi-qi" aria-hidden="true" class="header-anchor">¶</a>
+      指示器
+    </h3>
+    <p>可以将指示器的显示位置设置在容器外部</p>
+    <div class="demo-block demo-zh-CN demo-carousel">
+      <div class="source">
+        <el-carousel indicator-position="outside">
+          <el-carousel-item v-for="item in 4" :key="item">
+            <h3>{{ item }}</h3>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
+
     <h3 id="qie-huan-jian-tou">
       <a href="#qie-huan-jian-tou" aria-hidden="true" class="header-anchor">¶</a>
       切换箭头

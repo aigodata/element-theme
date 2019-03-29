@@ -60,17 +60,32 @@
     </h3>
     <div class="demo-block demo-zh-CN demo-input">
       <div class="source">
-        <el-input
-          style="margin-right: 20px;"
-          placeholder="请选择日期"
-          suffix-icon="el-icon-date"
-          v-model="input2">
-        </el-input>
-        <el-input
-          placeholder="请输入内容"
-          prefix-icon="el-icon-search"
-          v-model="input21">
-        </el-input>
+        <div class="demo-input-suffix">
+          属性方式：
+          <el-input
+            placeholder="请选择日期"
+            suffix-icon="el-icon-date"
+            v-model="input2">
+          </el-input>
+          <el-input
+            placeholder="请输入内容"
+            prefix-icon="el-icon-search"
+            v-model="input21">
+          </el-input>
+        </div>
+        <div class="demo-input-suffix">
+          slot 方式：
+          <el-input
+            placeholder="请选择日期"
+            v-model="input22">
+            <i slot="suffix" class="el-input__icon el-icon-date"></i>
+          </el-input>
+          <el-input
+            placeholder="请输入内容"
+            v-model="input23">
+            <i slot="prefix" class="el-input__icon el-icon-search"></i>
+          </el-input>
+        </div>
       </div>
     </div>
 
@@ -85,6 +100,29 @@
           :rows="2"
           placeholder="请输入内容"
           v-model="textarea">
+        </el-input>
+      </div>
+    </div>
+
+    <h3 id="ke-zi-gua-ying-wen-ben-gao-du-de-wen-ben-yu">
+      <a href="#ke-zi-gua-ying-wen-ben-gao-du-de-wen-ben-yu" aria-hidden="true" class="header-anchor">¶</a>
+      可自适应文本高度的文本域
+    </h3>
+    <p>通过设置 autosize 属性可以使得文本域的高度能够根据文本内容自动进行调整，并且 autosize 还可以设定为一个对象，指定最小行数和最大行数。</p>
+    <div class="demo-block demo-zh-CN demo-input">
+      <div class="source">
+        <el-input
+          type="textarea"
+          autosize
+          placeholder="请输入内容"
+          v-model="textarea2">
+        </el-input>
+        <div style="margin: 20px 0;"></div>
+        <el-input
+          type="textarea"
+          :autosize="{ minRows: 2, maxRows: 4}"
+          placeholder="请输入内容"
+          v-model="textarea3">
         </el-input>
       </div>
     </div>
@@ -153,10 +191,43 @@
       </div>
     </div>
 
-    <h3 id="zi-ding-yi-mo-ban">
-      <a href="#zi-ding-yi-mo-ban" aria-hidden="true" class="header-anchor">¶</a>
-      自定义模板
+    <h3 id="dai-shu-ru-jian-yi">
+      <a href="#dai-shu-ru-jian-yi" aria-hidden="true" class="header-anchor">¶</a>
+      带输入建议
     </h3>
+    <p>根据输入内容提供对应的输入建议</p>
+    <div class="demo-block demo-zh-CN demo-input">
+      <div class="source">
+        <el-row class="demo-autocomplete">
+          <el-col :span="12">
+            <div class="sub-title">激活即列出输入建议</div>
+            <el-autocomplete
+              class="inline-input"
+              v-model="state1"
+              :fetch-suggestions="querySearch"
+              placeholder="请输入内容"
+              @select="handleSelect"
+            ></el-autocomplete>
+          </el-col>
+          <el-col :span="12">
+            <div class="sub-title">输入后匹配输入建议</div>
+            <el-autocomplete
+              class="inline-input"
+              v-model="state2"
+              :fetch-suggestions="querySearch"
+              placeholder="请输入内容"
+              :trigger-on-focus="false"
+              @select="handleSelect"
+            ></el-autocomplete>
+          </el-col>
+        </el-row>
+      </div>
+    </div>
+
+    <h3 id="zi-ding-yi-mo-ban">
+    <a href="#zi-ding-yi-mo-ban" aria-hidden="true" class="header-anchor">¶</a>
+    自定义模板
+  </h3>
     <p>可自定义输入建议的显示</p>
     <div class="demo-block demo-zh-CN demo-input">
       <div class="source">
@@ -178,6 +249,22 @@
         </el-autocomplete>
       </div>
     </div>
+
+    <h3 id="yuan-cheng-sou-suo">
+      <a href="#yuan-cheng-sou-suo" aria-hidden="true" class="header-anchor">¶</a>
+      远程搜索
+    </h3>
+    <p>从服务端搜索数据</p>
+    <div class="demo-block demo-zh-CN demo-input">
+      <div class="source">
+        <el-autocomplete
+          v-model="state4"
+          :fetch-suggestions="querySearchAsync"
+          placeholder="请输入内容"
+          @select="handleSelect"
+        ></el-autocomplete>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -197,8 +284,13 @@
         // 带 icon 的输入框
         input2: '',
         input21: '',
+        input22: '',
+        input23: '',
         // 文本域
         textarea: '',
+        // 可自适应文本高度的文本域
+        textarea2: '',
+        textarea3: '',
         // 复合型输入框
         input3: '',
         input4: '',
@@ -209,9 +301,15 @@
         input7: '',
         input8: '',
         input9: '',
+        // 带输入建议
+        state1: '',
+        state2: '',
         // 自定义模板
+        state3: '',
+        // 远程搜索
         restaurants: [],
-        state3: ''
+        state4: '',
+        timeout:  null
       }
     },
     methods: {
@@ -238,6 +336,20 @@
       },
       handleIconClick(ev) {
         console.log(ev);
+      },
+      querySearchAsync(queryString, cb) {
+        var restaurants = this.restaurants;
+        var results = queryString ? restaurants.filter(this.createStateFilter(queryString)) : restaurants;
+
+        clearTimeout(this.timeout);
+        this.timeout = setTimeout(() => {
+          cb(results);
+        }, 3000 * Math.random());
+      },
+      createStateFilter(queryString) {
+        return (state) => {
+          return (state.value.toLowerCase().indexOf(queryString.toLowerCase()) === 0);
+        };
       }
     },
     mounted() {

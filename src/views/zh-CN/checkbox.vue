@@ -62,6 +62,22 @@
       </div>
     </div>
 
+    <h3 id="ke-xuan-xiang-mu-shu-liang-de-xian-zhi">
+      <a href="#ke-xuan-xiang-mu-shu-liang-de-xian-zhi" aria-hidden="true" class="header-anchor">¶</a>
+      可选项目数量的限制
+    </h3>
+    <p>使用 min 和 max 属性能够限制可以被勾选的项目的数量。</p>
+    <div class="demo-block demo-box demo-zh-CN demo-button">
+      <div class="source">
+        <el-checkbox-group
+          v-model="checkedCities1"
+          :min="1"
+          :max="2">
+          <el-checkbox v-for="city in cities" :label="city" :key="city">{{city}}</el-checkbox>
+        </el-checkbox-group>
+      </div>
+    </div>
+
     <h3 id="an-niu-yang-shi">
       <a href="#an-niu-yang-shi" aria-hidden="true" class="header-anchor">¶</a>
       按钮样式
@@ -141,6 +157,8 @@
         checkedCities: ['上海', '北京'],
         cities: cityOptions,
         isIndeterminate: true,
+        // 可选项目数量的限制
+        checkedCities1: ['上海', '北京'],
         // 按钮样式
         checkboxGroup1: ['上海'],
         checkboxGroup2: ['上海'],

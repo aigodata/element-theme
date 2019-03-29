@@ -56,6 +56,17 @@
         <el-button :plain="true" @click="openCenter">文字居中</el-button>
       </div>
     </div>
+
+    <h3 id="shi-yong-html-pian-duan">
+      <a href="#shi-yong-html-pian-duan" aria-hidden="true" class="header-anchor">¶</a>
+      使用 HTML 片段
+    </h3>
+    <p>message 属性支持传入 HTML 片段</p>
+    <div class="demo-block demo-zh-CN demo-message">
+      <div class="source">
+        <el-button :plain="true" @click="openHTML">使用 HTML 片段</el-button>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -136,6 +147,13 @@
         this.$message({
           message: '居中的文字',
           center: true
+        });
+      },
+
+      openHTML() {
+        this.$message({
+          dangerouslyUseHTMLString: true,
+          message: '<strong>这是 <i>HTML</i> 片段</strong>'
         });
       }
     }

@@ -85,6 +85,51 @@
         </el-button>
       </div>
     </div>
+
+    <h3 id="dai-you-pian-yi">
+      <a href="#dai-you-pian-yi" aria-hidden="true" class="header-anchor">¶</a>
+      带有偏移
+    </h3>
+    <p>让 Notification 偏移一些位置</p>
+    <div class="demo-block demo-zh-CN demo-notification">
+      <div class="source">
+        <el-button
+          plain
+          @click="open11">
+          偏移的消息
+        </el-button>
+      </div>
+    </div>
+
+    <h3 id="shi-yong-html-pian-duan">
+      <a href="#shi-yong-html-pian-duan" aria-hidden="true" class="header-anchor">¶</a>
+      使用 HTML 片段
+    </h3>
+    <p>message 属性支持传入 HTML 片段</p>
+    <div class="demo-block demo-zh-CN demo-notification">
+      <div class="source">
+        <el-button
+          plain
+          @click="open12">
+          使用 HTML 片段
+        </el-button>
+      </div>
+    </div>
+
+    <h3 id="yin-cang-guan-bi-an-niu">
+      <a href="#yin-cang-guan-bi-an-niu" aria-hidden="true" class="header-anchor">¶</a>
+      隐藏关闭按钮
+    </h3>
+    <p>可以不显示关闭按钮</p>
+    <div class="demo-block demo-zh-CN demo-notification">
+      <div class="source">
+        <el-button
+          plain
+          @click="open13">
+          隐藏关闭按钮
+        </el-button>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -170,6 +215,30 @@
           title: '自定义位置',
           message: '左上角弹出的消息',
           position: 'top-left'
+        });
+      },
+
+      open11() {
+        this.$notify({
+          title: '偏移',
+          message: '这是一条带有偏移的提示消息',
+          offset: 100
+        });
+      },
+
+      open12() {
+        this.$notify({
+          title: 'HTML 片段',
+          dangerouslyUseHTMLString: true,
+          message: '<strong>这是 <i>HTML</i> 片段</strong>'
+        });
+      },
+
+      open13() {
+        this.$notify.success({
+          title: 'Info',
+          message: '这是一条没有关闭按钮的消息',
+          showClose: false
         });
       }
     }

@@ -81,7 +81,8 @@
 }
 
 .el-date-table td.today.end-date span, .el-date-table td.today.start-date span {
-  color: #fff
+  color: #43b0f7;
+  font-weight: normal
 }
 
 .el-date-table td.available:hover {

@@ -113,6 +113,104 @@
         </div>
       </div>
     </div>
+
+    <h3 id="xuan-ze-yue-fen-fan-wei">
+      <a href="#xuan-ze-yue-fen-fan-wei" aria-hidden="true" class="header-anchor">¶</a>
+      选择月份范围
+    </h3>
+    <p>可在一个选择器中便捷地选择一个月份范围</p>
+    <div class="demo-block demo-zh-CN demo-date-picker">
+      <div class="source">
+        <div class="block">
+          <span class="demonstration">默认</span>
+          <el-date-picker
+            v-model="value15"
+            type="monthrange"
+            range-separator="至"
+            start-placeholder="开始月份"
+            end-placeholder="结束月份">
+          </el-date-picker>
+        </div>
+        <div class="block">
+          <span class="demonstration">带快捷选项</span>
+          <el-date-picker
+            v-model="value16"
+            type="monthrange"
+            align="right"
+            unlink-panels
+            range-separator="至"
+            start-placeholder="开始月份"
+            end-placeholder="结束月份"
+            :picker-options="pickerOptions3">
+          </el-date-picker>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="ri-qi-ge-shi">
+      <a href="#ri-qi-ge-shi" aria-hidden="true" class="header-anchor">¶</a>
+      日期格式
+    </h3>
+    <p>
+      使用format指定输入框的格式；使用value-format指定绑定值的格式。
+      默认情况下，组件接受并返回Date对象。以下为可用的格式化字串，以 UTC 2017年1月2日 03:04:05 为例：
+    </p>
+    <div class="demo-block demo-zh-CN demo-date-picker">
+      <div class="source">
+        <div class="block">
+          <span class="demonstration">默认为 Date 对象</span>
+          <div class="demonstration">值：{{ value10 }}</div>
+          <el-date-picker
+            v-model="value10"
+            type="date"
+            placeholder="选择日期"
+            format="yyyy 年 MM 月 dd 日">
+          </el-date-picker>
+        </div>
+        <div class="block">
+          <span class="demonstration">使用 value-format</span>
+          <div class="demonstration">值：{{ value11 }}</div>
+          <el-date-picker
+            v-model="value11"
+            type="date"
+            placeholder="选择日期"
+            format="yyyy 年 MM 月 dd 日"
+            value-format="yyyy-MM-dd">
+          </el-date-picker>
+        </div>
+        <div class="block">
+          <span class="demonstration">时间戳</span>
+          <div class="demonstration">值：{{ value12 }}</div>
+          <el-date-picker
+            v-model="value12"
+            type="date"
+            placeholder="选择日期"
+            format="yyyy 年 MM 月 dd 日"
+            value-format="timestamp">
+          </el-date-picker>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="mo-ren-xian-shi-ri-qi">
+      <a href="#mo-ren-xian-shi-ri-qi" aria-hidden="true" class="header-anchor">¶</a>
+      默认显示日期
+    </h3>
+    <p>在选择日期范围时，指定起始日期和结束日期的默认时刻。</p>
+    <div class="demo-block demo-zh-CN demo-date-picker">
+      <div class="source">
+        <div class="block">
+          <p>组件值：{{ value13 }}</p>
+          <el-date-picker
+            v-model="value13"
+            type="daterange"
+            start-placeholder="开始日期"
+            end-placeholder="结束日期"
+            :default-time="['00:00:00', '23:59:59']">
+          </el-date-picker>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -183,7 +281,39 @@
           }]
         },
         value6: '',
-        value7: ''
+        value7: '',
+        // 选择月份范围
+        pickerOptions3: {
+          shortcuts: [{
+            text: '本月',
+            onClick(picker) {
+              picker.$emit('pick', [new Date(), new Date()]);
+            }
+          }, {
+            text: '今年至今',
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date(new Date().getFullYear(), 0);
+              picker.$emit('pick', [start, end]);
+            }
+          }, {
+            text: '最近六个月',
+            onClick(picker) {
+              const end = new Date();
+              const start = new Date();
+              start.setMonth(start.getMonth() - 6);
+              picker.$emit('pick', [start, end]);
+            }
+          }]
+        },
+        value15: '',
+        value16: '',
+        // 日期格式
+        value10: '',
+        value11: '',
+        value12: '',
+        // 默认显示日期
+        value13: ''
       }
     }
   }

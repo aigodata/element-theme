@@ -169,6 +169,31 @@
       </div>
     </div>
 
+    <h3 id="zi-ding-yi-xiao-yan-gui-ze">
+      <a href="#zi-ding-yi-xiao-yan-gui-ze" aria-hidden="true" class="header-anchor">¶</a>
+      自定义校验规则
+    </h3>
+    <p>这个例子中展示了如何使用自定义验证规则来完成密码的二次验证。</p>
+    <div class="demo-block demo-zh-CN demo-form">
+      <div class="source">
+        <el-form :model="ruleForm2" status-icon :rules="rules2" ref="ruleForm2" label-width="100px" class="demo-ruleForm">
+          <el-form-item label="密码" prop="pass">
+            <el-input type="password" v-model="ruleForm2.pass" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="确认密码" prop="checkPass">
+            <el-input type="password" v-model="ruleForm2.checkPass" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item label="年龄" prop="age">
+            <el-input v-model.number="ruleForm2.age"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
+            <el-button @click="resetForm('ruleForm2')">重置</el-button>
+          </el-form-item>
+        </el-form>
+      </div>
+    </div>
+
     <h3 id="dong-tai-zeng-jian-biao-dan-xiang">
       <a href="#dong-tai-zeng-jian-biao-dan-xiang" aria-hidden="true" class="header-anchor">¶</a>
       动态增减表单项
@@ -205,6 +230,78 @@
         </el-form>
       </div>
     </div>
+
+    <h3 id="shu-zi-lei-xing-yan-zheng">
+      <a href="#shu-zi-lei-xing-yan-zheng" aria-hidden="true" class="header-anchor">¶</a>
+      数字类型验证
+    </h3>
+    <div class="demo-block demo-zh-CN demo-form">
+      <div class="source">
+        <el-form :model="numberValidateForm" ref="numberValidateForm" label-width="100px" class="demo-ruleForm">
+          <el-form-item
+            label="年龄"
+            prop="age"
+            :rules="[
+      { required: true, message: '年龄不能为空'},
+      { type: 'number', message: '年龄必须为数字值'}
+    ]"
+          >
+            <el-input type="age" v-model.number="numberValidateForm.age" autocomplete="off"></el-input>
+          </el-form-item>
+          <el-form-item>
+            <el-button type="primary" @click="submitForm('numberValidateForm')">提交</el-button>
+            <el-button @click="resetForm('numberValidateForm')">重置</el-button>
+          </el-form-item>
+        </el-form>
+      </div>
+    </div>
+
+    <h3 id="biao-dan-nei-zu-jian-chi-cun-kong-zhi">
+      <a href="#biao-dan-nei-zu-jian-chi-cun-kong-zhi" aria-hidden="true" class="header-anchor">¶</a>
+      表单内组件尺寸控制
+    </h3>
+    <p>通过设置 Form 上的 size 属性可以使该表单内所有可调节大小的组件继承该尺寸。Form-Item 也具有该属性。</p>
+    <div class="demo-block demo-zh-CN demo-form">
+      <div class="source">
+        <el-form ref="form" :model="sizeForm" label-width="80px" size="mini">
+          <el-form-item label="活动名称">
+            <el-input v-model="sizeForm.name"></el-input>
+          </el-form-item>
+          <el-form-item label="活动区域">
+            <el-select v-model="sizeForm.region" placeholder="请选择活动区域">
+              <el-option label="区域一" value="shanghai"></el-option>
+              <el-option label="区域二" value="beijing"></el-option>
+            </el-select>
+          </el-form-item>
+          <el-form-item label="活动时间">
+            <el-col :span="11">
+              <el-date-picker type="date" placeholder="选择日期" v-model="sizeForm.date1" style="width: 100%;"></el-date-picker>
+            </el-col>
+            <el-col class="line" :span="2">-</el-col>
+            <el-col :span="11">
+              <el-time-picker placeholder="选择时间" v-model="sizeForm.date2" style="width: 100%;"></el-time-picker>
+            </el-col>
+          </el-form-item>
+          <el-form-item label="活动性质">
+            <el-checkbox-group v-model="sizeForm.type">
+              <el-checkbox-button label="美食/餐厅线上活动" name="type"></el-checkbox-button>
+              <el-checkbox-button label="地推活动" name="type"></el-checkbox-button>
+              <el-checkbox-button label="线下主题活动" name="type"></el-checkbox-button>
+            </el-checkbox-group>
+          </el-form-item>
+          <el-form-item label="特殊资源">
+            <el-radio-group v-model="sizeForm.resource" size="medium">
+              <el-radio border label="线上品牌商赞助"></el-radio>
+              <el-radio border label="线下场地免费"></el-radio>
+            </el-radio-group>
+          </el-form-item>
+          <el-form-item size="large">
+            <el-button type="primary" @click="onSubmit">立即创建</el-button>
+            <el-button>取消</el-button>
+          </el-form-item>
+        </el-form>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -212,6 +309,41 @@
   export default {
     name: 'form',
     data() {
+      var checkAge = (rule, value, callback) => {
+        if (!value) {
+          return callback(new Error('年龄不能为空'));
+        }
+        setTimeout(() => {
+          if (!Number.isInteger(value)) {
+            callback(new Error('请输入数字值'));
+          } else {
+            if (value < 18) {
+              callback(new Error('必须年满18岁'));
+            } else {
+              callback();
+            }
+          }
+        }, 1000);
+      };
+      var validatePass = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请输入密码'));
+        } else {
+          if (this.ruleForm2.checkPass !== '') {
+            this.$refs.ruleForm2.validateField('checkPass');
+          }
+          callback();
+        }
+      };
+      var validatePass2 = (rule, value, callback) => {
+        if (value === '') {
+          callback(new Error('请再次输入密码'));
+        } else if (value !== this.ruleForm2.pass) {
+          callback(new Error('两次输入密码不一致!'));
+        } else {
+          callback();
+        }
+      };
       return {
         // 典型表单
         form: {
@@ -271,12 +403,44 @@
             { required: true, message: '请填写活动形式', trigger: 'blur' }
           ]
         },
+        // 自定义校验规则
+        ruleForm2: {
+          pass: '',
+          checkPass: '',
+          age: ''
+        },
+        rules2: {
+          pass: [
+            { validator: validatePass, trigger: 'blur' }
+          ],
+          checkPass: [
+            { validator: validatePass2, trigger: 'blur' }
+          ],
+          age: [
+            { validator: checkAge, trigger: 'blur' }
+          ]
+        },
         // 动态增减表单项
         dynamicValidateForm: {
           domains: [{
             value: ''
           }],
           email: ''
+        },
+        // 数字类型验证
+        numberValidateForm: {
+          age: ''
+        },
+        // 表单内组件尺寸控制
+        sizeForm: {
+          name: '',
+          region: '',
+          date1: '',
+          date2: '',
+          delivery: false,
+          type: [],
+          resource: '',
+          desc: ''
         }
       }
     },

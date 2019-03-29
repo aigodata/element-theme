@@ -26,6 +26,27 @@
       </div>
     </div>
 
+    <h3 id="bu-shu">
+      <a href="#bu-shu" aria-hidden="true" class="header-anchor">¶</a>
+      步数
+    </h3>
+    <p>允许定义递增递减的步数控制</p>
+    <div class="demo-block demo-zh-CN demo-input-number">
+      <div class="source">
+        <el-input-number v-model="num3" :step="2"></el-input-number>
+      </div>
+    </div>
+
+    <h3 id="jing-du">
+      <a href="#jing-du" aria-hidden="true" class="header-anchor">¶</a>
+      精度
+    </h3>
+    <div class="demo-block demo-zh-CN demo-input-number">
+      <div class="source">
+        <el-input-number v-model="num9" :precision="2" :step="0.1" :max="10"></el-input-number>
+      </div>
+    </div>
+
     <h3 id="chi-cun">
       <a href="#chi-cun" aria-hidden="true" class="header-anchor">¶</a>
       尺寸
@@ -61,6 +82,10 @@
         num1: 1,
         // 禁用状态
         num2: 1,
+        // 步数
+        num3: 5,
+        // 精度
+        num9: 1,
         // 尺寸
         num4: 1,
         num5: 1,

@@ -34,6 +34,40 @@
       </div>
     </div>
 
+    <h3 id="lan-jia-zai-zi-ding-yi-xie-zi-jie-dian">
+      <a href="#lan-jia-zai-zi-ding-yi-xie-zi-jie-dian" aria-hidden="true" class="header-anchor">¶</a>
+      懒加载自定义叶子节点
+    </h3>
+    <p>适用于需要选择层级时使用。</p>
+    <div class="demo-block demo-zh-CN demo-tree">
+      <div class="source">
+        <el-tree
+          :props="props1"
+          :load="loadNode1"
+          lazy
+          show-checkbox>
+        </el-tree>
+      </div>
+    </div>
+
+    <h3 id="mo-ren-zhan-kai-he-mo-ren-xuan-zhong">
+      <a href="#mo-ren-zhan-kai-he-mo-ren-xuan-zhong" aria-hidden="true" class="header-anchor">¶</a>
+      默认展开和默认选中
+    </h3>
+    <p>可将 Tree 的某些节点设置为默认展开或默认选中</p>
+    <div class="demo-block demo-zh-CN demo-tree">
+      <div class="source">
+        <el-tree
+          :data="data2"
+          show-checkbox
+          node-key="id"
+          :default-expanded-keys="[2, 3]"
+          :default-checked-keys="[5]"
+          :props="defaultProps">
+        </el-tree>
+      </div>
+    </div>
+
     <h3 id="jin-yong-zhuang-tai">
       <a href="#jin-yong-zhuang-tai" aria-hidden="true" class="header-anchor">¶</a>
       禁用状态
@@ -288,6 +322,12 @@
           children: 'zones'
         },
         count: 1,
+        // 懒加载自定义叶子节点
+        props1: {
+          label: 'name',
+          children: 'zones',
+          isLeaf: 'leaf'
+        },
         // 禁用状态
         data3: [{
           id: 1,
@@ -611,6 +651,23 @@
       },
       allowDrag(draggingNode) {
         return draggingNode.data.label.indexOf('三级 3-2-2') === -1;
+      },
+      loadNode1(node, resolve) {
+        if (node.level === 0) {
+          return resolve([{ name: 'region' }]);
+        }
+        if (node.level > 1) return resolve([]);
+
+        setTimeout(() => {
+          const data = [{
+            name: 'leaf',
+            leaf: true
+          }, {
+            name: 'zone'
+          }];
+
+          resolve(data);
+        }, 500);
       }
     }
   }

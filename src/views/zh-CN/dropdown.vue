@@ -102,6 +102,50 @@
       </div>
     </div>
 
+    <h3 id="cai-dan-yin-cang-fang-shi">
+      <a href="#cai-dan-yin-cang-fang-shi" aria-hidden="true" class="header-anchor">¶</a>
+      菜单隐藏方式
+    </h3>
+    <p>可以hide-on-click属性来配置。</p>
+    <div class="demo-block demo-zh-CN demo-dropdown">
+      <div class="source">
+        <el-dropdown :hide-on-click="false">
+          <span class="el-dropdown-link">
+            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item>黄金糕</el-dropdown-item>
+            <el-dropdown-item>狮子头</el-dropdown-item>
+            <el-dropdown-item>螺蛳粉</el-dropdown-item>
+            <el-dropdown-item disabled>双皮奶</el-dropdown-item>
+            <el-dropdown-item divided>蚵仔煎</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
+    </div>
+
+    <h3 id="zhi-ling-shi-jian">
+      <a href="#zhi-ling-shi-jian" aria-hidden="true" class="header-anchor">¶</a>
+      指令事件
+    </h3>
+    <p>点击菜单项后会触发事件，用户可以通过相应的菜单项 key 进行不同的操作</p>
+    <div class="demo-block demo-zh-CN demo-dropdown">
+      <div class="source">
+        <el-dropdown @command="handleCommand">
+          <span class="el-dropdown-link">
+            下拉菜单<i class="el-icon-arrow-down el-icon--right"></i>
+          </span>
+          <el-dropdown-menu slot="dropdown">
+            <el-dropdown-item command="a">黄金糕</el-dropdown-item>
+            <el-dropdown-item command="b">狮子头</el-dropdown-item>
+            <el-dropdown-item command="c">螺蛳粉</el-dropdown-item>
+            <el-dropdown-item command="d" disabled>双皮奶</el-dropdown-item>
+            <el-dropdown-item command="e" divided>蚵仔煎</el-dropdown-item>
+          </el-dropdown-menu>
+        </el-dropdown>
+      </div>
+    </div>
+
     <h3 id="bu-tong-chi-cun">
       <a href="#bu-tong-chi-cun" aria-hidden="true" class="header-anchor">¶</a>
       不同尺寸
@@ -166,6 +210,9 @@
     methods: {
       handleClick() {
         alert('button click');
+      },
+      handleCommand(command) {
+        this.$message('click on item ' + command);
       }
     }
   }

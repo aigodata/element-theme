@@ -10,6 +10,7 @@
       <a href="#ji-chu-yong-fa" aria-hidden="true" class="header-anchor">¶</a>
       基础用法
     </h3>
+    <p>适用广泛的基础单选</p>
     <div class="demo-block demo-zh-CN demo-select">
       <div class="source">
         <el-select v-model="value" placeholder="请选择">
@@ -151,6 +152,74 @@
         </el-select>
       </div>
     </div>
+
+    <h3 id="ke-sou-suo">
+      <a href="#ke-sou-suo" aria-hidden="true" class="header-anchor">¶</a>
+      可搜索
+    </h3>
+    <p>可以利用搜索功能快速查找选项</p>
+    <div class="demo-block demo-zh-CN demo-select">
+      <div class="source">
+        <el-select v-model="value8" filterable placeholder="请选择">
+          <el-option
+            v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+      </div>
+    </div>
+
+    <h3 id="yuan-cheng-sou-suo">
+      <a href="#yuan-cheng-sou-suo" aria-hidden="true" class="header-anchor">¶</a>
+      远程搜索
+    </h3>
+    <p>从服务器搜索数据，输入关键字进行查找</p>
+    <div class="demo-block demo-zh-CN demo-select">
+      <div class="source">
+        <el-select
+          v-model="value9"
+          multiple
+          filterable
+          remote
+          reserve-keyword
+          placeholder="请输入关键词"
+          :remote-method="remoteMethod"
+          :loading="loading">
+          <el-option
+            v-for="item in options4"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+      </div>
+    </div>
+
+    <h3 id="chuang-jian-tiao-mu">
+      <a href="#chuang-jian-tiao-mu" aria-hidden="true" class="header-anchor">¶</a>
+      创建条目
+    </h3>
+    <p>可以创建并选中选项中不存在的条目</p>
+    <div class="demo-block demo-zh-CN demo-select">
+      <div class="source">
+        <el-select
+          v-model="value10"
+          multiple
+          filterable
+          allow-create
+          default-first-option
+          placeholder="请选择文章标签">
+          <el-option
+            v-for="item in options5"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -250,7 +319,64 @@
             label: '大连'
           }]
         }],
-        value7: ''
+        value7: '',
+        // 可搜索
+        value8: '',
+        // 远程搜索
+        options4: [],
+        value9: [],
+        list: [],
+        loading: false,
+        states: ["Alabama", "Alaska", "Arizona",
+          "Arkansas", "California", "Colorado",
+          "Connecticut", "Delaware", "Florida",
+          "Georgia", "Hawaii", "Idaho", "Illinois",
+          "Indiana", "Iowa", "Kansas", "Kentucky",
+          "Louisiana", "Maine", "Maryland",
+          "Massachusetts", "Michigan", "Minnesota",
+          "Mississippi", "Missouri", "Montana",
+          "Nebraska", "Nevada", "New Hampshire",
+          "New Jersey", "New Mexico", "New York",
+          "North Carolina", "North Dakota", "Ohio",
+          "Oklahoma", "Oregon", "Pennsylvania",
+          "Rhode Island", "South Carolina",
+          "South Dakota", "Tennessee", "Texas",
+          "Utah", "Vermont", "Virginia",
+          "Washington", "West Virginia", "Wisconsin",
+          "Wyoming"],
+        // 创建条目
+        options5: [{
+          value: 'HTML',
+          label: 'HTML'
+        }, {
+          value: 'CSS',
+          label: 'CSS'
+        }, {
+          value: 'JavaScript',
+          label: 'JavaScript'
+        }],
+        value10: []
+      }
+    },
+    mounted() {
+      this.list = this.states.map(item => {
+        return { value: item, label: item };
+      });
+    },
+    methods: {
+      remoteMethod(query) {
+        if (query !== '') {
+          this.loading = true;
+          setTimeout(() => {
+            this.loading = false;
+            this.options4 = this.list.filter(item => {
+              return item.label.toLowerCase()
+                .indexOf(query.toLowerCase()) > -1;
+            });
+          }, 200);
+        } else {
+          this.options4 = [];
+        }
       }
     }
   }

@@ -71,7 +71,7 @@
     <div class="demo-block demo-zh-CN demo-tooltip">
       <div class="source">
         <el-tooltip content="Top center" placement="top">
-          <el-button>Dark</el-button>
+          <el-button>Blue</el-button>
         </el-tooltip>
         <el-tooltip content="Bottom center" placement="bottom" effect="light">
           <el-button>Light</el-button>
@@ -97,6 +97,13 @@
       <a href="#gao-ji-kuo-zhan" aria-hidden="true" class="header-anchor">¶</a>
       高级扩展
     </h3>
+    <p>
+      除了这些基本设置外，还有一些属性可以让使用者更好的定制自己的效果：<br/>
+
+      transition 属性可以定制显隐的动画效果，默认为fade-in-linear。 如果需要关闭 tooltip 功能，disabled 属性可以满足这个需求，它接受一个Boolean，设置为true即可。<br/>
+
+      事实上，这是基于 Vue-popper 的扩展，你可以自定义任意 Vue-popper 中允许定义的字段。 当然 Tooltip 组件实际上十分强大，文末的API文档会做一一说明。
+    </p>
     <div class="demo-block demo-zh-CN demo-tooltip">
       <div class="source">
         <el-tooltip :disabled="disabled" content="点击关闭 tooltip 功能" placement="bottom" effect="light">
