@@ -642,7 +642,7 @@
             align="right">
             <template slot="header" slot-scope="scope">
               <el-input
-                v-model="search"
+                v-model="scope.search"
                 size="mini"
                 placeholder="输入关键字搜索"/>
             </template>
@@ -1127,7 +1127,7 @@
 
         return sums;
       },
-      arraySpanMethod({ row, column, rowIndex, columnIndex }) {
+      arraySpanMethod({ rowIndex, columnIndex }) {
         if (rowIndex % 2 === 0) {
           if (columnIndex === 0) {
             return [1, 2];
@@ -1137,7 +1137,7 @@
         }
       },
 
-      objectSpanMethod({ row, column, rowIndex, columnIndex }) {
+      objectSpanMethod({ rowIndex, columnIndex }) {
         if (columnIndex === 0) {
           if (rowIndex % 2 === 0) {
             return {

@@ -199,6 +199,32 @@
   cursor: pointer
 }
 
+.el-tree-node__content .el-checkbox__input.is-checked .el-checkbox__inner {
+  background-color: #fff;
+  border-color: #389fe3
+}
+
+.el-tree-node__content .el-checkbox__input.is-checked .el-checkbox__inner, .el-tree-node__content .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+  background-color: #fff;
+  border-color: #389fe3
+}
+
+.el-tree-node__content .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+  background-color: #389fe3
+}
+
+.el-tree-node__content .el-checkbox__input.is-checked.is-disabled .el-checkbox__inner {
+  border-color: #dcdfe6
+}
+
+.el-tree-node__content .el-checkbox__inner:after {
+  border-color: #3ba1e3
+}
+
+.el-tree-node__content .el-checkbox__inner::after {
+  border-color: #3ba1e3
+}
+
 .el-tree-node__content > .el-tree-node__expand-icon {
   padding: 6px
 }
@@ -232,7 +258,7 @@
 }
 
 .el-tree-node__content:hover .el-checkbox__input.is-checked .el-checkbox__inner, .el-tree-node__content:hover .el-checkbox__input.is-indeterminate .el-checkbox__inner {
-  border-color: #fff
+  /*border-color: #fff*/
 }
 
 .el-tree-node__content:hover .el-checkbox__input.is-disabled.is-checked .el-checkbox__inner, .el-tree-node__content:hover .el-checkbox__input.is-disabled.is-indeterminate .el-checkbox__inner {
