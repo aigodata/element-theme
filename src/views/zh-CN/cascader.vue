@@ -552,7 +552,7 @@
       },
       handleItemChange(val) {
         console.log('active item:', val);
-        setTimeout(_ => {
+        setTimeout(() => {
           if (val.indexOf('江苏') > -1 && !this.options2[0].cities.length) {
             this.options2[0].cities = [{
               label: '南京'

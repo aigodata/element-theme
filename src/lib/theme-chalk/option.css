@@ -34,3 +34,7 @@
   color: #005b9a;
   font-weight: normal
 }
+
+.el-select-dropdown__item.selected.hover span, .el-select-dropdown__item.selected:hover span {
+  color: #fff
+}
