@@ -3,6 +3,8 @@ Progress
 Pagination
 hover状态下 三位数的分页原型缺一角
 
+upload 右击时关闭按钮位置有问题
+
 
 Notification
 弹出框  错误 成功等弹出框上描边颜色设计不同  但css样式是一个 没法做成不同颜色

@@ -205,7 +205,7 @@
 }
 
 .el-range-editor.is-active, .el-range-editor.is-active:hover {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-range-editor--medium.el-input__inner {
@@ -472,8 +472,12 @@
 }
 
 .time-select-item.selected:not(.disabled) {
-  color: #005b9a;
+  color: #2aa1ef;
   font-weight: 700
+}
+
+.time-select-item.selected:not(.disabled):hover {
+  color: #fff
 }
 
 .time-select-item.disabled {
@@ -495,6 +499,6 @@
   -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   font-weight: 700;
-  color: #005b9a;
+  color: #fff;
   cursor: pointer
 }

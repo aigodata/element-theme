@@ -40,7 +40,7 @@
 }
 
 .el-breadcrumb__inner a:hover, .el-breadcrumb__inner.is-link:hover {
-  color: #409EFF;
+  color: #2aa1ef;
   cursor: pointer
 }
 

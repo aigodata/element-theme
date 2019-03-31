@@ -32,11 +32,11 @@
 }
 
 .el-input-number__decrease:hover, .el-input-number__increase:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-input-number__decrease:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled), .el-input-number__increase:hover:not(.is-disabled) ~ .el-input .el-input__inner:not(.is-disabled) {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-input-number__decrease.is-disabled, .el-input-number__increase.is-disabled {

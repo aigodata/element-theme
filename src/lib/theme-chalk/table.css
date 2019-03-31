@@ -223,7 +223,7 @@
 }
 
 .el-table th > .cell.highlight {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-table th.required > div::before {
@@ -460,11 +460,11 @@
 }
 
 .el-table .ascending .sort-caret.ascending {
-  border-bottom-color: #409EFF
+  border-bottom-color: #2aa1ef
 }
 
 .el-table .descending .sort-caret.descending {
-  border-top-color: #409EFF
+  border-top-color: #2aa1ef
 }
 
 .el-table .hidden-columns {

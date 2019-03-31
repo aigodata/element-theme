@@ -35,7 +35,7 @@
 }
 
 .el-table-filter__list-item.is-active {
-  background-color: #409EFF;
+  background-color: #2aa1ef;
   color: #fff
 }
 
@@ -58,7 +58,7 @@
 }
 
 .el-table-filter__bottom button:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-table-filter__bottom button:focus {

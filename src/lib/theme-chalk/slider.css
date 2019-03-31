@@ -76,7 +76,7 @@
 
 .el-slider__bar {
   height: 6px;
-  background-color: #409EFF;
+  background-color: #2aa1ef;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
   position: absolute;
@@ -119,7 +119,7 @@
 .el-slider__button {
   width: 6px;
   height: 6px;
-  border: 7px solid #409EFF;
+  border: 7px solid #2aa1ef;
   background-color: #fff;
   border-radius: 50%;
   -webkit-transition: .2s;
@@ -236,6 +236,6 @@
 }
 
 .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__decrease, .el-slider.is-vertical.el-slider--with-input .el-slider__input:active .el-input-number__increase {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 

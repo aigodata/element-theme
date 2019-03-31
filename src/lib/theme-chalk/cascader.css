@@ -113,7 +113,7 @@
 }
 
 .el-cascader .el-input.is-focus .el-input__inner {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-cascader .el-input__icon {
@@ -250,7 +250,7 @@
 }
 
 .el-cascader-menu__item.is-active {
-  color: #005b9a
+  color: #2aa1ef
 }
 
 .el-cascader-menu__item:focus:not(:active), .el-cascader-menu__item:hover {

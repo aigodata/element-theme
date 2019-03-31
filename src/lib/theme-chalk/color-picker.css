@@ -31,8 +31,8 @@
 }
 
 .el-color-predefine__color-selector.selected {
-  -webkit-box-shadow: 0 0 3px 2px #409EFF;
-  box-shadow: 0 0 3px 2px #409EFF
+  -webkit-box-shadow: 0 0 3px 2px #2aa1ef;
+  box-shadow: 0 0 3px 2px #2aa1ef
 }
 
 .el-color-predefine__color-selector > div {
@@ -233,39 +233,41 @@
 }
 
 .el-color-dropdown__btn:hover {
-  color: #409EFF;
-  border-color: #409EFF
+  color: #2aa1ef;
+  border-color: #2aa1ef
 }
 
 .el-color-dropdown__link-btn {
   cursor: pointer;
-  color: #409EFF;
+  color: #2aa1ef;
   text-decoration: none;
   padding: 15px;
   font-size: 12px
 }
 
 .el-color-dropdown__link-btn:hover {
-  color: tint(#409EFF, 20%)
+  color: tint(#2aa1ef, 20%)
 }
 
 .el-color-dropdown__btns .el-button.is-plain {
   color: #fff;
-  border: 1px solid #2aa1ef;
   margin-left: 5px;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  border: 1px solid #2aa1ef;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-color-dropdown__btns .el-button.is-plain:focus, .el-color-dropdown__btns .el-button.is-plain:hover {
   color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  border-color: #2aa1ef;
+  background: linear-gradient(to top, #1284cf , #3eb1fc)
 }
 
 .el-color-dropdown__btns .el-button.is-plain.is-active, .el-color-dropdown__btns .el-button.is-plain:active {
   color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  border-color: #2aa1ef;
+  background: linear-gradient(to top, #3eb1fc , #1284cf)
 }
 
 .el-color-dropdown__btns .el-button.is-plain:active {
@@ -289,22 +291,23 @@
   font-size: 12px;
   border-radius: 3px;
   color: #333333;
-  background: #fff;
   font-weight: 500;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  border: 1px solid #dbdbdb
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f7f7f7 , #fff)
 }
 
 .el-color-dropdown__btns .el-button.el-button--text:focus, .el-color-dropdown__btns .el-button.el-button--text:hover {
-  background: linear-gradient(to top, #f7f7f7 , #fff);
-  border-color: #dbdbdb;
-  color: #333333
+  color: #333333;
+  border-color: #e4e4e4;
+  background: linear-gradient(to top, #f1f1f1 , #fff)
 }
 
 .el-color-dropdown__btns .el-button.el-button--text.is-active, .el-color-dropdown__btns .el-button.el-button--text:active {
-  color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  background: linear-gradient(to top, #fff , #f1f1f1);
+  color: #333333;
+  border-color: #e4e4e4
 }
 
 .el-color-dropdown__btns .el-button.el-button--text:active {

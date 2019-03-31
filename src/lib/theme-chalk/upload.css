@@ -77,12 +77,12 @@
 }
 
 .el-upload--picture-card:hover, .el-upload:focus {
-  border-color: #409EFF;
-  color: #409EFF
+  border-color: #2aa1ef;
+  color: #2aa1ef
 }
 
 .el-upload:focus .el-upload-dragger {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-upload-dragger {
@@ -123,17 +123,17 @@
 }
 
 .el-upload-dragger .el-upload__text em {
-  color: #409EFF;
+  color: #2aa1ef;
   font-style: normal
 }
 
 .el-upload-dragger:hover {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-upload-dragger.is-dragover {
   background-color: rgba(32, 159, 255, .06);
-  border: 2px dashed #409EFF
+  border: 2px dashed #2aa1ef
 }
 
 .el-upload-list {
@@ -208,7 +208,7 @@
   font-size: 12px;
   cursor: pointer;
   opacity: 1;
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-upload-list__item:hover {
@@ -238,7 +238,7 @@
 }
 
 .el-upload-list__item.is-success .el-upload-list__item-name:focus, .el-upload-list__item.is-success .el-upload-list__item-name:hover {
-  color: #409EFF;
+  color: #2aa1ef;
   cursor: pointer
 }
 
@@ -292,7 +292,7 @@
 }
 
 .el-upload-list__item-delete:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-upload-list--picture-card {
@@ -656,10 +656,10 @@
 }
 
 .avatar-uploader .el-upload:hover {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 .avatar-uploader .el-upload:hover .avatar-uploader-icon {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 

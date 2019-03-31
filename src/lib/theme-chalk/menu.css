@@ -167,7 +167,7 @@
 }
 
 .el-menu--horizontal > .el-submenu.is-active .el-submenu__title {
-  border-bottom: 2px solid #409EFF;
+  border-bottom: 2px solid #2aa1ef;
   color: #303133
 }
 
@@ -219,7 +219,7 @@
 }
 
 .el-menu--horizontal > .el-menu-item.is-active {
-  border-bottom: 2px solid #409EFF;
+  border-bottom: 2px solid #2aa1ef;
   color: #303133
 }
 
@@ -336,7 +336,7 @@
 }
 
 .el-menu-item.is-active {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-menu-item.is-active i {
@@ -407,7 +407,7 @@
 }
 
 .el-submenu.is-active .el-submenu__title {
-  border-bottom-color: #409EFF
+  border-bottom-color: #2aa1ef
 }
 
 .el-submenu.is-opened > .el-submenu__title .el-submenu__icon-arrow {

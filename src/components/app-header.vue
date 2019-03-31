@@ -3,7 +3,7 @@
     <header class="header">
       <div class="container">
         <h1>
-          <a href="#/zh-CN" class="router-link-active">
+          <a href="http://element-cn.eleme.io/#/zh-CN" target="_blank" class="router-link-active">
             <img src="../assets/logo.svg" alt="element-logo" class="nav-logo">
           </a>
         </h1>

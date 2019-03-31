@@ -205,7 +205,7 @@
 }
 
 .el-range-editor.is-active, .el-range-editor.is-active:hover {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-range-editor--medium.el-input__inner {
@@ -346,7 +346,7 @@
 }
 
 .el-time-spinner__arrow:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-time-spinner__arrow.el-icon-arrow-up {
@@ -519,19 +519,21 @@
 .el-time-panel__btn.confirm {
   color: #fff;
   border: 1px solid #2aa1ef;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.1);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
   background: linear-gradient(to top, #2aa1ef , #3eb1fc)
 }
 
 .el-time-panel__btn.confirm:focus, .el-time-panel__btn.confirm:hover {
   color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  border-color: #2aa1ef;
+  background: linear-gradient(to top, #1284cf , #3eb1fc)
 }
 
 .el-time-panel__btn.confirm.is-active, .el-time-panel__btn.confirm:active {
   color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  border-color: #2aa1ef;
+  background: linear-gradient(to top, #3eb1fc , #1284cf)
 }
 
 .el-time-panel__btn.confirm:active {
@@ -542,20 +544,23 @@
   color: #333333;
   background: #fff;
   font-weight: 500;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  border: 1px solid #dbdbdb
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f7f7f7 , #fff);
+  border: 1px solid #e4e4e4
 }
 
 .el-time-panel__btn.cancel:focus, .el-time-panel__btn.cancel:hover {
-  background: linear-gradient(to top, #f7f7f7 , #fff);
-  border-color: #dbdbdb;
-  color: #333333
+  color: #333333;
+  border-color: #e4e4e4;
+  background: linear-gradient(to top, #f1f1f1 , #fff)
 }
 
 .el-time-panel__btn.cancel.is-active, .el-time-panel__btn.cancel:active {
-  color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  background: linear-gradient(to top, #fff , #f1f1f1);
+  color: #333333;
+  border-color: #e4e4e4;
+  outline: 0
 }
 
 .el-time-panel__btn.cancel:active {

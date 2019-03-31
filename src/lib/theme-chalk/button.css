@@ -36,6 +36,7 @@
 }
 
 .el-button:active {
+  background: linear-gradient(to top, #fff , #f1f1f1);
   color: #333333;
   border-color: #e4e4e4;
   outline: 0
@@ -64,12 +65,13 @@
 }
 
 .el-button.is-active, .el-button.is-plain:active {
+  background: linear-gradient(to top, #fff , #f1f1f1);
   color: #3a8ee6;
   border-color: #dbdbdb
 }
 
 .el-button.is-plain:active {
-  background: #fff;
+  background: linear-gradient(to top, #fff , #f1f1f1);
   outline: 0
 }
 
@@ -130,13 +132,12 @@
   color: #fff;
   border-color: #2aa1ef;
   background: linear-gradient(to top, #1284cf , #3eb1fc)
-
 }
 
 .el-button--primary.is-active, .el-button--primary:active {
   color: #fff;
   border-color: #2aa1ef;
-  background: linear-gradient(to top, #1284cf , #3eb1fc)
+  background: linear-gradient(to top, #3eb1fc , #1284cf)
 }
 
 .el-button--primary:active {
@@ -160,13 +161,13 @@
 .el-button--primary.is-plain:focus, .el-button--primary.is-plain:hover {
   color: #fff;
   border-color: #1d98e9;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  background: linear-gradient(to top, #1284cf , #3eb1fc)
 }
 
 .el-button--primary.is-plain:active {
   color: #fff;
   border-color: #1d98e9;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc);
+  background: linear-gradient(to top, #3eb1fc , #1284cf);
   outline: 0
 }
 
@@ -192,7 +193,7 @@
 }
 
 .el-button--success.is-active, .el-button--success:active {
-  background: linear-gradient(to top, #31a41e , #63ce4a);
+  background: linear-gradient(to top, #63ce4a , #31a41e);
   border-color: #45c130;
   color: #fff
 }
@@ -216,13 +217,13 @@
 }
 
 .el-button--success.is-plain:focus, .el-button--success.is-plain:hover {
-  background: linear-gradient(to top, #3ab425 , #63ce4a);
+  background: linear-gradient(to top, #31a41e , #63ce4a);
   border-color: #55c83d;
   color: #fff
 }
 
 .el-button--success.is-plain:active {
-  background: linear-gradient(to top, #3ab425 , #63ce4a);
+  background: linear-gradient(to top, #63ce4a , #31a41e);
   border-color: #55c83d;
   color: #fff;
   outline: 0
@@ -250,7 +251,7 @@
 }
 
 .el-button--warning.is-active, .el-button--warning:active {
-  background: linear-gradient(to top, #e66c04 , #fd953b);
+  background: linear-gradient(to top, #fd953b , #e66c04);
   border-color: #fd8824;
   color: #fff
 }
@@ -274,13 +275,13 @@
 }
 
 .el-button--warning.is-plain:focus, .el-button--warning.is-plain:hover {
-  background: linear-gradient(to top, #f67a0f , #fd953b);
+  background: linear-gradient(to top, #e66c04 , #fd953b);
   border-color: #f67a0f;
   color: #fff
 }
 
 .el-button--warning.is-plain:active {
-  background: linear-gradient(to top, #f67a0f , #fd953b);
+  background: linear-gradient(to top, #fd953b , #e66c04);
   border-color: #f67a0f;
   color: #fff;
   outline: 0
@@ -308,7 +309,7 @@
 }
 
 .el-button--danger.is-active, .el-button--danger:active {
-  background: linear-gradient(to top, #e92b32 , #fe6a6f);
+  background: linear-gradient(to top, #fe6a6f , #e92b32);
   border-color: #f85d63;
   color: #fff
 }
@@ -332,13 +333,13 @@
 }
 
 .el-button--danger.is-plain:focus, .el-button--danger.is-plain:hover {
-  background: linear-gradient(to top, #fb5258 , #fe6a6f);
+  background: linear-gradient(to top, #e92b32 , #fe6a6f);
   border-color: #fb5258;
   color: #fff
 }
 
 .el-button--danger.is-plain:active {
-  background: linear-gradient(to top, #fb5258 , #fe6a6f);
+  background: linear-gradient(to top, #fe6a6f , #e92b32);
   border-color: #fb5258;
   color: #fff;
   outline: 0
@@ -366,7 +367,7 @@
 }
 
 .el-button--info.is-active, .el-button--info:active {
-  background: linear-gradient(to top, #3b3e4e , #74767e);
+  background: linear-gradient(to top, #74767e , #3b3e4e);
   border-color: #585b69;
   color: #fff
 }
@@ -390,13 +391,13 @@
 }
 
 .el-button--info.is-plain:focus, .el-button--info.is-plain:hover {
-  background: linear-gradient(to top, #545866 , #74767e);
+  background: linear-gradient(to top, #3b3e4e , #74767e);
   border-color: #545866;
   color: #fff
 }
 
 .el-button--info.is-plain:active {
-  background: linear-gradient(to top, #545866 , #74767e);
+  background: linear-gradient(to top, #74767e , #3b3e4e);
   border-color: #545866;
   color: #fff;
   outline: 0
@@ -449,7 +450,7 @@
 }
 
 .el-button--text {
-  color: #409EFF;
+  color: #2aa1ef;
   background: 0 0;
   padding-left: 0;
   padding-right: 0;

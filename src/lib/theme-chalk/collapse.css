@@ -134,7 +134,7 @@
 }
 
 .el-collapse-item__header:hover {
-  color: #409eff
+  color: #2aa1ef
 }
 
 .el-collapse-item__arrow {
@@ -152,7 +152,7 @@
 }
 
 .el-collapse-item__header.focusing:focus:not(:hover) {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-collapse-item__header.is-active {

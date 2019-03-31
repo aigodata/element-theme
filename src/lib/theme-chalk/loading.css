@@ -41,7 +41,7 @@
 }
 
 .el-loading-spinner .el-loading-text {
-  color: #409EFF;
+  color: #2aa1ef;
   margin: 3px 0;
   font-size: 14px
 }
@@ -59,14 +59,14 @@
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
   stroke-width: 4;
-  stroke: #409EFF;
+  stroke: #2aa1ef;
   stroke-linecap: round
 }
 
 .el-loading-spinner i {
   font-size: 26px;
   font-weight: bold;
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-loading-fade-enter, .el-loading-fade-leave-active {

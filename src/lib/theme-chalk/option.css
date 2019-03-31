@@ -31,10 +31,34 @@
 }
 
 .el-select-dropdown__item.selected {
-  color: #005b9a;
-  font-weight: normal
+  color: #2aa1ef
 }
 
-.el-select-dropdown__item.selected.hover span, .el-select-dropdown__item.selected:hover span {
+
+.el-select-dropdown__item.selected.hover, .el-select-dropdown__item.selected:hover {
   color: #fff
+}
+
+.el-select-dropdown__item.selected::after {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  background: #2aa1ef;
+  color: #fff;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  font-family: element-icons;
+  content: "\E611";
+  font-size: 12px;
+  font-weight: 700;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+.el-select-dropdown__item.selected.hover::after {
+  background: #fff;
+  color: #2aa1ef
 }

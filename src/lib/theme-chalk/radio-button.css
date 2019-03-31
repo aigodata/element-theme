@@ -34,7 +34,7 @@
 }
 
 .el-radio-button__inner:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-radio-button__inner [class*=el-icon-] {
@@ -62,9 +62,9 @@
 .el-radio-button__orig-radio:checked + .el-radio-button__inner {
   color: #fff;
   background: linear-gradient(to top, #2aa1ef , #3eb1fc);
-  border-color: #409EFF;
-  -webkit-box-shadow: -1px 0 0 0 #409EFF;
-  box-shadow: -1px 0 0 0 #409EFF
+  border-color: #2aa1ef;
+  -webkit-box-shadow: -1px 0 0 0 #2aa1ef;
+  box-shadow: -1px 0 0 0 #2aa1ef
 }
 
 .el-radio-button__orig-radio:disabled + .el-radio-button__inner {
@@ -120,6 +120,6 @@
 }
 
 .el-radio-button:focus:not(.is-focus):not(:active):not(.is-disabled) {
-  -webkit-box-shadow: 0 0 2px 2px #409EFF;
-  box-shadow: 0 0 2px 2px #409EFF
+  -webkit-box-shadow: 0 0 2px 2px #2aa1ef;
+  box-shadow: 0 0 2px 2px #2aa1ef
 }

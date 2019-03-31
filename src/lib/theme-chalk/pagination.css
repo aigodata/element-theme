@@ -221,7 +221,7 @@
 }
 
 .el-pagination button:hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-pagination button:disabled {
@@ -298,7 +298,7 @@
 }
 
 .el-pagination__sizes .el-input .el-input__inner:hover {
-  border-color: #409EFF
+  border-color: #2aa1ef
 }
 
 .el-pagination__total {
@@ -366,7 +366,7 @@
 }
 
 .el-pagination.is-background .el-pager li:not(.disabled):hover {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-pagination.is-background .el-pager li:not(.disabled).active {
@@ -436,6 +436,10 @@
 }
 
 .el-pager li.active {
-  color: #005b9a;
+  color: #2aa1ef;
   cursor: default
+}
+
+.el-pager li.active:hover {
+  color: #fff
 }

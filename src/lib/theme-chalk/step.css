@@ -74,8 +74,8 @@
 }
 
 .el-step__head.is-finish {
-  color: #409EFF;
-  border-color: #409EFF
+  color: #2aa1ef;
+  border-color: #2aa1ef
 }
 
 .el-step__head.is-finish .el-step__icon.is-text {
@@ -187,7 +187,7 @@
 }
 
 .el-step__title.is-finish {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-step__description {
@@ -215,7 +215,7 @@
 }
 
 .el-step__description.is-finish {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-step.is-horizontal {

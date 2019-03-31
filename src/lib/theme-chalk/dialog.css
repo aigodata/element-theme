@@ -98,7 +98,7 @@
 }
 
 .el-dialog__headerbtn:focus .el-dialog__close, .el-dialog__headerbtn:hover .el-dialog__close {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-dialog__title {

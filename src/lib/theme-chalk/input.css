@@ -38,14 +38,14 @@
 }
 
 .el-textarea__inner:hover {
-  border-color: #409EFF;
+  border-color: #2aa1ef;
   -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
   box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea__inner:focus {
   outline: 0;
-  border-color: #409EFF;
+  border-color: #2aa1ef;
   -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
   box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
@@ -161,13 +161,13 @@
 }
 
 .el-input__inner:hover {
-  border-color: #409EFF;
+  border-color: #2aa1ef;
   -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
   box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 3px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-input.is-active .el-input__inner, .el-input__inner:focus {
-  border-color: #409EFF;
+  border-color: #2aa1ef;
   -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
   box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 3px 8px rgba(62, 172, 249, 0.2);
   outline: 0

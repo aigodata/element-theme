@@ -48,6 +48,7 @@
             :icon="activity.icon"
             :type="activity.type"
             :color="activity.color"
+            :borderColor="activity.borderColor"
             :size="activity.size"
             :timestamp="activity.timestamp">
             {{activity.content}}
@@ -117,7 +118,8 @@
         }, {
           content: '支持自定义颜色',
           timestamp: '2018-04-03 20:46',
-          color: '#0bbd87'
+          color: '#0bbd87',
+          borderColor: '#0bbd87'
         }, {
           content: '支持自定义尺寸',
           timestamp: '2018-04-03 20:46',

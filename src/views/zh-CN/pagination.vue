@@ -158,4 +158,9 @@
   .page-pagination {
 
   }
+
+  .page-pagination .demonstration {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
 </style>

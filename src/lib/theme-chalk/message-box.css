@@ -110,7 +110,7 @@
 }
 
 .el-message-box__headerbtn:focus .el-message-box__close, .el-message-box__headerbtn:hover .el-message-box__close {
-  color: #409EFF
+  color: #2aa1ef
 }
 
 .el-message-box__content {

@@ -124,7 +124,7 @@
             :label="item.label"
             :value="item.value">
             <span style="float: left">{{ item.label }}</span>
-            <span style="float: right; font-size: 13px">{{ item.value }}</span>
+            <span style="float: right; font-size: 13px; margin-right: 20px">{{ item.value }}</span>
           </el-option>
         </el-select>
       </div>
