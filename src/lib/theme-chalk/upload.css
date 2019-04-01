@@ -226,6 +226,8 @@
 }
 
 .el-upload-list__item:focus .el-icon-close {
+  top: 9px;
+  right: 6px;
   display: inline-block
 }
 
