@@ -87,6 +87,7 @@
   }
 
   .page-component .page-component__content {
+    padding-top: 30px;
     padding-left: 270px;
     padding-bottom: 100px;
     box-sizing: border-box

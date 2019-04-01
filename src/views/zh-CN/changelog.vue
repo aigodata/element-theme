@@ -4,7 +4,7 @@
       <div class="heading">
         <button type="button" class="el-button fr el-button--default">
           <span>
-            <a href="https://github.com/ElemeFE/element/releases" target="_blank">GitHub Releases</a>
+            <a href="https://github.com/aigodata/element-theme" target="_blank">GitHub Releases</a>
           </span>
         </button>
         更新日志

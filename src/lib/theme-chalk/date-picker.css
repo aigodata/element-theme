@@ -87,6 +87,28 @@
   font-weight: 700
 }
 
+.el-date-table td.today.selected span {
+  width: 24px;
+  height: 24px;
+  line-height: 24px
+}
+
+.el-date-table td.today.in-range span {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #2aa1ef
+}
+
+.el-date-table.is-week-mode .el-date-table__row.current td.today div span {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #2aa1ef
+}
+
+.el-date-table td.today.in-range span:hover {
+  color: #fff
+}
+
 .el-date-table td.today.in-range span {
   border: 1px solid #fff;
   color: #fff;
@@ -96,6 +118,10 @@
 .el-date-table td.today.end-date span, .el-date-table td.today.start-date span {
   color: #43b0f7;
   font-weight: normal
+}
+
+.el-date-table td.today.in-range.end-date span, .el-date-table td.today.in-range.start-date span {
+  color: #fff
 }
 
 .el-date-table td.available:hover {
@@ -145,12 +171,12 @@
 .el-date-table td.selected div {
   margin-left: 5px;
   margin-right: 5px;
-  background-color: #f2f6fc;
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 15px
 }
 
 .el-date-table td.selected div:hover {
-  background-color: #f2f6fc
+  background-color: rgba(0, 0, 0, 0)
 }
 
 .el-date-table td.selected span {
@@ -181,8 +207,20 @@
 
 .el-month-table td {
   text-align: center;
-  padding: 20px 3px;
+  padding: 20px 0;
   cursor: pointer
+}
+
+.el-month-table td div {
+  padding: 6px 3px;
+  height: 44px
+}
+
+.el-month-table td.in-range div, .el-month-table td.in-range div:hover {
+  color: #fff;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4)
 }
 
 .el-month-table td.disabled .cell {
@@ -200,8 +238,25 @@
   margin: 0 auto
 }
 
+.el-month-table td.in-range .cell {
+  color: #fff
+}
+
+.el-month-table td.in-range .cell:hover {
+  color: #fff
+}
+
 .el-month-table td .cell:hover, .el-month-table td.current:not(.disabled) .cell {
   color: #2aa1ef
+}
+
+.el-month-table td.end-date .cell, .el-month-table td.start-date .cell {
+  background-color: #fff;
+  color: #43b0f7
+}
+
+.el-month-table td.end-date .cell:hover, .el-month-table td.start-date .cell:hover {
+  color: #43b0f7
 }
 
 .el-month-table td.current:not(.disabled) .cell {
@@ -635,20 +690,23 @@
   color: #333333;
   background: #fff;
   font-weight: 500;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.1);
-  border: 1px solid #dbdbdb
+  border: 1px solid #e4e4e4;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  background: linear-gradient(to top, #f7f7f7 , #fff)
 }
 
 .el-picker-panel__footer .el-button.el-button--text:focus, .el-picker-panel__footer .el-button.el-button--text:hover {
-  background: linear-gradient(to top, #f7f7f7 , #fff);
-  border-color: #dbdbdb;
-  color: #333333
+  color: #333333;
+  border-color: #e4e4e4;
+  background: linear-gradient(to top, #f1f1f1 , #fff)
 }
 
 .el-picker-panel__footer .el-button.el-button--text.is-active, .el-picker-panel__footer .el-button.el-button--text:active {
-  color: #fff;
-  background: linear-gradient(to top, #1d98e9 , #3eb1fc)
+  background: linear-gradient(to top, #fff , #f1f1f1);
+  color: #333333;
+  border-color: #e4e4e4;
+  outline: 0
 }
 
 .el-picker-panel__footer .el-button.el-button--text:active {
@@ -1130,11 +1188,41 @@
 }
 
 .el-month-table td.today .cell {
+  width: 46px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  border-radius: 16px;
   color: #2aa1ef;
+  text-align: center;
+  border: 1px solid #2aa1ef;
   font-weight: 700
 }
 
+.el-month-table td.today.in-range .cell {
+  border: 1px solid #fff;
+  color: #fff;
+  background: #2aa1ef
+}
+
+.el-month-table td.today.selected .cell {
+  width: 48px;
+  height: 32px
+}
+
 .el-year-table td.today .cell {
+  width: 46px;
+  height: 30px;
+  line-height: 30px;
+  background: #fff;
+  border-radius: 16px;
   color: #2aa1ef;
+  text-align: center;
+  border: 1px solid #2aa1ef;
   font-weight: 700
+}
+
+.el-year-table td.today.selected .cell {
+  width: 48px;
+  height: 32px
 }
