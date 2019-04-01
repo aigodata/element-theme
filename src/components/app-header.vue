@@ -49,11 +49,11 @@
 
   .headerWrapper .header .github-logo {
     float: right;
-    margin: 12px 0 0 30px;
+    margin: 8px 0 0 30px;
   }
 
   .headerWrapper .header .github-logo img {
-    width: 40px;
+    width: 30px;
   }
 
   .headerWrapper .link-font {
