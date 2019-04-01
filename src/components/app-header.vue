@@ -11,11 +11,14 @@
             <img src="../assets/aigodata-logo.svg">
           </a>
         </h1>
+        <a href="https://github.com/aigodata/element-theme" title="访问github" class="github-logo">
+          <img src="../assets/github.png">
+        </a>
         <ul class="nav">
           <li class="nav-item nav-versions">
             <el-dropdown trigger="click">
               <span class="el-dropdown-link link-font">
-                选择版本<i class="el-icon-arrow-down el-icon--right"></i>
+                2.7.0<i class="el-icon-arrow-down el-icon--right"></i>
               </span>
               <el-dropdown-menu slot="dropdown">
                 <el-dropdown-item>2.7.0</el-dropdown-item>
@@ -26,6 +29,7 @@
             语言
           </li>
         </ul>
+
       </div>
     </header>
   </div>
@@ -43,13 +47,22 @@
     box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   }
 
+  .headerWrapper .header .github-logo {
+    float: right;
+    margin: 12px 0 0 30px;
+  }
+
+  .headerWrapper .header .github-logo img {
+    width: 40px;
+  }
+
   .headerWrapper .link-font {
-    color: #000;
+    color: #888;
     font-size: 16px;
   }
 
   .headerWrapper .header .nav-item {
-    color: #000;
+    color: #888;
   }
 
   .headerWrapper .router-link-active {

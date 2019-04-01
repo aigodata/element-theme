@@ -226,9 +226,7 @@
 }
 
 .el-upload-list__item:focus .el-icon-close {
-  top: 9px;
-  right: 6px;
-  display: inline-block
+  display: none
 }
 
 .el-upload-list__item:hover .el-progress__text {
