@@ -11,26 +11,45 @@
       </div>
       <ul class="timeline">
         <li>
-          <h3><a href="https://github.com/ElemeFE/element/releases/tag/v2.7.0" target="_blank">2.7.0</a></h3>
+          <h3><a href="" target="_blank">2.7.0</a></h3>
           <p><em>2019-03-28</em></p>
-          <h4 id="xin-te-xing"> 新特性</h4>
+          <h4 id="xin-te-xing" class="the-title"> 新特性</h4>
           <ul>
             <li>
-              Table
+              <span class="weight-font">Table</span>
               <ul>
                 <li>
                   增加对树形结构数据的支持
                 </li>
               </ul>
-              <h4 id="xiu-fu"> 修复</h4>
+            </li>
+          </ul>
+          <h4 id="xiu-fu"> 修复</h4>
+          <ul>
+            <li>
+              <span class="weight-font">Tabs</span>
               <ul>
                 <li>
-                  Tabs
-                  <ul>
-                    <li>
-                      阴影样式使用全局主颜色
-                    </li>
-                  </ul>
+                  阴影样式使用全局主颜色
+                </li>
+              </ul>
+            </li>
+            <li>
+              <span class="weight-font">Table</span>
+              <ul>
+                <li>
+                  Table footer 与 body 的对齐一致
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <h4 id="you-hua" class="the-title"> 优化</h4>
+          <ul>
+            <li>
+              <span class="weight-font">Chore</span>
+              <ul>
+                <li>
+                  增加网页描述信息
                 </li>
               </ul>
             </li>
@@ -52,7 +71,28 @@
 
   }
 
+  .page-changelog .timeline ul ul li::before {
+    width: 2px;
+    height: 2px;
+  }
+
+  .page-changelog .weight-font {
+    font-weight: 700;
+  }
+
+  .page-changelog .timeline h4 {
+    color: #409eff;
+  }
+
+  .page-changelog ul {
+    list-style: none;
+  }
+
   .page-changelog ul li {
     list-style: none;
+  }
+
+  .page-changelog .timeline ul {
+    padding: 20px 30px 0;
   }
 </style>

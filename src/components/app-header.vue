@@ -13,7 +13,14 @@
         </h1>
         <ul class="nav">
           <li class="nav-item nav-versions">
-            版本
+            <el-dropdown trigger="click">
+              <span class="el-dropdown-link link-font">
+                选择版本<i class="el-icon-arrow-down el-icon--right"></i>
+              </span>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>2.7.0</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
           </li>
           <li class="nav-item lang-item">
             语言
@@ -34,6 +41,11 @@
   .headerWrapper .header {
     -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
     box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+  }
+
+  .headerWrapper .link-font {
+    color: #000;
+    font-size: 16px;
   }
 
   .headerWrapper .header .nav-item {

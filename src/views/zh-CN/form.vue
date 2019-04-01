@@ -53,8 +53,8 @@
             <el-input type="textarea" v-model="form.desc"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="onSubmit">立即创建</el-button>
             <el-button>取消</el-button>
+            <el-button type="primary" @click="onSubmit">立即创建</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -162,8 +162,8 @@
             <el-input type="textarea" v-model="ruleForm.desc"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
             <el-button @click="resetForm('ruleForm')">重置</el-button>
+            <el-button type="primary" @click="submitForm('ruleForm')">立即创建</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -187,8 +187,8 @@
             <el-input v-model.number="ruleForm2.age"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
             <el-button @click="resetForm('ruleForm2')">重置</el-button>
+            <el-button type="primary" @click="submitForm('ruleForm2')">提交</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -223,9 +223,9 @@
             <el-input v-model="domain.value"></el-input><el-button @click.prevent="removeDomain(domain)">删除</el-button>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="submitForm('dynamicValidateForm')">提交</el-button>
             <el-button @click="addDomain">新增域名</el-button>
             <el-button @click="resetForm('dynamicValidateForm')">重置</el-button>
+            <el-button type="primary" @click="submitForm('dynamicValidateForm')">提交</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -249,8 +249,8 @@
             <el-input type="age" v-model.number="numberValidateForm.age" autocomplete="off"></el-input>
           </el-form-item>
           <el-form-item>
-            <el-button type="primary" @click="submitForm('numberValidateForm')">提交</el-button>
             <el-button @click="resetForm('numberValidateForm')">重置</el-button>
+            <el-button type="primary" @click="submitForm('numberValidateForm')">提交</el-button>
           </el-form-item>
         </el-form>
       </div>
@@ -296,8 +296,8 @@
             </el-radio-group>
           </el-form-item>
           <el-form-item size="large">
-            <el-button type="primary" @click="onSubmit">立即创建</el-button>
             <el-button>取消</el-button>
+            <el-button type="primary" @click="onSubmit">立即创建</el-button>
           </el-form-item>
         </el-form>
       </div>
