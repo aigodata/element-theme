@@ -3,6 +3,9 @@
   "version": "2.7.0",
   "main": "lib/index.css",
   "style": "lib/index.css",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",

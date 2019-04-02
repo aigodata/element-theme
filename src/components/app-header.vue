@@ -11,7 +11,7 @@
             <img src="../assets/aigodata-logo.svg">
           </a>
         </h1>
-        <a href="https://github.com/aigodata/element-theme" title="访问github" class="github-logo">
+        <a href="https://github.com/aigodata/element-theme" target="_blank" title="访问github" class="github-logo">
           <img src="../assets/github.png">
         </a>
         <ul class="nav">

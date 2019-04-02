@@ -1,35 +1,17 @@
 # element-theme
-基于ElementUI的定制主题
 
-## Project setup
+aigodata团队发布的基于ElementUI的定制主题
 
-      正常安装
-      npm install
+## 正常安装
+
       
-      快速安装
-      npm install --registry=http://registry.npm.taobao.org
+      npm install element-theme
+
+## 代码地址
+
+      https://github.com/aigodata/element-theme
 
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## 演示地址
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
+      https://aigodata.github.io/element-theme
