@@ -1,6 +1,10 @@
 {
   "name": "element-theme",
   "version": "2.7.0",
+  "author": {
+    "name": "tm-roamer",
+    "email": "tm165822@163.com"
+  },
   "main": "lib/index.css",
   "style": "lib/index.css",
   "files": [
