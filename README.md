@@ -5,7 +5,7 @@ aigodata团队发布的基于ElementUI的定制主题
 ## 正常安装
 
       
-      npm install element-theme
+      npm i aigodata-element-theme
 
 ## 代码地址
 
