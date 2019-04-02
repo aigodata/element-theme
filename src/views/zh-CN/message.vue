@@ -80,7 +80,6 @@
       open() {
         this.$message('这是一条消息提示');
       },
-
       openVn() {
         const h = this.$createElement;
         this.$message({
@@ -89,10 +88,6 @@
             h('i', {style: 'color: teal'}, 'VNode')
           ])
         });
-      },
-
-      open() {
-        this.$message('这是一条消息提示');
       },
       open2() {
         this.$message({

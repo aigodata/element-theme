@@ -193,7 +193,7 @@
     methods: {
       handleClose(done) {
         this.$confirm('确认关闭？')
-          .then(_ => {
+          .then(() => {
             done();
           })
           .catch(_ => {});
