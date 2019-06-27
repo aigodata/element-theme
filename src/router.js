@@ -50,6 +50,10 @@ export default new Router({
 							component: () => import('./views/zh-CN/icon.vue')
 						},
 						{
+							path: 'border', name: 'border', meta: {name: '边框'},
+							component: () => import('./views/zh-CN/border.vue')
+						},
+						{
 							path: 'button', name: 'button', meta: {name: '按钮'},
 							component: () => import('./views/zh-CN/button.vue')
 						},

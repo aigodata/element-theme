@@ -23,7 +23,9 @@
                 <li class="nav-item"><a href="#/zh-CN/color" class="">Color 色彩</a></li>
                 <!--<li class="nav-item"><a href="#/zh-CN/typography" class="">Typography 字体</a></li>-->
                 <!--<li class="nav-item"><a href="#/zh-CN/icon" class="">Icon 图标</a></li>-->
+                <li class="nav-item"><a href="#/zh-CN/border" class="">Border 边框</a></li>
                 <li class="nav-item"><a href="#/zh-CN/button" class="">Button 按钮</a></li>
+                <li class="nav-item"><a href="#/zh-CN/link" class="">Link 文字链接</a></li>
               </ul>
             </div>
             <div class="nav-group">
