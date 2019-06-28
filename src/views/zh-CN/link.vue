@@ -15,13 +15,12 @@
     <div class="demo-block demo-zh-CN demo-link">
       <div class="source">
         <div>
-          <div><a href="https://element.eleme.io" target="_blank" class="el-link el-link--default is-underline">
-            <!----><span class="el-link--inner">默认链接</span><!----></a> <a class="el-link el-link--primary is-underline">
-            <!----><span class="el-link--inner">主要链接</span><!----></a> <a class="el-link el-link--success is-underline">
-            <!----><span class="el-link--inner">成功链接</span><!----></a> <a class="el-link el-link--warning is-underline">
-            <!----><span class="el-link--inner">警告链接</span><!----></a> <a class="el-link el-link--danger is-underline">
-            <!----><span class="el-link--inner">危险链接</span><!----></a> <a class="el-link el-link--info is-underline">
-            <!----><span class="el-link--inner">信息链接</span><!----></a></div>
+          <el-link href="https://element.eleme.io" target="_blank">默认链接</el-link>
+          <el-link type="primary">主要链接</el-link>
+          <el-link type="success">成功链接</el-link>
+          <el-link type="warning">警告链接</el-link>
+          <el-link type="danger">危险链接</el-link>
+          <el-link type="info">信息链接</el-link>
         </div>
       </div>
     </div>
@@ -34,13 +33,12 @@
     <div class="demo-block demo-zh-CN demo-link">
       <div class="source">
         <div>
-          <div><a class="el-link el-link--default is-disabled"><!----><span class="el-link--inner">默认链接</span><!---->
-          </a> <a class="el-link el-link--primary is-disabled"><!----><span class="el-link--inner">主要链接</span><!---->
-          </a> <a class="el-link el-link--success is-disabled"><!----><span class="el-link--inner">成功链接</span><!---->
-          </a> <a class="el-link el-link--warning is-disabled"><!----><span class="el-link--inner">警告链接</span><!---->
-          </a> <a class="el-link el-link--danger is-disabled"><!----><span class="el-link--inner">危险链接</span><!----></a>
-            <a class="el-link el-link--info is-disabled"><!----><span class="el-link--inner">信息链接</span><!----></a>
-          </div>
+          <el-link disabled>默认链接</el-link>
+          <el-link type="primary" disabled>主要链接</el-link>
+          <el-link type="success" disabled>成功链接</el-link>
+          <el-link type="warning" disabled>警告链接</el-link>
+          <el-link type="danger" disabled>危险链接</el-link>
+          <el-link type="info" disabled>信息链接</el-link>
         </div>
       </div>
     </div>
@@ -53,9 +51,8 @@
     <div class="demo-block demo-zh-CN demo-link">
       <div class="source">
         <div>
-          <div><a class="el-link el-link--default"><!----><span class="el-link--inner">无下划线</span><!----></a> <a
-            class="el-link el-link--default is-underline"><!----><span class="el-link--inner">有下划线</span><!----></a>
-          </div>
+          <el-link :underline="false">无下划线</el-link>
+          <el-link>有下划线</el-link>
         </div>
       </div>
     </div>
@@ -68,9 +65,8 @@
     <div class="demo-block demo-zh-CN demo-link">
       <div class="source">
         <div>
-          <div><a class="el-link el-link--default is-underline"><i class="el-icon-edit"></i><span
-            class="el-link--inner">编辑</span><!----></a> <a class="el-link el-link--default is-underline"><!----><span
-            class="el-link--inner">查看<i class="el-icon-view el-icon--right"></i></span><!----></a></div>
+          <el-link icon="el-icon-edit">编辑</el-link>
+          <el-link>查看<i class="el-icon-view el-icon--right"></i> </el-link>
         </div>
       </div>
     </div>

@@ -37,6 +37,18 @@
       </div>
     </div>
 
+    <h3 id="yan-ge-bu-shu">
+      <a href="#yan-ge-bu-shu" aria-hidden="true" class="header-anchor">¶</a>
+      严格步数
+    </h3>
+    <div class="demo-block demo-zh-CN demo-input-number">
+      <div class="source">
+        <div>
+          <el-input-number v-model="num10" :step="2" step-strictly></el-input-number>
+        </div>
+      </div>
+    </div>
+
     <h3 id="jing-du">
       <a href="#jing-du" aria-hidden="true" class="header-anchor">¶</a>
       精度
@@ -84,6 +96,8 @@
         num2: 1,
         // 步数
         num3: 5,
+        // 严格步数
+        num10: 2,
         // 精度
         num9: 1,
         // 尺寸
@@ -108,7 +122,7 @@
 
   }
 
-  .page-input-number .demo-block.demo-input-number .el-input-number+.el-input-number {
+  .page-input-number .demo-block.demo-input-number .el-input-number + .el-input-number {
     margin-left: 10px;
   }
 </style>

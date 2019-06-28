@@ -272,18 +272,23 @@
     </h3>
     <div class="demo-block demo-zh-CN demo-input">
       <div class="source">
-        <div>
-          <div class="el-input"><!----><input type="text" autocomplete="off" placeholder="请输入内容" maxlength="10"
-                                              class="el-input__inner"><!----><span class="el-input__suffix"><span
-            class="el-input__suffix-inner"><!----><!----><!----><span class="el-input__count"><span
-            class="el-input__count-inner">
-            0/10
-          </span></span></span><!----></span><!----><!----></div>
-          <div style="margin: 20px 0px;"></div>
-          <div class="el-textarea"><textarea autocomplete="off" placeholder="请输入内容" maxlength="30"
-                                             class="el-textarea__inner" style="min-height: 33px;"></textarea><span
-            class="el-input__count">0/30</span></div>
-        </div>
+        <el-input
+          type="text"
+          placeholder="请输入内容"
+          v-model="text"
+          maxlength="10"
+          show-word-limit
+        >
+        </el-input>
+        <div style="margin: 20px 0;"></div>
+        <el-input
+          type="textarea"
+          placeholder="请输入内容"
+          v-model="textarea"
+          maxlength="30"
+          show-word-limit
+        >
+        </el-input>
       </div>
     </div>
   </section>
