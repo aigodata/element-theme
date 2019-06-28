@@ -40,6 +40,7 @@
       <a href="#dong-tai-bian-ji-biao-qian" aria-hidden="true" class="header-anchor">¶</a>
       动态编辑标签
     </h3>
+    <p>动态编辑标签可以通过点击标签关闭按钮后触发的 close 事件来实现</p>
     <div class="demo-block demo-zh-CN demo-tag">
       <div class="source">
         <el-tag
@@ -68,12 +69,44 @@
       <a href="#bu-tong-chi-cun" aria-hidden="true" class="header-anchor">¶</a>
       不同尺寸
     </h3>
+    <p>Tag 组件提供除了默认值以外的三种尺寸，可以在不同场景下选择合适的按钮尺寸。</p>
     <div class="demo-block demo-zh-CN demo-tag">
       <div class="source">
         <el-tag closable>默认标签</el-tag>
         <el-tag size="medium" closable>中等标签</el-tag>
         <el-tag size="small" closable>小型标签</el-tag>
         <el-tag size="mini" closable>超小标签</el-tag>
+      </div>
+    </div>
+
+    <h3 id="bu-tong-zhu-ti">
+      <a href="#bu-tong-zhu-ti" aria-hidden="true" class="header-anchor">¶</a>
+      不同主题
+    </h3>
+    <p>Tag 组件提供了三个不同的主题：dark、light 和 plain</p>
+    <div class="demo-block demo-zh-CN demo-tag">
+      <div class="source">
+        <div class="tag-group">
+          <span class="tag-group__title">Dark</span>
+          <el-tag
+            v-for="item in items"
+            :key="item.label"
+            :type="item.type"
+            effect="dark">
+            {{ item.label }}
+          </el-tag>
+        </div>
+        <div class="tag-group">
+          <span class="tag-group__title">Plain</span>
+          <el-tag
+            v-for="item in items"
+            :key="item.label"
+            :type="item.type"
+            effect="plain">
+            {{ item.label }}
+          </el-tag>
+        </div>
+
       </div>
     </div>
   </section>
@@ -91,6 +124,14 @@
           { name: '标签三', type: 'info' },
           { name: '标签四', type: 'warning' },
           { name: '标签五', type: 'danger' }
+        ],
+        // 不同主题
+        items: [
+          { type: '', label: '标签一' },
+          { type: 'success', label: '标签二' },
+          { type: 'info', label: '标签三' },
+          { type: 'danger', label: '标签四' },
+          { type: 'warning', label: '标签五' }
         ],
         // 动态编辑标签
         dynamicTags: ['标签一', '标签二', '标签三'],

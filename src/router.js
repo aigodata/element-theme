@@ -214,6 +214,10 @@ export default new Router({
 							component: () => import('./views/zh-CN/collapse.vue')
 						},
 						{
+							path: 'calendar', name: 'calendar', meta: {name: '日历'},
+							component: () => import('./views/zh-CN/calendar.vue')
+						},
+						{
 							path: 'timeline', name: 'timeline', meta: {name: 'Timeline时间线'},
 							component: () => import('./views/zh-CN/timeline.vue')
 						}

@@ -155,3 +155,204 @@
   -webkit-transform: scale(.7);
   transform: scale(.7)
 }
+
+/* 不同主题 */
+
+.el-tag--dark {
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+  color: #fff
+}
+
+.el-tag--dark, .el-tag--dark.is-hit {
+  border-color: #2aa1ef
+}
+
+.el-tag--dark .el-tag__close {
+  color: #fff
+}
+
+.el-tag--dark .el-tag__close:hover {
+  color: #fff;
+  background-color: #66b1ff
+}
+
+.el-tag--dark.el-tag--info {
+  -webkit-box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
+  box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
+  background: linear-gradient(to top, #585b69 , #74767e);
+  border-color: #585b69;
+  color: #fff
+}
+
+.el-tag--dark.el-tag--info.is-hit {
+  border-color: #585b69
+}
+
+.el-tag--dark.el-tag--info .el-tag__close {
+  color: #fff
+}
+
+.el-tag--dark.el-tag--info .el-tag__close:hover {
+  color: #fff;
+  background-color: #a6a9ad
+}
+
+.el-tag--dark.el-tag--success {
+  -webkit-box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
+  box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
+  background: linear-gradient(to top, #45c130 , #63ce4a);
+  border-color: #45c130;
+  color: #fff
+}
+
+.el-tag--dark.el-tag--success.is-hit {
+  border-color: #67c23a
+}
+
+.el-tag--dark.el-tag--success .el-tag__close {
+  color: #fff
+}
+
+.el-tag--dark.el-tag--success .el-tag__close:hover {
+  color: #fff;
+  background-color: #85ce61
+}
+
+.el-tag--dark.el-tag--warning {
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
+  box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
+  background: linear-gradient(to top, #fd8824 , #fd9a44);
+  border-color: #fd8824;
+  color: #fff
+}
+
+.el-tag--dark.el-tag--warning.is-hit {
+  border-color: #fd8824
+}
+
+.el-tag--dark.el-tag--warning .el-tag__close {
+  color: #fff
+}
+
+.el-tag--dark.el-tag--warning .el-tag__close:hover {
+  color: #fff;
+  background-color: #ebb563
+}
+
+.el-tag--dark.el-tag--danger {
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
+  background: linear-gradient(to top, #f85d63 , #fd787d);
+  border-color: #f85d63;
+  color: #fff
+}
+
+.el-tag--dark.el-tag--danger.is-hit {
+  border-color: #f85d63
+}
+
+.el-tag--dark.el-tag--danger .el-tag__close {
+  color: #fff
+}
+
+.el-tag--dark.el-tag--danger .el-tag__close:hover {
+  color: #fff;
+  background-color: #f78989
+}
+
+.el-tag--plain {
+  background-color: #fff;
+  border-color: #2aa1ef;
+  color: #2aa1ef
+}
+
+.el-tag--plain.is-hit {
+  border-color: #2aa1ef
+}
+
+.el-tag--plain .el-tag__close {
+  color: #409eff
+}
+
+.el-tag--plain .el-tag__close:hover {
+  color: #fff;
+  background-color: #409eff
+}
+
+.el-tag--plain.el-tag--info {
+  background-color: #fff;
+  border-color: #545866;
+  color: #545866
+}
+
+.el-tag--plain.el-tag--info.is-hit {
+  border-color: #545866
+}
+
+.el-tag--plain.el-tag--info .el-tag__close {
+  color: #909399
+}
+
+.el-tag--plain.el-tag--info .el-tag__close:hover {
+  color: #fff;
+  background-color: #909399
+}
+
+.el-tag--plain.el-tag--success {
+  background-color: #fff;
+  border-color: #55c83d;
+  color: #55c83d
+}
+
+.el-tag--plain.el-tag--success.is-hit {
+  border-color: #55c83d
+}
+
+.el-tag--plain.el-tag--success .el-tag__close {
+  color: #67c23a
+}
+
+.el-tag--plain.el-tag--success .el-tag__close:hover {
+  color: #fff;
+  background-color: #67c23a
+}
+
+.el-tag--plain.el-tag--warning {
+  background-color: #fff;
+  border-color: #f67a0f;
+  color: #f67a0f
+}
+
+.el-tag--plain.el-tag--warning.is-hit {
+  border-color: #f67a0f
+}
+
+.el-tag--plain.el-tag--warning .el-tag__close {
+  color: #e6a23c
+}
+
+.el-tag--plain.el-tag--warning .el-tag__close:hover {
+  color: #fff;
+  background-color: #e6a23c
+}
+
+.el-tag--plain.el-tag--danger {
+  background-color: #fff;
+  border-color: #fb5258;
+  color: #fb5258
+}
+
+.el-tag--plain.el-tag--danger.is-hit {
+  border-color: #fb5258
+}
+
+.el-tag--plain.el-tag--danger .el-tag__close {
+  color: #f56c6c
+}
+
+.el-tag--plain.el-tag--danger .el-tag__close:hover {
+  color: #fff;
+  background-color: #f56c6c
+}
