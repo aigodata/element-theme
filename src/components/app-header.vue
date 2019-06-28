@@ -65,6 +65,22 @@
     color: #888;
   }
 
+  .headerWrapper .header h1 {
+    margin: 0;
+    float: left;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .headerWrapper .header .nav {
+    float: right;
+    height: 100%;
+    line-height: 80px;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+  }
+
   .headerWrapper .router-link-active {
     float: left;
   }

@@ -225,9 +225,9 @@
     </div>
 
     <h3 id="zi-ding-yi-mo-ban">
-    <a href="#zi-ding-yi-mo-ban" aria-hidden="true" class="header-anchor">¶</a>
-    自定义模板
-  </h3>
+      <a href="#zi-ding-yi-mo-ban" aria-hidden="true" class="header-anchor">¶</a>
+      自定义模板
+    </h3>
     <p>可自定义输入建议的显示</p>
     <div class="demo-block demo-zh-CN demo-input">
       <div class="source">
@@ -263,6 +263,27 @@
           placeholder="请输入内容"
           @select="handleSelect"
         ></el-autocomplete>
+      </div>
+    </div>
+
+    <h3 id="shu-ru-chang-du-xian-zhi">
+      <a href="#shu-ru-chang-du-xian-zhi" aria-hidden="true" class="header-anchor">¶</a>
+      输入长度限制
+    </h3>
+    <div class="demo-block demo-zh-CN demo-input">
+      <div class="source">
+        <div>
+          <div class="el-input"><!----><input type="text" autocomplete="off" placeholder="请输入内容" maxlength="10"
+                                              class="el-input__inner"><!----><span class="el-input__suffix"><span
+            class="el-input__suffix-inner"><!----><!----><!----><span class="el-input__count"><span
+            class="el-input__count-inner">
+            0/10
+          </span></span></span><!----></span><!----><!----></div>
+          <div style="margin: 20px 0px;"></div>
+          <div class="el-textarea"><textarea autocomplete="off" placeholder="请输入内容" maxlength="30"
+                                             class="el-textarea__inner" style="min-height: 33px;"></textarea><span
+            class="el-input__count">0/30</span></div>
+        </div>
       </div>
     </div>
   </section>
@@ -309,7 +330,7 @@
         // 远程搜索
         restaurants: [],
         state4: '',
-        timeout:  null
+        timeout: null
       }
     },
     methods: {
@@ -362,24 +383,30 @@
   .page-input {
 
   }
+
   .page-input .el-select .el-input {
     width: 130px;
   }
+
   .page-input .input-with-select .el-input-group__prepend {
     background-color: #fff;
   }
+
   .page-input .my-autocomplete li {
     line-height: normal;
     padding: 7px;
   }
+
   .page-input .my-autocomplete li .name {
     text-overflow: ellipsis;
     overflow: hidden;
   }
+
   .page-input .my-autocomplete li .addr {
     font-size: 12px;
     color: #b4b4b4;
   }
+
   .page-input .my-autocomplete li .highlighted .addr {
     color: #ddd;
   }
