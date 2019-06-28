@@ -129,6 +129,25 @@
         </div>
       </div>
     </div>
+
+    <h3 id="dang-zhi-you-yi-ye-shi-yin-cang-fen-ye">
+      <a href="#dang-zhi-you-yi-ye-shi-yin-cang-fen-ye" aria-hidden="true" class="header-anchor">¶</a>
+      当只有一页时隐藏分页
+    </h3>
+    <p>当只有一页时，通过设置 hide-on-single-page 属性来隐藏分页。</p>
+    <div class="demo-block demo-zh-CN demo-pagination">
+      <div class="source">
+        <div>
+          <el-switch v-model="value">
+          </el-switch>
+          <el-pagination
+            :hide-on-single-page="value"
+            :total="5"
+            layout="prev, pager, next">
+          </el-pagination>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -140,7 +159,8 @@
         currentPage1: 5,
         currentPage2: 5,
         currentPage3: 5,
-        currentPage4: 4
+        currentPage4: 4,
+        value: false
       }
     },
     methods: {

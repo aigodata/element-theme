@@ -45,6 +45,39 @@
   .headerWrapper .header {
     -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
     box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
+    background-color: #fff;
+    color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    line-height: 80px;
+    z-index: 100;
+    position: relative;
+  }
+
+  .headerWrapper .header .nav-item {
+    color: #888;
+  }
+
+  .headerWrapper .header .nav-item {
+    margin: 0;
+    float: left;
+    list-style: none;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .headerWrapper .header .nav-item.lang-item, .headerWrapper .header .nav-item:last-child {
+    cursor: default;
+    margin-left: 34px;
+  }
+
+  .header, .headerWrapper {
+    height: 80px;
+  }
+
+  .headerWrapper .header .nav-logo, .headerWrapper .header .nav-logo-small {
+    vertical-align: sub;
   }
 
   .headerWrapper .header .github-logo {

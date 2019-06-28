@@ -2,71 +2,52 @@
   <section class="page-calendar content element-doc content">
     <h2 id="border-bian-kuang">
       <a href="#button-an-niu" aria-hidden="true" class="header-anchor">¶</a>
-      calendar 文字链接
+      Calendar calendar
     </h2>
 
-    <p>文字超链接。</p>
+    <p>显示日期</p>
 
-    <h3 id="ji-chu-yong-fa">
-      <a href="#ji-chu-yong-fa" aria-hidden="true" class="header-anchor">¶</a>
-      基础用法
+    <h3 id="ji-ben">
+      <a href="#ji-ben" aria-hidden="true" class="header-anchor">¶</a>
+      基本
     </h3>
-    <p>基础的文字链接用法。</p>
     <div class="demo-block demo-zh-CN demo-calendar">
       <div class="source">
         <div>
-          <el-calendar href="https://element.eleme.io" target="_blank">默认链接</el-calendar>
-          <el-calendar type="primary">主要链接</el-calendar>
-          <el-calendar type="success">成功链接</el-calendar>
-          <el-calendar type="warning">警告链接</el-calendar>
-          <el-calendar type="danger">危险链接</el-calendar>
-          <el-calendar type="info">信息链接</el-calendar>
+          <el-calendar v-model="value"></el-calendar>
         </div>
       </div>
     </div>
 
-    <h3 id="jin-yong-zhuang-tai">
-      <a href="#jin-yong-zhuang-tai" aria-hidden="true" class="header-anchor">¶</a>
-      禁用状态
+    <h3 id="zi-ding-yi-nei-rong">
+      <a href="#zi-ding-yi-nei-rong" aria-hidden="true" class="header-anchor">¶</a>
+      自定义内容
     </h3>
-    <p>文字链接不可用状态。</p>
     <div class="demo-block demo-zh-CN demo-calendar">
       <div class="source">
         <div>
-          <el-calendar disabled>默认链接</el-calendar>
-          <el-calendar type="primary" disabled>主要链接</el-calendar>
-          <el-calendar type="success" disabled>成功链接</el-calendar>
-          <el-calendar type="warning" disabled>警告链接</el-calendar>
-          <el-calendar type="danger" disabled>危险链接</el-calendar>
-          <el-calendar type="info" disabled>信息链接</el-calendar>
+          <el-calendar>
+            <!-- 这里使用的是 2.5 slot 语法，对于新项目请使用 2.6 slot 语法-->
+            <template
+              slot="dateCell"
+              slot-scope="{date, data}">
+              <p :class="data.isSelected ? 'is-selected' : ''">
+                {{ data.day.split('-').slice(1).join('-') }} {{ data.isSelected ? '✔️' : ''}}
+              </p>
+            </template>
+          </el-calendar>
         </div>
       </div>
     </div>
 
-    <h3 id="xia-hua-xian">
-      <a href="#xia-hua-xian" aria-hidden="true" class="header-anchor">¶</a>
-      下划线
+    <h3 id="zi-ding-yi-fan-wei">
+      <a href="#zi-ding-yi-fan-wei" aria-hidden="true" class="header-anchor">¶</a>
+      自定义范围
     </h3>
-    <p>文字链接下划线。</p>
     <div class="demo-block demo-zh-CN demo-calendar">
       <div class="source">
         <div>
-          <el-calendar :underline="false">无下划线</el-calendar>
-          <el-calendar>有下划线</el-calendar>
-        </div>
-      </div>
-    </div>
-
-    <h3 id="tu-biao">
-      <a href="#tu-biao" aria-hidden="true" class="header-anchor">¶</a>
-      图标
-    </h3>
-    <p>带图标的文字链接可增强辨识度。</p>
-    <div class="demo-block demo-zh-CN demo-calendar">
-      <div class="source">
-        <div>
-          <el-calendar icon="el-icon-edit">编辑</el-calendar>
-          <el-calendar>查看<i class="el-icon-view el-icon--right"></i> </el-calendar>
+          <el-calendar :range="['2019-03-04', '2019-03-24']"></el-calendar>
         </div>
       </div>
     </div>
@@ -76,12 +57,21 @@
 
 <script>
 	export default {
-		name: "calendar"
+		name: "calendar",
+    data() {
+      return {
+        value: new Date()
+      }
+    }
 	}
 </script>
 
 <style scoped>
   .page-calendar {
 
+  }
+
+  .page-calendar .is-selected {
+    color: #fff;
   }
 </style>
