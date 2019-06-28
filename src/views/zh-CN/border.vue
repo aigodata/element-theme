@@ -1,5 +1,5 @@
 <template>
-  <section class="page-button content element-doc content">
+  <section class="page-border content element-doc content">
     <h2 id="border-bian-kuang">
       <a href="#button-an-niu" aria-hidden="true" class="header-anchor">¶</a>
       Border 边框
@@ -83,11 +83,11 @@
 </script><!---->
 
 <style scoped>
-  .page-button {
+  .page-border {
 
   }
 
-  .page-button .demo-radius .radius {
+  .page-border .demo-radius .radius {
     border-color: #dbdbdb;
     -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
     box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);

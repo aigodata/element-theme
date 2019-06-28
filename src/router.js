@@ -58,6 +58,10 @@ export default new Router({
 							component: () => import('./views/zh-CN/button.vue')
 						},
 						{
+							path: 'link', name: 'link', meta: {name: '文字链接'},
+							component: () => import('./views/zh-CN/link.vue')
+						},
+						{
 							path: 'radio', name: 'radio', meta: {name: '单选框'},
 							component: () => import('./views/zh-CN/radio.vue')
 						},

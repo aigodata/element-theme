@@ -15,3 +15,8 @@ aigodata团队发布的基于ElementUI的定制主题
 ## 演示地址
 
       https://aigodata.github.io/element-theme
+
+## 
+
+      npm uninstall element-ui
+      npm install element-ui --save
