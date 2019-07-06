@@ -12,6 +12,6 @@
 </script>
 
 <style lang="scss">
-  @import '../../lib/theme-chalk/index';
+   @import '../../lib/theme-chalk/index.scss';
 </style>
 
