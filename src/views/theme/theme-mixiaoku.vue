@@ -12,5 +12,5 @@
 </script>
 
 <style lang="scss">
-  @import '../../lib/theme-mixiaoku/index';
+  @import '../../lib/theme-mixiaoku/index.scss';
 </style>
