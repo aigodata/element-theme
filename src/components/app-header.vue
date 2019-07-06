@@ -51,22 +51,21 @@
     methods: {
       changeTheme(theme) {
         this.$store.commit("theme", theme);
+        let pathName = location.pathname
         if (process.env.NODE_ENV === "production") {
-          let { pathname } = window.location;
-          let id = 'aigodata-style';
-          let t = document.head.querySelector(`#${id}`);
-          if (!t || t.nodeType != 1) {
-            t = document.createElement('link');
-            document.head.appendChild(t);
+          let id = 'aigodata-element-theme';
+          let link = document.head.querySelector(`#${id}`);
+          // 不存在新增
+          if (!link) {
+            link = document.createElement('link');
+            document.head.appendChild(link);
+            link.setAttribute('id', id);
+            link.setAttribute('charset', 'utf-8');
+            link.setAttribute('type', 'text/css');
           }
-          t.setAttribute('id', id);
-          t.setAttribute('charset', 'utf-8');
-          t.setAttribute('rel', 'stylesheet');
-          t.setAttribute('type', 'text/css');
-          t.setAttribute('href', `${pathname}lib/${theme}/index.css?${Math.random()}`);
+          link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Math.random()}`);
         } else {
             let origin = location.origin
-            let pathName = location.pathname
             let paths = this.$route.path.split('/');
             let currentModule = paths[paths.length - 1];
             window.location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
