@@ -19,6 +19,6 @@
 <!-- 页面配合主题进行颜色修改 -->
 <style>
   #body-theme-mixiaoku {
-    background-color: rgba(255, 0, 0, 0.2);
+    /* background-color: rgba(255, 0, 0, 0.2); */
   }
 </style>

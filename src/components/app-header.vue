@@ -56,9 +56,10 @@
         let paths = this.$route.path.split('/');
         let currentModule = paths[paths.length - 1];
         window.location.href = `${origin}${pathName}#/zh-CN/${theme}/${currentModule}`
-        setTimeout( () => {
+        // 有缓存....还是强刷下
+        setTimeout(() => {
           window.location.reload();
-        } , 0)
+        }, 0)
       }
     },
     mounted() {
