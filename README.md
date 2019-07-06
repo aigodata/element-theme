@@ -19,6 +19,10 @@
 
       git clone 工程  
       使用 git 切换版本
+      
+## 寻找element-ui的css
+
+      /element-theme/node_modules/element-ui
 
 ## 
 
