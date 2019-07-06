@@ -49,14 +49,14 @@
       }
     },
     methods: {
-      changeTheme(theme) {
-        if (theme === this.$store.getters.theme) return
+      changeTheme(theme, isLoad) {
+        if (theme === this.$store.getters.theme && !isLoad) return
         this.$store.commit("theme", theme);
         let pathName = location.pathname
         let origin = location.origin
         let paths = this.$route.path.split('/');
         let currentModule = paths[paths.length - 1];
-//        if (process.env.NODE_ENV === "production") {
+        if (process.env.NODE_ENV === "production") {
           let id = 'aigodata-element-theme';
           let link = document.querySelector(`#${id}`);
           // 不存在新增
@@ -71,9 +71,9 @@
           link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
           this.$store.commit("loading", true);
           this.$router.push(`/zh-CN/${theme}/${currentModule}`)
-//        } else {
-//            location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
-//        }
+        } else {
+            location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
+        }
       }
     },
     mounted() {
@@ -84,7 +84,7 @@
       }
       document.body.setAttribute('id', 'body-' + theme)
       if (process.env.NODE_ENV === "production") {
-        this.changeTheme(theme);
+        this.changeTheme(theme, true);
       }
     }
   }
