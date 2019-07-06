@@ -52,6 +52,9 @@
       changeTheme(theme) {
         this.$store.commit("theme", theme);
         let pathName = location.pathname
+        let origin = location.origin
+        let paths = this.$route.path.split('/');
+        let currentModule = paths[paths.length - 1];
         if (process.env.NODE_ENV === "production") {
           let id = 'aigodata-element-theme';
           let link = document.head.querySelector(`#${id}`);
@@ -65,11 +68,9 @@
             link.setAttribute('type', 'text/css');
           }
           link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
+          this.$router.push(`/zh-CN/${theme}/${currentModule}`)
         } else {
-            let origin = location.origin
-            let paths = this.$route.path.split('/');
-            let currentModule = paths[paths.length - 1];
-            window.location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
+            location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
         }
       }
     },
@@ -78,6 +79,7 @@
       if (!theme) {
         theme = 'theme-chalk';
         this.$store.commit("theme", theme);
+        document.body.setAttribute('id', 'body-' + theme)
       }
       if (process.env.NODE_ENV === "production") {
         this.changeTheme(theme);
