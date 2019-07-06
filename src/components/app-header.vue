@@ -60,10 +60,11 @@
             link = document.createElement('link');
             document.head.appendChild(link);
             link.setAttribute('id', id);
+            link.setAttribute('rel', 'stylesheet');
             link.setAttribute('charset', 'utf-8');
             link.setAttribute('type', 'text/css');
           }
-          link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Math.random()}`);
+          link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
         } else {
             let origin = location.origin
             let paths = this.$route.path.split('/');
@@ -77,6 +78,9 @@
       if (!theme) {
         theme = 'theme-chalk';
         this.$store.commit("theme", theme);
+      }
+      if (process.env.NODE_ENV === "production") {
+        this.changeTheme(theme);
       }
     }
   }
