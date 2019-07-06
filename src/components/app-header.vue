@@ -55,11 +55,27 @@
         let pathName = location.pathname
         let paths = this.$route.path.split('/');
         let currentModule = paths[paths.length - 1];
-        window.location.href = `${origin}${pathName}#/zh-CN/${theme}/${currentModule}`
-        // 有缓存....还是强刷下
-        setTimeout(() => {
-          window.location.reload();
-        }, 0)
+        window.location.href = `${origin}${pathName}#/zh-CN/${theme}/${currentModule}?${new Date().getTime()}`;
+        if (process.env.NODE_ENV === "production") {
+          let {
+            pathname
+          } = window.location;
+
+          let id = 'aigodata-style';
+          let t = document.head.querySelector(`#${id}`);
+          if (!t || t.nodeType != 1) {
+            t = document.createElement('link');
+            document.head.appendChild(t);
+          }
+          t.setAttribute('id', id);
+          t.setAttribute('charset', 'utf-8');
+          t.setAttribute('rel', 'stylesheet');
+          t.setAttribute('type', 'text/css');
+          t.setAttribute('href', `${pathname}lib/${theme}/index.css?${Math.random()}`);
+        } else {
+          // 有缓存....还是强刷下
+          // window.location.reload();
+        }
       }
     },
     mounted() {
@@ -67,23 +83,6 @@
       if (!theme) {
         theme = 'theme-chalk';
         this.$store.commit("theme", theme);
-      }
-      if (process.env.NODE_ENV == "production") {
-        let {
-          pathname
-        } = window.location;
-
-        let id = 'aigodata-style';
-        let t = document.head.querySelector(`#${id}`);
-        if (!t || t.nodeType != 1) {
-          t = document.createElement('link');
-          document.head.appendChild(t);
-        }
-        t.setAttribute('id', id);
-        t.setAttribute('charset', 'utf-8');
-        t.setAttribute('rel', 'stylesheet');
-        t.setAttribute('type', 'text/css');
-        t.setAttribute('href', `${pathname}lib/${theme}/index.css?${Math.random()}`);
       }
     }
   }
