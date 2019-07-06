@@ -123,13 +123,13 @@
     methods: {
       // 二次跳转-带主题标识
       redirectURL(path = this.$route.path) {
-        let query = JSON.parse(JSON.stringify(this.$route.query));
-        if (!('theme' in query)) {
-          Object.assign(query, { theme: this.theme })
-        }
+        // let query = JSON.parse(JSON.stringify(this.$route.query));
+        // if (!('theme' in query)) {
+        //   Object.assign(query, { theme: this.theme })
+        // }
         this.$router.push({
           path: path || '/',
-          query
+          // query
         })
       },
       // 导航菜单切换

@@ -17,21 +17,19 @@
         </a>
         <ul class="nav">
           <!--<li class="nav-item nav-versions">-->
-            <!--<el-dropdown trigger="click">-->
-              <!--<span class="el-dropdown-link link-font">-->
-                <!--2.7.0<i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
-              <!--</span>-->
-              <!--<el-dropdown-menu slot="dropdown">-->
-                <!--<el-dropdown-item>2.7.0</el-dropdown-item>-->
-              <!--</el-dropdown-menu>-->
-            <!--</el-dropdown>-->
+          <!--<el-dropdown trigger="click">-->
+          <!--<span class="el-dropdown-link link-font">-->
+          <!--2.7.0<i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
+          <!--</span>-->
+          <!--<el-dropdown-menu slot="dropdown">-->
+          <!--<el-dropdown-item>2.7.0</el-dropdown-item>-->
+          <!--</el-dropdown-menu>-->
+          <!--</el-dropdown>-->
           <!--</li>-->
-          <li class="nav-item" @click="changeTheme('theme-chalk')"
-              :class="{active: $store.getters.theme === 'theme-chalk'}">
+          <li class="nav-item" @click="changeTheme('theme-chalk')" :class="{active: $store.getters.theme === 'theme-chalk'}">
             白垩纪
           </li>
-          <li class="nav-item" @click="changeTheme('theme-mixiaoku')"
-              :class="{active: $store.getters.theme === 'theme-mixiaoku'}">
+          <li class="nav-item" @click="changeTheme('theme-mixiaoku')" :class="{active: $store.getters.theme === 'theme-mixiaoku'}">
             日食
           </li>
         </ul>
@@ -55,13 +53,36 @@
         this.$store.commit("theme", theme);
         let origin = location.origin
         let pathName = location.pathname
-        let hash = '#/zh-CN/'+ theme +'/'
-        location.href =  origin + pathName + '?theme='+theme + hash
+        let paths = this.$route.path.split('/');
+        let currentModule = paths[paths.length - 1];
+        window.location.href = `${origin}${pathName}#/zh-CN/${theme}/${currentModule}`
+        setTimeout( () => {
+          window.location.reload();
+        } , 0)
       }
     },
     mounted() {
-      if (!this.$store.getters.theme) {
-        this.$store.commit("theme", 'theme-chalk');
+      let theme = this.$store.getters.theme;
+      if (!theme) {
+        theme = 'theme-chalk';
+        this.$store.commit("theme", theme);
+      }
+      if (process.env.NODE_ENV == "production") {
+        let {
+          pathname
+        } = window.location;
+
+        let id = 'aigodata-style';
+        let t = document.head.querySelector(`#${id}`);
+        if (!t || t.nodeType != 1) {
+          t = document.createElement('link');
+          document.head.appendChild(t);
+        }
+        t.setAttribute('id', id);
+        t.setAttribute('charset', 'utf-8');
+        t.setAttribute('rel', 'stylesheet');
+        t.setAttribute('type', 'text/css');
+        t.setAttribute('href', `${pathname}lib/${theme}/index.css?${Math.random()}`);
       }
     }
   }
@@ -104,11 +125,13 @@
     cursor: pointer;
   }
 
-  .header, .headerWrapper {
+  .header,
+  .headerWrapper {
     height: 80px;
   }
 
-  .headerWrapper .header .nav-logo, .headerWrapper .header .nav-logo-small {
+  .headerWrapper .header .nav-logo,
+  .headerWrapper .header .nav-logo-small {
     vertical-align: sub;
   }
 
