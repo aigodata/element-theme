@@ -7,7 +7,7 @@
     name: 'theme-chalk',
     mounted() {
       document.body.setAttribute('id', 'body-theme-chalk')
-      this.$store.commit("loading", false)
+      // setTimeout(_ => (this.$store.commit("loading", false)), 1000)
     }
   }
 </script>

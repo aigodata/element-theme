@@ -69,6 +69,9 @@
             link.setAttribute('type', 'text/css');
           }
           link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
+          link.onload = link.onerror = function() {
+            this.$store.commit("loading", false);
+          }
           this.$store.commit("loading", true);
           this.$router.push(`/zh-CN/${theme}/${currentModule}`)
         } else {
