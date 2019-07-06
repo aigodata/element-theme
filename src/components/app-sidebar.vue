@@ -105,8 +105,8 @@
 </template>
 
 <script>
-  import ThemeChalk from '!!raw-loader!sass-loader!./../lib/theme-chalk/index.scss'
-  import ThemeTest from '!!raw-loader!sass-loader!./../lib/theme-test/index.scss'
+//  import ThemeChalk from '!!raw-loader!sass-loader!./../lib/theme-chalk/index.scss'
+//  import ThemeTest from '!!raw-loader!sass-loader!../lib/theme-mixiaoku/index.scss'
 
   export default {
     name: 'app-sidebar',
@@ -134,62 +134,63 @@
       },
       // 导航菜单切换
       handleNavigationChange(path) {
+        let theme = this.$store.getters.theme
         // 先不用pathName了,为后续国际化留个口子
-        let international = 'zh-CN';
+        let international = 'zh-CN/' + theme + '';
         this.redirectURL(`/${international}/${path}`);
       },
       // 主题
       handleThemeCssChange() {
-        let isDev = process.env.NODE_ENV == "development";
-        let themes = {
-          chalk: isDev ? ThemeChalk : 'chalk',
-          test: isDev ? ThemeTest : 'test'
-        }
-        if (isDev) {
-          let themes = {
-            chalk: ThemeChalk,
-            test: ThemeTest
-          }
-          if (this.$route.query.theme in themes) {
-            let customStyleId = 'aigodata-style';
-            let customStyle = document.head.querySelector(`#${customStyleId}`);
-
-            if (!customStyle || customStyle.nodeType != 1) {
-              customStyle = document.createElement('style');
-              customStyle.type = 'text/css';
-              customStyle.id = customStyleId;
-              document.head.append(customStyle);
-            }
-            customStyle.innerHTML = themes[this.$route.query.theme];
-          }
-        } else {
-          if (this.$route.query.theme in themes) {
-            let {
-              host,
-              protocol,
-              pathname
-            } = window.location;
-
-            let id = 'aigodata-style';
-            let t = document.head.querySelector(`#${id}`);
-            if (!t || t.nodeType != 1) {
-              t = document.createElement('link');
-              document.head.appendChild(t);
-            }
-            t.setAttribute('id', id);
-            t.setAttribute('charset', 'utf-8');
-            t.setAttribute('rel', 'stylesheet');
-            t.setAttribute('type', 'text/css');
-            t.setAttribute('href', `${pathname}css/theme-${themes[this.$route.query.theme]}.css?${Math.random()}`);
-          }
-        }
+//        let isDev = process.env.NODE_ENV == "development";
+//        let themes = {
+//          chalk: isDev ? ThemeChalk : 'chalk',
+//          test: isDev ? ThemeTest : 'test'
+//        }
+//        if (isDev) {
+//          let themes = {
+//            chalk: ThemeChalk,
+//            test: ThemeTest
+//          }
+//          if (this.$route.query.theme in themes) {
+//            let customStyleId = 'aigodata-style';
+//            let customStyle = document.head.querySelector(`#${customStyleId}`);
+//
+//            if (!customStyle || customStyle.nodeType != 1) {
+//              customStyle = document.createElement('style');
+//              customStyle.type = 'text/css';
+//              customStyle.id = customStyleId;
+//              document.head.append(customStyle);
+//            }
+//            customStyle.innerHTML = themes[this.$route.query.theme];
+//          }
+//        } else {
+//          if (this.$route.query.theme in themes) {
+//            let {
+//              host,
+//              protocol,
+//              pathname
+//            } = window.location;
+//
+//            let id = 'aigodata-style';
+//            let t = document.head.querySelector(`#${id}`);
+//            if (!t || t.nodeType != 1) {
+//              t = document.createElement('link');
+//              document.head.appendChild(t);
+//            }
+//            t.setAttribute('id', id);
+//            t.setAttribute('charset', 'utf-8');
+//            t.setAttribute('rel', 'stylesheet');
+//            t.setAttribute('type', 'text/css');
+//            t.setAttribute('href', `${pathname}css/theme-${themes[this.$route.query.theme]}.css?${Math.random()}`);
+//          }
+//        }
       }
     },
     mounted() {
-      if (!('theme' in this.$route.query)) {
-        return this.redirectURL();
-      }
-      this.handleThemeCssChange();
+//      if (!('theme' in this.$route.query)) {
+//        return this.redirectURL();
+//      }
+//      this.handleThemeCssChange();
     }
   }
 </script>

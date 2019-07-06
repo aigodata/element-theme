@@ -1,12 +1,11 @@
 {
-  "name": "aigodata-element-theme",
-  "version": "2.7.0",
+  "name": "@aigodata/element-theme",
+  "version": "2.10.0",
   "author": {
-    "name": "tm-roamer",
-    "email": "tm165822@163.com"
+    "name": "aigodata"
   },
-  "main": "lib/index.css",
-  "style": "lib/index.css",
+  "main": "docs/lib/theme-chalk/index.css",
+  "style": "docs/lib/theme-chalk/index.css",
   "files": [
     "lib"
   ],
@@ -32,6 +31,7 @@
   "homepage": "https://github.com/aigodata/element-theme#element-theme",
   "dependencies": {
     "highlight.js": "^9.13.1",
+    "store": "^2.0.12",
     "vue": "^2.5.17",
     "element-ui": "^2.10.0",
     "vue-router": "^3.0.1",
@@ -40,7 +40,6 @@
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
     "@vue/cli-service": "^3.4.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",

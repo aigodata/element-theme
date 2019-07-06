@@ -15,18 +15,26 @@
           <img src="../assets/github.png">
         </a>
         <ul class="nav">
-          <li class="nav-item nav-versions">
-            <el-dropdown trigger="click">
-              <span class="el-dropdown-link link-font">
-                2.7.0<i class="el-icon-arrow-down el-icon--right"></i>
-              </span>
-              <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>2.7.0</el-dropdown-item>
-              </el-dropdown-menu>
-            </el-dropdown>
+          <!--<li class="nav-item nav-versions">-->
+            <!--<el-dropdown trigger="click">-->
+              <!--<span class="el-dropdown-link link-font">-->
+                <!--2.7.0<i class="el-icon-arrow-down el-icon&#45;&#45;right"></i>-->
+              <!--</span>-->
+              <!--<el-dropdown-menu slot="dropdown">-->
+                <!--<el-dropdown-item>2.7.0</el-dropdown-item>-->
+              <!--</el-dropdown-menu>-->
+            <!--</el-dropdown>-->
+          <!--</li>-->
+          <!--<li class="nav-item lang-item">-->
+            <!--语言-->
+          <!--</li>-->
+          <li class="nav-item" @click="changeTheme('theme-chalk')"
+              :class="{active: $store.getters.theme === 'theme-chalk'}">
+            白垩纪
           </li>
-          <li class="nav-item lang-item">
-            语言
+          <li class="nav-item" @click="changeTheme('theme-mixiaoku')"
+              :class="{active: $store.getters.theme === 'theme-mixiaoku'}">
+            日食
           </li>
         </ul>
 
@@ -38,6 +46,17 @@
 <script>
   export default {
     name: 'app-header',
+    data() {
+      return {
+        theme: []
+      }
+    },
+    methods: {
+      changeTheme(theme) {
+        this.$store.commit("theme", theme);
+        this.$router.push({name: theme})
+      }
+    }
   }
 </script>
 
@@ -57,6 +76,12 @@
 
   .headerWrapper .header .nav-item {
     color: #888;
+    padding: 0 10px;
+  }
+
+  .headerWrapper .header .nav-item:hover,
+  .headerWrapper .header .nav-item.active {
+    color: #549ef8;
   }
 
   .headerWrapper .header .nav-item {
@@ -65,11 +90,6 @@
     list-style: none;
     position: relative;
     cursor: pointer;
-  }
-
-  .headerWrapper .header .nav-item.lang-item, .headerWrapper .header .nav-item:last-child {
-    cursor: default;
-    margin-left: 34px;
   }
 
   .header, .headerWrapper {
@@ -92,10 +112,6 @@
   .headerWrapper .link-font {
     color: #888;
     font-size: 16px;
-  }
-
-  .headerWrapper .header .nav-item {
-    color: #888;
   }
 
   .headerWrapper .header h1 {

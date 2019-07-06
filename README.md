@@ -1,6 +1,6 @@
 # element-theme
 
-aigodata团队发布的基于ElementUI的定制主题
+基于ElementUI的定制主题
 
 ## 正常安装
 
