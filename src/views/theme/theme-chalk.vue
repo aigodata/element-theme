@@ -6,7 +6,7 @@
   export default {
     name: 'theme-chalk',
     mounted() {
-      // location.reload()
+      document.body.setAttribute('id', 'body-theme-chalk')
     }
   }
 </script>
