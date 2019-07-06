@@ -6,7 +6,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-		theme: 'theme-chalk',
+		theme: '',
   },
   mutations: {
 		theme(state, params) {

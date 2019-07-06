@@ -5,6 +5,7 @@
         <h1>
           <a href="http://element-cn.eleme.io/#/zh-CN" target="_blank" class="router-link-active">
             <img src="../assets/logo.svg" alt="element-logo" class="nav-logo">
+            <span class="version">{{ version }}</span>
           </a>
           <img src="../assets/clothes.svg" class="clothes">
           <a href="https://github.com/aigodata" target="_blank" class="aigodata-logo">
@@ -25,9 +26,6 @@
               <!--</el-dropdown-menu>-->
             <!--</el-dropdown>-->
           <!--</li>-->
-          <!--<li class="nav-item lang-item">-->
-            <!--语言-->
-          <!--</li>-->
           <li class="nav-item" @click="changeTheme('theme-chalk')"
               :class="{active: $store.getters.theme === 'theme-chalk'}">
             白垩纪
@@ -44,17 +42,26 @@
 </template>
 
 <script>
+  import { version } from '../../package.json'
   export default {
     name: 'app-header',
     data() {
       return {
-        theme: []
+        version: version
       }
     },
     methods: {
       changeTheme(theme) {
         this.$store.commit("theme", theme);
-        this.$router.push({name: theme})
+        let origin = location.origin
+        let pathName = location.pathname
+        let hash = '#/zh-CN/'+ theme +'/'
+        location.href =  origin + pathName + '?theme='+theme + hash
+      }
+    },
+    mounted() {
+      if (!this.$store.getters.theme) {
+        this.$store.commit("theme", 'theme-chalk');
       }
     }
   }
@@ -72,6 +79,11 @@
     line-height: 80px;
     z-index: 100;
     position: relative;
+  }
+
+  .headerWrapper .header .version {
+    font-size: 14px;
+    padding-left: 5px;
   }
 
   .headerWrapper .header .nav-item {

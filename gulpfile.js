@@ -18,15 +18,15 @@ function compile(theme) {
 			cascade: false
 		}))
 		.pipe(cssmin())
-		.pipe(dest('./lib/' + theme + ' /'))
+		.pipe(dest('./lib/' + theme + '/'))
 		.pipe(rename('element-theme.min.css'))
-		.pipe(dest('./lib/' + theme + ' /' + version + '/'));
+		.pipe(dest('./lib/' + theme + '/' + version + '/'));
 }
 
 function copyfont(theme) {
 	return src('./src/lib/' + theme + '/fonts/**')
 		.pipe(cssmin())
-		.pipe(dest('./lib/' + theme + ' /' + version + '/fonts/'))
+		.pipe(dest('./lib/' + theme + '/' + version + '/fonts/'))
 }
 
 function copyLib() {
@@ -46,6 +46,7 @@ exports.build = series(
 	},
 	() => {
 		return copyfont(theme[1])
-	},
-	copyLib
+	}
 );
+
+exports.copyLib = series(copyLib);
