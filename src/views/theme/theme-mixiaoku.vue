@@ -7,7 +7,7 @@
     name: 'theme-mixiaoku',
     mounted() {
       document.body.setAttribute('id', 'body-theme-mixiaoku')
-      this.$store.commit("loading", false);
+      this.$store.commit("loading", false)
     }
   }
 </script>
