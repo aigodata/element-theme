@@ -2,7 +2,7 @@
   <div id="app" class="is-component">
     <!-- 头部 -->
     <app-header></app-header>
-    <div class="main-cnt">
+    <div class="main-cnt" v-loading="$store.state.loading">
       <div class="page-component__scroll">
         <el-scrollbar tag="div" ref="scrollbar">
           <div class="page-container page-component">
@@ -27,6 +27,10 @@
 
   export default {
     name: 'app',
+    data() {
+      return {}
+    },
+    methods: {},
     components: {
       appHeader,
       appSidebar

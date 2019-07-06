@@ -7,9 +7,9 @@ import empty from '@/views/empty.vue'
 Vue.use(Router)
 
 // 白垩纪
-let chalk = () => import('./views/theme/theme-chalk.vue')
+import chalk from './views/theme/theme-chalk.vue'
 // 日食
-let mixiaoku = () => import('./views/theme/theme-mixiaoku.vue')
+import mixiaoku from './views/theme/theme-mixiaoku.vue'
 
 let children = [
 	{

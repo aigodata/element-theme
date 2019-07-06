@@ -50,6 +50,7 @@
     },
     methods: {
       changeTheme(theme) {
+        if (theme === this.$store.getters.theme) return
         this.$store.commit("theme", theme);
         let pathName = location.pathname
         let origin = location.origin
@@ -57,7 +58,7 @@
         let currentModule = paths[paths.length - 1];
         if (process.env.NODE_ENV === "production") {
           let id = 'aigodata-element-theme';
-          let link = document.head.querySelector(`#${id}`);
+          let link = document.querySelector(`#${id}`);
           // 不存在新增
           if (!link) {
             link = document.createElement('link');
@@ -69,6 +70,7 @@
           }
           link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
           this.$router.push(`/zh-CN/${theme}/${currentModule}`)
+          this.$store.commit("loading", true);
         } else {
             location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
         }
