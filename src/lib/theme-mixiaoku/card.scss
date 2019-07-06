@@ -1,0 +1,27 @@
+.el-card {
+  border-radius: 4px;
+  border: 1px solid #ebeef5;
+  background-color: #fff;
+  overflow: hidden;
+  color: #303133;
+  -webkit-transition: .3s;
+  transition: .3s
+}
+
+.el-card.is-always-shadow, .el-card.is-hover-shadow:focus, .el-card.is-hover-shadow:hover {
+  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1)
+}
+
+.el-card__header {
+  width: calc(100% - 38px);
+  margin: 0 auto;
+  padding: 18px 0;
+  border-bottom: 1px solid #ebeef5;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+.el-card__body {
+  padding: 20px
+}

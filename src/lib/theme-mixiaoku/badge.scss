@@ -1,0 +1,71 @@
+.el-badge {
+  position: relative;
+  vertical-align: middle;
+  display: inline-block
+}
+
+.el-badge__content {
+  background-color: #fb5b5f;
+  border-radius: 10px;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  height: 18px;
+  line-height: 18px;
+  padding: 0 6px;
+  text-align: center;
+  white-space: nowrap;
+  border: none;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2)
+}
+
+.el-badge__content.is-fixed {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  -webkit-transform: translateY(-50%) translateX(100%);
+  transform: translateY(-50%) translateX(100%)
+}
+
+.el-badge__content.is-fixed.is-dot {
+  right: 5px
+}
+
+.el-badge__content.is-dot {
+  height: 8px;
+  width: 8px;
+  padding: 0;
+  right: 0;
+  border-radius: 50%
+}
+
+.el-badge__content--primary {
+  background-color: #1e9ff2;
+  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.2);
+  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.2)
+}
+
+.el-badge__content--success {
+  background-color: #50ca31;
+  -webkit-box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2);
+  box-shadow: 0px 2px 8px rgba(53, 207, 149, 0.2)
+}
+
+.el-badge__content--warning {
+  background-color: #ff9321;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2);
+  box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.2)
+}
+
+.el-badge__content--info {
+  background-color: #909399;
+  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2);
+  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.2)
+}
+
+.el-badge__content--danger {
+  background-color: #f56c6c;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.2)
+}
