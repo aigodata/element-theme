@@ -46,6 +46,7 @@ exports.build = series(
 	},
 	() => {
 		return copyfont(theme[1])
-	},
-	copyLib
+	}
 );
+
+exports.copyLib = series(copyLib);
