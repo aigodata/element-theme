@@ -23,7 +23,7 @@ export default new Vuex.Store({
   },
 	getters: {
 		theme: (state) => {
-			return state.theme || localStore.get('theme') || {}
+			return state.theme || localStore.get('theme') || 'theme-chalk'
 		},
 	}
 })

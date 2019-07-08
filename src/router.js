@@ -218,6 +218,14 @@ let children = [
 	{
 		path: 'timeline', name: 'timeline', meta: {name: 'Timeline时间线'},
 		component: () => import('./views/zh-CN/timeline.vue')
+	},
+	{
+		path: 'backtop', name: 'backtop', meta: {name: 'Backtop回到顶部'},
+		component: () => import('./views/zh-CN/backtop.vue')
+	},
+	{
+		path: 'infiniteScroll', name: 'infiniteScroll', meta: {name: 'InfiniteScroll无限滚动'},
+		component: () => import('./views/zh-CN/infiniteScroll.vue')
 	}
 ]
 
