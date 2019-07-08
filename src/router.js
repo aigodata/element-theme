@@ -212,6 +212,10 @@ let children = [
 		component: () => import('./views/zh-CN/collapse.vue')
 	},
 	{
+		path: 'divider', name: 'divider', meta: {name: 'Divider分割线'},
+		component: () => import('./views/zh-CN/divider.vue')
+	},
+	{
 		path: 'calendar', name: 'calendar', meta: {name: '日历'},
 		component: () => import('./views/zh-CN/calendar.vue')
 	},
