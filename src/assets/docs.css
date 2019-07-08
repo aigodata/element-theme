@@ -2030,9 +2030,13 @@ ul.language-list li {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background: #e8f3fe;
+  background: linear-gradient(to top, #f6f6f6 , #f9f9f9);
+  -webkit-box-shadow: 0px 2px 8px rgba(126, 126, 126, 0.1);
+  box-shadow: 0px 2px 8px rgba(126, 126, 126, 0.1);
   margin: 10px;
-  color: #7dbcfc
+  color: #585b6a;
+  border: 1px solid #efefef;
+  border-radius: 4px;
 }
 
 .infinite-list .infinite-list-item + .list-item {
@@ -2056,8 +2060,12 @@ ul.language-list li {
   align-items: center;
   justify-content: center;
   height: 50px;
-  background: #fff6f6;
-  color: #ff8484
+  border: 1px solid #fee2c0;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 38, 0.1);
+  box-shadow: 0px 2px 8px rgba(253, 147, 38, 0.1);
+  background: linear-gradient(to top, #ffefdb , #fff0dd);
+  border-radius: 4px;
+  color: #fd9326;
 }
 
 .infinite-list-wrapper .list-item + .list-item {
