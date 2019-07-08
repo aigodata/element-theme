@@ -53,7 +53,7 @@
   position: absolute;
   list-style: none;
   bottom: 0;
-  left: 50%;
+  //left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin: 0;
@@ -141,4 +141,91 @@
   -webkit-transform: translateY(-50%) translateX(10px);
   transform: translateY(-50%) translateX(10px);
   opacity: 0
+}
+
+.el-carousel__indicators {
+  position: absolute;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 2
+}
+
+.el-carousel__indicators--horizontal {
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%)
+}
+
+.el-carousel__indicators--vertical {
+  width: 30px;
+  left: auto;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%)
+}
+
+.el-carousel__indicators--outside {
+  bottom: 26px;
+  text-align: center;
+  position: static;
+  -webkit-transform: none;
+  transform: none
+}
+
+.el-carousel__indicators--outside .el-carousel__indicator:hover button {
+  opacity: .64
+}
+
+.el-carousel__indicators--outside button {
+  background-color: #c0c4cc;
+  opacity: .24
+}
+
+.el-carousel__indicators--labels {
+  left: 0;
+  right: 0;
+  -webkit-transform: none;
+  transform: none;
+  text-align: center
+}
+
+.el-carousel__indicators--labels .el-carousel__button {
+  height: auto;
+  width: auto;
+  padding: 2px 18px;
+  font-size: 12px
+}
+
+.el-carousel__indicators--labels .el-carousel__indicator {
+  padding: 6px 4px
+}
+
+.el-carousel__indicator {
+  background-color: transparent;
+  cursor: pointer
+}
+
+.el-carousel__indicator:hover button {
+  opacity: .72
+}
+
+.el-carousel__indicator--horizontal {
+  display: inline-block;
+  padding: 12px 4px
+}
+
+.el-carousel__indicator--vertical {
+  padding: 4px 12px
+}
+
+.el-carousel__indicator--vertical .el-carousel__button {
+  width: 2px;
+  height: 15px
+}
+
+.el-carousel__indicator.is-active button {
+  opacity: 1
 }

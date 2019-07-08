@@ -76,6 +76,21 @@
         </el-carousel>
       </div>
     </div>
+
+    <h3 id="fang-xiang">
+      <a href="#fang-xiang" aria-hidden="true" class="header-anchor">¶</a>
+      方向
+    </h3>
+    <p>默认情况下，direction 为 horizontal。通过设置 direction 为 vertical 来让走马灯在垂直方向上显示。</p>
+    <div class="demo-block demo-zh-CN demo-carousel">
+      <div class="source">
+        <el-carousel height="200px" direction="vertical" :autoplay="false">
+          <el-carousel-item v-for="item in 3" :key="item">
+            <h3 class="medium">{{ item }}</h3>
+          </el-carousel-item>
+        </el-carousel>
+      </div>
+    </div>
   </section>
 </template>
 
