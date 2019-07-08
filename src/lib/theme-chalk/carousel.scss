@@ -21,7 +21,7 @@
   border-radius: 50%;
   -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-  background-color: rgba(255, 255, 255, 0.5);
+  background: linear-gradient(to top, #dedede , #ffffff);
   color: #fff;
   position: absolute;
   top: 50%;
@@ -41,11 +41,13 @@
 }
 
 .el-carousel__arrow:hover {
- background: rgba(255, 255, 255, 1)
+ opacity: 0.8;
 }
 
 .el-carousel__arrow i {
-  color: #707070;
+  color: #6d6d6d;
+  font-size: 14px;
+  font-weight: bold;
   cursor: pointer
 }
 
