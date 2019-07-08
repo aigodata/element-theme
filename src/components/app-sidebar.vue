@@ -96,6 +96,7 @@
                 <li class="nav-item"><a @click="handleNavigationChange('timeline')" class="">Timeline 时间线</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('divider')" class="">Divider 分割线</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('calendar')" class="">Calendar 日历</a></li>
+                <li class="nav-item"><a @click="handleNavigationChange('image')" class="">Image 图片</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('backtop')" class="">Backtop 回到顶部</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('infiniteScroll')" class="">InfiniteScroll 无限滚动</a></li>
               </ul>

@@ -224,6 +224,10 @@ let children = [
 		component: () => import('./views/zh-CN/timeline.vue')
 	},
 	{
+		path: 'image', name: 'image', meta: {name: 'Image图片'},
+		component: () => import('./views/zh-CN/image.vue')
+	},
+	{
 		path: 'backtop', name: 'backtop', meta: {name: 'Backtop回到顶部'},
 		component: () => import('./views/zh-CN/backtop.vue')
 	},
