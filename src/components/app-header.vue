@@ -84,7 +84,7 @@
     mounted() {
       let theme = this.$store.getters.theme;
       if (!theme) {
-        theme = 'theme-mixiaoku';
+        theme = 'theme-chalk';
         this.$store.commit("theme", theme);
       }
       document.body.setAttribute('id', 'body-' + theme)
