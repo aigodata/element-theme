@@ -34,11 +34,15 @@
             style="{
               height: 100%;
               width: 100%;
-              background-color: #f2f5f6;
-              box-shadow: 0 0 6px rgba(0,0,0, .12);
+              border: 1px solid #2aa1ef;
+              -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+              box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+              background: linear-gradient(to top, #2aa1ef , #3eb1fc);
               text-align: center;
               line-height: 40px;
-              color: #1989fa;
+              color: #fff;
+              border-radius: 50%;
+              font-size: 15px;
             }"
           >
             UP
