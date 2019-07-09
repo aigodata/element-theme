@@ -12,32 +12,34 @@
     </h3>
     <div class="demo-block demo-zh-CN demo-datetime-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认</span>
-          <el-date-picker
-            v-model="value1"
-            type="datetime"
-            placeholder="选择日期时间">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">带快捷选项</span>
-          <el-date-picker
-            v-model="value2"
-            type="datetime"
-            placeholder="选择日期时间"
-            align="right"
-            :picker-options="pickerOptions1">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">设置默认时间</span>
-          <el-date-picker
-            v-model="value3"
-            type="datetime"
-            placeholder="选择日期时间"
-            default-time="12:00:00">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+              v-model="value1"
+              type="datetime"
+              placeholder="选择日期时间">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">带快捷选项</span>
+            <el-date-picker
+              v-model="value2"
+              type="datetime"
+              placeholder="选择日期时间"
+              align="right"
+              :picker-options="pickerOptions1">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">设置默认时间</span>
+            <el-date-picker
+              v-model="value3"
+              type="datetime"
+              placeholder="选择日期时间"
+              default-time="12:00:00">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -48,27 +50,29 @@
     </h3>
     <div class="demo-block demo-zh-CN demo-datetime-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认</span>
-          <el-date-picker
-            v-model="value4"
-            type="datetimerange"
-            range-separator="至"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">带快捷选项</span>
-          <el-date-picker
-            v-model="value5"
-            type="datetimerange"
-            :picker-options="pickerOptions2"
-            range-separator="至"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期"
-            align="right">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+              v-model="value4"
+              type="datetimerange"
+              range-separator="至"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">带快捷选项</span>
+            <el-date-picker
+              v-model="value5"
+              type="datetimerange"
+              :picker-options="pickerOptions2"
+              range-separator="至"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              align="right">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -79,26 +83,28 @@
     </h3>
     <div class="demo-block demo-zh-CN demo-datetime-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">起始日期时刻为 12:00:00</span>
-          <el-date-picker
-            v-model="value6"
-            type="datetimerange"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期"
-            :default-time="['12:00:00']">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">起始日期时刻为 12:00:00，结束日期时刻为 08:00:00</span>
-          <el-date-picker
-            v-model="value7"
-            type="datetimerange"
-            align="right"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期"
-            :default-time="['12:00:00', '08:00:00']">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">起始日期时刻为 12:00:00</span>
+            <el-date-picker
+              v-model="value6"
+              type="datetimerange"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              :default-time="['12:00:00']">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">起始日期时刻为 12:00:00，结束日期时刻为 08:00:00</span>
+            <el-date-picker
+              v-model="value7"
+              type="datetimerange"
+              align="right"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              :default-time="['12:00:00', '08:00:00']">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>

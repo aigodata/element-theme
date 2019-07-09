@@ -13,23 +13,25 @@
     <p>以「日」为基本单位，基础的日期选择控件</p>
     <div class="demo-block demo-zh-CN demo-date-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认</span>
-          <el-date-picker
-            v-model="value1"
-            type="date"
-            placeholder="选择日期">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">带快捷选项</span>
-          <el-date-picker
-            v-model="value2"
-            align="right"
-            type="date"
-            placeholder="选择日期"
-            :picker-options="pickerOptions1">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+              v-model="value1"
+              type="date"
+              placeholder="选择日期">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">带快捷选项</span>
+            <el-date-picker
+              v-model="value2"
+              align="right"
+              type="date"
+              placeholder="选择日期"
+              :picker-options="pickerOptions1">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -88,28 +90,30 @@
     <p>可在一个选择器中便捷地选择一个时间范围</p>
     <div class="demo-block demo-zh-CN demo-date-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认</span>
-          <el-date-picker
-            v-model="value6"
-            type="daterange"
-            range-separator="至"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">带快捷选项</span>
-          <el-date-picker
-            v-model="value7"
-            type="daterange"
-            align="right"
-            unlink-panels
-            range-separator="至"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期"
-            :picker-options="pickerOptions2">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+              v-model="value6"
+              type="daterange"
+              range-separator="至"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">带快捷选项</span>
+            <el-date-picker
+              v-model="value7"
+              type="daterange"
+              align="right"
+              unlink-panels
+              range-separator="至"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              :picker-options="pickerOptions2">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -121,28 +125,30 @@
     <p>可在一个选择器中便捷地选择一个月份范围</p>
     <div class="demo-block demo-zh-CN demo-date-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认</span>
-          <el-date-picker
-            v-model="value15"
-            type="monthrange"
-            range-separator="至"
-            start-placeholder="开始月份"
-            end-placeholder="结束月份">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">带快捷选项</span>
-          <el-date-picker
-            v-model="value16"
-            type="monthrange"
-            align="right"
-            unlink-panels
-            range-separator="至"
-            start-placeholder="开始月份"
-            end-placeholder="结束月份"
-            :picker-options="pickerOptions3">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认</span>
+            <el-date-picker
+              v-model="value15"
+              type="monthrange"
+              range-separator="至"
+              start-placeholder="开始月份"
+              end-placeholder="结束月份">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">带快捷选项</span>
+            <el-date-picker
+              v-model="value16"
+              type="monthrange"
+              align="right"
+              unlink-panels
+              range-separator="至"
+              start-placeholder="开始月份"
+              end-placeholder="结束月份"
+              :picker-options="pickerOptions3">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -157,37 +163,39 @@
     </p>
     <div class="demo-block demo-zh-CN demo-date-picker">
       <div class="source">
-        <div class="block">
-          <span class="demonstration">默认为 Date 对象</span>
-          <div class="demonstration">值：{{ value10 }}</div>
-          <el-date-picker
-            v-model="value10"
-            type="date"
-            placeholder="选择日期"
-            format="yyyy 年 MM 月 dd 日">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">使用 value-format</span>
-          <div class="demonstration">值：{{ value11 }}</div>
-          <el-date-picker
-            v-model="value11"
-            type="date"
-            placeholder="选择日期"
-            format="yyyy 年 MM 月 dd 日"
-            value-format="yyyy-MM-dd">
-          </el-date-picker>
-        </div>
-        <div class="block">
-          <span class="demonstration">时间戳</span>
-          <div class="demonstration">值：{{ value12 }}</div>
-          <el-date-picker
-            v-model="value12"
-            type="date"
-            placeholder="选择日期"
-            format="yyyy 年 MM 月 dd 日"
-            value-format="timestamp">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认为 Date 对象</span>
+            <div class="demonstration">值：{{ value10 }}</div>
+            <el-date-picker
+              v-model="value10"
+              type="date"
+              placeholder="选择日期"
+              format="yyyy 年 MM 月 dd 日">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">使用 value-format</span>
+            <div class="demonstration">值：{{ value11 }}</div>
+            <el-date-picker
+              v-model="value11"
+              type="date"
+              placeholder="选择日期"
+              format="yyyy 年 MM 月 dd 日"
+              value-format="yyyy-MM-dd">
+            </el-date-picker>
+          </div>
+          <div class="block">
+            <span class="demonstration">时间戳</span>
+            <div class="demonstration">值：{{ value12 }}</div>
+            <el-date-picker
+              v-model="value12"
+              type="date"
+              placeholder="选择日期"
+              format="yyyy 年 MM 月 dd 日"
+              value-format="timestamp">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
@@ -199,15 +207,17 @@
     <p>在选择日期范围时，指定起始日期和结束日期的默认时刻。</p>
     <div class="demo-block demo-zh-CN demo-date-picker">
       <div class="source">
-        <div class="block">
-          <p>组件值：{{ value13 }}</p>
-          <el-date-picker
-            v-model="value13"
-            type="daterange"
-            start-placeholder="开始日期"
-            end-placeholder="结束日期"
-            :default-time="['00:00:00', '23:59:59']">
-          </el-date-picker>
+        <div style="width: 100%;">
+          <div class="block">
+            <p>组件值：{{ value13 }}</p>
+            <el-date-picker
+              v-model="value13"
+              type="daterange"
+              start-placeholder="开始日期"
+              end-placeholder="结束日期"
+              :default-time="['00:00:00', '23:59:59']">
+            </el-date-picker>
+          </div>
         </div>
       </div>
     </div>
