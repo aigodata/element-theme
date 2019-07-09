@@ -387,6 +387,10 @@
   border: 1px solid #ffffff;
 }
 
+.el-cascader-node:not(.is-disabled):focus .el-radio__inner, .el-cascader-node:not(.is-disabled):hover .el-checkbox__inner {
+  border: 1px solid #ffffff;
+}
+
 .el-cascader-node.is-disabled {
   color: #c0c4cc;
   cursor: not-allowed

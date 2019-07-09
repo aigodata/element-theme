@@ -48,6 +48,17 @@
       </div>
     </div>
 
+    <h3 id="ke-qing-kong">
+      <a href="#ke-qing-kong" aria-hidden="true" class="header-anchor">¶</a>
+      可清空
+    </h3>
+    <p>通过 clearable 设置输入框可清空</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <el-cascader :options="options" clearable></el-cascader>
+      </div>
+    </div>
+
     <h3 id="jin-xian-shi-zui-hou-yi-ji">
       <a href="#jin-xian-shi-zui-hou-yi-ji" aria-hidden="true" class="header-anchor">¶</a>
       仅显示最后一级
@@ -59,6 +70,33 @@
           :options="options"
           :show-all-levels="false"
         ></el-cascader>
+      </div>
+    </div>
+
+    <h3 id="duo-xuan">
+      <a href="#duo-xuan" aria-hidden="true" class="header-anchor">¶</a>
+      多选
+    </h3>
+    <p>可通过 props.multiple = true 来开启多选模式</p>
+    <div class="demo-block demo-zh-CN demo-cascader">
+      <div class="source">
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">默认显示所有Tag</span>
+            <el-cascader
+              :options="options03"
+              :props="props"
+              clearable></el-cascader>
+          </div>
+          <div class="block">
+            <span class="demonstration">折叠展示Tag</span>
+            <el-cascader
+              :options="options03"
+              :props="props"
+              collapse-tags
+              clearable></el-cascader>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -75,23 +113,35 @@
       </div>
     </div>
 
-    <h3 id="xuan-ze-ji-gai-bian">
-      <a href="#xuan-ze-ji-gai-bian" aria-hidden="true" class="header-anchor">¶</a>
-      选择即改变
+    <h3 id="xuan-ze-ren-yi-yi-ji-xuan-xiang">
+      <a href="#xuan-ze-ren-yi-yi-ji-xuan-xiang" aria-hidden="true" class="header-anchor">¶</a>
+      选择任意一级选项
     </h3>
-    <p>点击或移入选项即表示选中该项，可用于选择任意一级菜单的选项。</p>
+    <p>在单选模式下，你只能选择叶子节点；而在多选模式下，勾选父节点真正选中的都是叶子节点。启用该功能后，可让父子节点取消关联，选择任意一级选项。</p>
     <div class="demo-block demo-zh-CN demo-cascader">
       <div class="source">
-        <el-cascader
-          :options="options"
-          change-on-select
-        ></el-cascader>
+        <div style="width: 100%;">
+          <div class="block">
+            <span class="demonstration">单选选择任意一级选项</span>
+            <el-cascader
+              :options="options"
+              :props="{ checkStrictly: true }"
+              clearable></el-cascader>
+          </div>
+          <div class="block">
+            <span class="demonstration">多选选择任意一级选项</span>
+            <el-cascader
+              :options="options"
+              :props="{ multiple: true, checkStrictly: true }"
+              clearable></el-cascader>
+          </div>
+        </div>
       </div>
     </div>
 
-    <h3 id="dong-tai-jia-zai-ci-ji-xuan-xiang">
-      <a href="#dong-tai-jia-zai-ci-ji-xuan-xiang" aria-hidden="true" class="header-anchor">¶</a>
-      动态加载次级选项
+    <h3 id="dong-tai-jia-zai">
+      <a href="#dong-tai-jia-zai" aria-hidden="true" class="header-anchor">¶</a>
+      动态加载
     </h3>
     <p>当选中某一级时，动态加载该级下的选项。</p>
     <div class="demo-block demo-zh-CN demo-cascader">
@@ -113,21 +163,19 @@
       <div class="source">
         <div style="width: 100%;">
           <div class="block">
-            <span class="demonstration">只可选择最后一级菜单的选项</span>
+            <span class="demonstration">单选可搜索</span>
             <el-cascader
               placeholder="试试搜索：指南"
               :options="options"
-              filterable
-            ></el-cascader>
+              filterable></el-cascader>
           </div>
           <div class="block">
-            <span class="demonstration">可选择任意一级菜单的选项</span>
+            <span class="demonstration">多选可搜索</span>
             <el-cascader
               placeholder="试试搜索：指南"
               :options="options"
-              filterable
-              change-on-select
-            ></el-cascader>
+              :props="{ multiple: true }"
+              filterable></el-cascader>
           </div>
         </div>
       </div>
@@ -171,6 +219,55 @@
     name: 'cascader',
     data() {
       return {
+        // 多选
+        props: { multiple: true },
+        options03: [{
+          value: 1,
+          label: '东南',
+          children: [{
+            value: 2,
+            label: '上海',
+            children: [
+              { value: 3, label: '普陀' },
+              { value: 4, label: '黄埔' },
+              { value: 5, label: '徐汇' }
+            ]
+          }, {
+            value: 7,
+            label: '江苏',
+            children: [
+              { value: 8, label: '南京' },
+              { value: 9, label: '苏州' },
+              { value: 10, label: '无锡' }
+            ]
+          }, {
+            value: 12,
+            label: '浙江',
+            children: [
+              { value: 13, label: '杭州' },
+              { value: 14, label: '宁波' },
+              { value: 15, label: '嘉兴' }
+            ]
+          }]
+        }, {
+          value: 17,
+          label: '西北',
+          children: [{
+            value: 18,
+            label: '陕西',
+            children: [
+              { value: 19, label: '西安' },
+              { value: 20, label: '延安' }
+            ]
+          }, {
+            value: 21,
+            label: '新疆维吾尔族自治区',
+            children: [
+              { value: 22, label: '乌鲁木齐' },
+              { value: 23, label: '克拉玛依' }
+            ]
+          }]
+        }],
         // 基础用法
         options: [{
           value: 'zhinan',
