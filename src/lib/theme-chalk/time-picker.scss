@@ -533,7 +533,7 @@
 .el-time-panel__btn.confirm.is-active, .el-time-panel__btn.confirm:active {
   color: #fff;
   border-color: #2aa1ef;
-  background: linear-gradient(to top, #3eb1fc , #1284cf)
+  background: linear-gradient(to top, #1284cf , #0585d7)
 }
 
 .el-time-panel__btn.confirm:active {
@@ -557,7 +557,7 @@
 }
 
 .el-time-panel__btn.cancel.is-active, .el-time-panel__btn.cancel:active {
-  background: linear-gradient(to top, #fff , #f1f1f1);
+  background: linear-gradient(to top, #e5e5e5 , #efefef);
   color: #333333;
   border-color: #e4e4e4;
   outline: 0
