@@ -32,6 +32,36 @@
       </div>
     </div>
 
+    <h3 id="zhu-ti">
+      <a href="#zhu-ti" aria-hidden="true" class="header-anchor">¶</a>
+      主题
+    </h3>
+    <p>Alert 组件提供了两个不同的主题：light和dark。</p>
+    <div class="demo-block demo-zh-CN demo-alert">
+      <div class="source">
+        <el-alert
+          title="成功提示的文案"
+          type="success"
+          effect="dark">
+        </el-alert>
+        <el-alert
+          title="消息提示的文案"
+          type="info"
+          effect="dark">
+        </el-alert>
+        <el-alert
+          title="警告提示的文案"
+          type="warning"
+          effect="dark">
+        </el-alert>
+        <el-alert
+          title="错误提示的文案"
+          type="error"
+          effect="dark">
+        </el-alert>
+      </div>
+    </div>
+
     <h3 id="zi-ding-yi-guan-bi-an-niu">
       <a href="#zi-ding-yi-guan-bi-an-niu" aria-hidden="true" class="header-anchor">¶</a>
       自定义关闭按钮
