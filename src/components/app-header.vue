@@ -56,29 +56,7 @@
         let origin = location.origin
         let paths = this.$route.path.split('/');
         let currentModule = paths[paths.length - 1];
-        if (process.env.NODE_ENV === "production") {
-          let id = 'aigodata-element-theme';
-          // 存在删除
-          let ele = document.querySelector(`#${id}`);
-          ele && ele.remove()
-          // 新增
-          let link = document.createElement('link');
-          document.head.appendChild(link);
-          link.setAttribute('id', id);
-          link.setAttribute('rel', 'stylesheet');
-          link.setAttribute('charset', 'utf-8');
-          link.setAttribute('type', 'text/css');
-          link.setAttribute('href', `${pathName}lib/${theme}/index.css?random=${Date.now()}`);
-          let vm = this
-          link.onload = link.onerror = function() {
-            // @特殊处理, 仅修改href不会触发load事件
-            vm.$store.commit("loading", false);
-          }
-          this.$store.commit("loading", true);
-          this.$router.push(`/zh-CN/${theme}/${currentModule}`)
-        } else {
-          location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
-        }
+        location.href = `${origin}${pathName}${'?' + 'random=' + Date.now()}#/zh-CN/${theme}/${currentModule}`;
       }
     },
     mounted() {
@@ -88,9 +66,6 @@
         this.$store.commit("theme", theme);
       }
       document.body.setAttribute('id', 'body-' + theme)
-      if (process.env.NODE_ENV === "production") {
-        this.changeTheme(theme, true);
-      }
     }
   }
 </script>
