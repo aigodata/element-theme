@@ -36,7 +36,7 @@
 }
 
 .el-button:active {
-  background: linear-gradient(to top, #fff , #f1f1f1);
+  background: linear-gradient(to top, #e5e5e5 , #efefef);
   color: #333333;
   border-color: #e4e4e4;
   outline: 0
@@ -66,12 +66,12 @@
 
 .el-button.is-active, .el-button.is-plain:active {
   background: linear-gradient(to top, #fff , #f1f1f1);
-  color: #3a8ee6;
+  color: #333333;
   border-color: #dbdbdb
 }
 
 .el-button.is-plain:active {
-  background: linear-gradient(to top, #fff , #f1f1f1);
+  background: linear-gradient(to top, #e5e5e5 , #efefef);
   outline: 0
 }
 
@@ -137,7 +137,7 @@
 .el-button--primary.is-active, .el-button--primary:active {
   color: #fff;
   border-color: #2aa1ef;
-  background: linear-gradient(to top, #3eb1fc , #1284cf)
+  background: linear-gradient(to top, #1284cf , #0585d7)
 }
 
 .el-button--primary:active {
@@ -167,7 +167,7 @@
 .el-button--primary.is-plain:active {
   color: #fff;
   border-color: #1d98e9;
-  background: linear-gradient(to top, #3eb1fc , #1284cf);
+  background: linear-gradient(to top, #1284cf , #0585d7);
   outline: 0
 }
 
@@ -193,7 +193,7 @@
 }
 
 .el-button--success.is-active, .el-button--success:active {
-  background: linear-gradient(to top, #63ce4a , #31a41e);
+  background: linear-gradient(to top, #2fa91a , #24a905);
   border-color: #45c130;
   color: #fff
 }
@@ -223,7 +223,7 @@
 }
 
 .el-button--success.is-plain:active {
-  background: linear-gradient(to top, #63ce4a , #31a41e);
+  background: linear-gradient(to top, #2fa91a , #24a905);
   border-color: #55c83d;
   color: #fff;
   outline: 0
@@ -251,7 +251,7 @@
 }
 
 .el-button--warning.is-active, .el-button--warning:active {
-  background: linear-gradient(to top, #fd953b , #e66c04);
+  background: linear-gradient(to top, #e07112 , #ea6e04);
   border-color: #fd8824;
   color: #fff
 }
@@ -281,7 +281,7 @@
 }
 
 .el-button--warning.is-plain:active {
-  background: linear-gradient(to top, #fd953b , #e66c04);
+  background: linear-gradient(to top, #e07112 , #ea6e04);
   border-color: #f67a0f;
   color: #fff;
   outline: 0
@@ -309,7 +309,7 @@
 }
 
 .el-button--danger.is-active, .el-button--danger:active {
-  background: linear-gradient(to top, #fe6a6f , #e92b32);
+  background: linear-gradient(to top, #df3c43 , #e34248);
   border-color: #f85d63;
   color: #fff
 }
@@ -339,7 +339,7 @@
 }
 
 .el-button--danger.is-plain:active {
-  background: linear-gradient(to top, #fe6a6f , #e92b32);
+  background: linear-gradient(to top, #df3c43 , #e34248);
   border-color: #fb5258;
   color: #fff;
   outline: 0
@@ -367,7 +367,7 @@
 }
 
 .el-button--info.is-active, .el-button--info:active {
-  background: linear-gradient(to top, #74767e , #3b3e4e);
+  background: linear-gradient(to top, #3b3e4e , #4a4b52);
   border-color: #585b69;
   color: #fff
 }
@@ -397,7 +397,7 @@
 }
 
 .el-button--info.is-plain:active {
-  background: linear-gradient(to top, #74767e , #3b3e4e);
+  background: linear-gradient(to top, #3b3e4e , #4a4b52);
   border-color: #545866;
   color: #fff;
   outline: 0
