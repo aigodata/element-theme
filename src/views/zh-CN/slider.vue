@@ -110,6 +110,22 @@
         </div>
       </div>
     </div>
+
+    <h3 id="zhan-shi-biao-ji">
+      <a href="#zhan-shi-biao-ji" aria-hidden="true" class="header-anchor">¶</a>
+      展示标记
+    </h3>
+    <div class="demo-block demo-zh-CN demo-slider">
+      <div class="source">
+        <div class="block">
+          <el-slider
+            v-model="value"
+            range
+            :marks="marks">
+          </el-slider>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -132,7 +148,20 @@ export default {
       // 范围选择
       value9: [4, 8],
       // 竖向模式
-      value10: 0
+      value10: 0,
+      // 展示标记
+      value: [30, 60],
+      marks: {
+        0: '0°C',
+        8: '8°C',
+        37: '37°C',
+        50: {
+          style: {
+            color: '#1989FA'
+          },
+          label: this.$createElement('strong', '50%')
+        }
+      }
     }
   },
   methods: {
