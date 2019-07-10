@@ -148,6 +148,10 @@ let children = [
 		component: () => import('./views/zh-CN/badge.vue')
 	},
 	{
+		path: 'avatar', name: 'avatar', meta: {name: '头像'},
+		component: () => import('./views/zh-CN/avatar.vue')
+	},
+	{
 		path: 'alert', name: 'alert', meta: {name: '警告'},
 		component: () => import('./views/zh-CN/alert.vue')
 	},
@@ -212,7 +216,7 @@ let children = [
 		component: () => import('./views/zh-CN/collapse.vue')
 	},
 	{
-		path: 'divider', name: 'divider', meta: {name: 'Divider分割线'},
+		path: 'divider', name: 'divider', meta: {name: '分割线'},
 		component: () => import('./views/zh-CN/divider.vue')
 	},
 	{
@@ -220,7 +224,7 @@ let children = [
 		component: () => import('./views/zh-CN/calendar.vue')
 	},
 	{
-		path: 'timeline', name: 'timeline', meta: {name: 'Timeline时间线'},
+		path: 'timeline', name: 'timeline', meta: {name: '时间线'},
 		component: () => import('./views/zh-CN/timeline.vue')
 	},
 	{
@@ -228,11 +232,11 @@ let children = [
 		component: () => import('./views/zh-CN/image.vue')
 	},
 	{
-		path: 'backtop', name: 'backtop', meta: {name: 'Backtop回到顶部'},
+		path: 'backtop', name: 'backtop', meta: {name: '回到顶部'},
 		component: () => import('./views/zh-CN/backtop.vue')
 	},
 	{
-		path: 'infiniteScroll', name: 'infiniteScroll', meta: {name: 'InfiniteScroll无限滚动'},
+		path: 'infiniteScroll', name: 'infiniteScroll', meta: {name: '无限滚动'},
 		component: () => import('./views/zh-CN/infiniteScroll.vue')
 	}
 ]

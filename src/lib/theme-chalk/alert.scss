@@ -125,3 +125,71 @@
 .el-alert-fade-enter, .el-alert-fade-leave-active {
   opacity: 0
 }
+
+.el-alert--success.is-light {
+  background-color: #f0f9eb;
+  color: #67c23a
+}
+
+.el-alert--success.is-light .el-alert__description {
+  color: #67c23a
+}
+
+.el-alert--success.is-dark {
+  border: 1px solid #45c130;
+  -webkit-box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
+  box-shadow: 0px 2px 8px rgba(60, 173, 40, 0.4);
+  background: linear-gradient(to top, #45c130 , #63ce4a);
+  color: #fff
+}
+
+.el-alert--info.is-light {
+  background-color: #f4f4f5;
+  color: #909399
+}
+
+.el-alert--info.is-dark {
+  border: 1px solid #585b69;
+  -webkit-box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
+  box-shadow: 0px 2px 8px rgba(88, 91, 105, 0.4);
+  background: linear-gradient(to top, #585b69 , #74767e);
+  color: #fff
+}
+
+.el-alert--info .el-alert__description {
+  color: #909399
+}
+
+.el-alert--warning.is-light {
+  background-color: #fdf6ec;
+  color: #e6a23c
+}
+
+.el-alert--warning.is-light .el-alert__description {
+  color: #e6a23c
+}
+
+.el-alert--warning.is-dark {
+  border: 1px solid #fd8824;
+  -webkit-box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
+  box-shadow: 0px 2px 8px rgba(253, 147, 52, 0.4);
+  background: linear-gradient(to top, #fd8824 , #fd9a44);
+  color: #fff
+}
+
+.el-alert--error.is-light {
+  background-color: #fef0f0;
+  color: #f56c6c
+}
+
+.el-alert--error.is-light .el-alert__description {
+  color: #f56c6c
+}
+
+.el-alert--error.is-dark {
+  border: 1px solid #f85d63;
+  -webkit-box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
+  box-shadow: 0px 2px 8px rgba(248, 93, 99, 0.4);
+  background: linear-gradient(to top, #f85d63 , #fd787d);
+  color: #fff
+}

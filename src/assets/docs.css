@@ -631,7 +631,8 @@
 }
 
 .side-nav li {
-  list-style: none
+  list-style: none;
+  cursor: pointer;
 }
 
 .side-nav ul {

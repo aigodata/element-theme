@@ -62,6 +62,7 @@
                 <li class="nav-item"><a @click="handleNavigationChange('tree')" class="">Tree 树形控件</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('pagination')" class="">Pagination 分页</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('badge')" class="">Badge 标记</a></li>
+                <li class="nav-item"><a @click="handleNavigationChange('avatar')" class="">Avatar 头像</a></li>
               </ul>
             </div>
             <div class="nav-group">
