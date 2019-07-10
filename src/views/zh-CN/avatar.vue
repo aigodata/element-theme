@@ -1,201 +1,90 @@
 <template>
   <section class="page-avatar">
-    <h2 id="alert-jing-gao">
-      <a href="#alert-jing-gao" aria-hidden="true" class="header-anchor">¶</a>
-      Alert 警告
+    <h2 id="avatar-tou-xiang">
+      <a href="#avatar-tou-xiang" aria-hidden="true" class="header-anchor">¶</a>
+      Avatar 头像
     </h2>
-    <p>用于页面中展示重要的提示信息。</p>
+    <p>用图标、图片或者字符的形式展示用户或事物信息。</p>
 
     <h3 id="ji-chu-yong-fa">
       <a href="#ji-chu-yong-fa" aria-hidden="true" class="header-anchor">¶</a>
       基础用法
     </h3>
-    <p>页面中的非浮层元素，不会自动消失。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
+    <p>通过 shape 和 size 设置头像的形状和大小。</p>
+    <div class="demo-block demo-zh-CN demo-avatar">
       <div class="source">
-        <el-alert
-          title="成功提示的文案"
-          type="success">
-        </el-alert>
-        <el-alert
-          title="消息提示的文案"
-          type="info">
-        </el-alert>
-        <el-alert
-          title="警告提示的文案"
-          type="warning">
-        </el-alert>
-        <el-alert
-          title="错误提示的文案"
-          type="error">
-        </el-alert>
+        <el-row class="demo-avatar demo-basic">
+          <el-col :span="12">
+            <div class="sub-title">circle</div>
+            <div class="demo-basic--circle">
+              <div class="block"><el-avatar :size="50" :src="circleUrl"></el-avatar></div>
+              <div class="block" v-for="size in sizeList" :key="size">
+                <el-avatar :size="size" :src="circleUrl"></el-avatar>
+              </div>
+            </div>
+          </el-col>
+          <el-col :span="12">
+            <div class="sub-title">square</div>
+            <div class="demo-basic--circle">
+              <div class="block"><el-avatar shape="square" :size="50" :src="squareUrl"></el-avatar></div>
+              <div class="block" v-for="size in sizeList" :key="size">
+                <el-avatar shape="square" :size="size" :src="squareUrl"></el-avatar>
+              </div>
+            </div>
+          </el-col>
+        </el-row>
       </div>
     </div>
 
-    <h3 id="zhu-ti">
-      <a href="#zhu-ti" aria-hidden="true" class="header-anchor">¶</a>
-      主题
+    <h3 id="zhan-shi-lei-xing">
+      <a href="#zhan-shi-lei-xing" aria-hidden="true" class="header-anchor">¶</a>
+      展示类型
     </h3>
-    <p>Alert 组件提供了两个不同的主题：light和dark。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
+    <p>支持三种类型：图标、图片和字符</p>
+    <div class="demo-block demo-zh-CN demo-avatar">
       <div class="source">
-        <el-alert
-          title="成功提示的文案"
-          type="success"
-          effect="dark">
-        </el-alert>
-        <el-alert
-          title="消息提示的文案"
-          type="info"
-          effect="dark">
-        </el-alert>
-        <el-alert
-          title="警告提示的文案"
-          type="warning"
-          effect="dark">
-        </el-alert>
-        <el-alert
-          title="错误提示的文案"
-          type="error"
-          effect="dark">
-        </el-alert>
+        <div class="demo-type">
+          <div>
+            <el-avatar icon="el-icon-user-solid"></el-avatar>
+          </div>
+          <div>
+            <el-avatar src="https://cube.elemecdn.com/0/88/03b0d39583f48206768a7534e55bcpng.png"></el-avatar>
+          </div>
+          <div>
+            <el-avatar> user </el-avatar>
+          </div>
+        </div>
       </div>
     </div>
 
-    <h3 id="zi-ding-yi-guan-bi-an-niu">
-      <a href="#zi-ding-yi-guan-bi-an-niu" aria-hidden="true" class="header-anchor">¶</a>
-      自定义关闭按钮
+    <h3 id="tu-pian-jia-zai-shi-bai-de-fallback-xing-wei">
+      <a href="#tu-pian-jia-zai-shi-bai-de-fallback-xing-wei" aria-hidden="true" class="header-anchor">¶</a>
+      图片加载失败的 fallback 行为
     </h3>
-    <p>自定义关闭按钮为文字或其他符号。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
+    <p>当展示类型为图片的时候，图片加载失败的 fallback 行为</p>
+    <div class="demo-block demo-zh-CN demo-avatar">
       <div class="source">
-        <el-alert
-          title="不可关闭的 alert"
-          type="success"
-          :closable="false">
-        </el-alert>
-        <el-alert
-          title="自定义 close-text"
-          type="info"
-          close-text="知道了">
-        </el-alert>
-        <el-alert
-          title="设置了回调的 alert"
-          type="warning"
-          @close="hello">
-        </el-alert>
+        <div class="demo-type">
+          <el-avatar :size="60" src="https://empty" @error="errorHandler">
+            <img src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png"/>
+          </el-avatar>
+        </div>
       </div>
     </div>
 
-    <h3 id="dai-you-icon">
-      <a href="#dai-you-icon" aria-hidden="true" class="header-anchor">¶</a>
-      带有 icon
+    <h3 id="tu-pian-ru-he-gua-ying-rong-qi-kuang">
+      <a href="#tu-pian-ru-he-gua-ying-rong-qi-kuang" aria-hidden="true" class="header-anchor">¶</a>
+      图片如何适应容器框
     </h3>
-    <p>表示某种状态时提升可读性。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
+    <p>当展示类型为图片的时候，使用 fit 属性定义图片如何适应容器框，同原生 object-fit。</p>
+    <div class="demo-block demo-zh-CN demo-avatar">
       <div class="source">
-        <el-alert
-          title="成功提示的文案"
-          type="success"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="消息提示的文案"
-          type="info"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="警告提示的文案"
-          type="warning"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="错误提示的文案"
-          type="error"
-          show-icon>
-        </el-alert>
-      </div>
-    </div>
-
-    <h3 id="wen-zi-ju-zhong">
-      <a href="#wen-zi-ju-zhong" aria-hidden="true" class="header-anchor">¶</a>
-      文字居中
-    </h3>
-    <p>使用 center 属性让文字水平居中。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
-      <div class="source">
-        <el-alert
-          title="成功提示的文案"
-          type="success"
-          center
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="消息提示的文案"
-          type="info"
-          center
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="警告提示的文案"
-          type="warning"
-          center
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="错误提示的文案"
-          type="error"
-          center
-          show-icon>
-        </el-alert>
-      </div>
-    </div>
-
-    <h3 id="dai-you-fu-zhu-xing-wen-zi-jie-shao">
-      <a href="#dai-you-fu-zhu-xing-wen-zi-jie-shao" aria-hidden="true" class="header-anchor">¶</a>
-      带有辅助性文字介绍
-    </h3>
-    <p>包含标题和内容，解释更详细的警告。</p>
-    <div class="demo-block demo-zh-CN demo-alert">
-      <div class="source">
-        <el-alert
-          title="带辅助性文字介绍"
-          type="success"
-          description="这是一句绕口令：黑灰化肥会挥发发灰黑化肥挥发；灰黑化肥会挥发发黑灰化肥发挥。 黑灰化肥会挥发发灰黑化肥黑灰挥发化为灰……">
-        </el-alert>
-      </div>
-    </div>
-
-    <h3 id="dai-you-icon-he-fu-zhu-xing-wen-zi-jie-shao">
-      <a href="#dai-you-icon-he-fu-zhu-xing-wen-zi-jie-shao" aria-hidden="true" class="header-anchor">¶</a>
-      带有 icon 和辅助性文字介绍
-    </h3>
-    <div class="demo-block demo-zh-CN demo-alert">
-      <div class="source">
-        <el-alert
-          title="成功提示的文案"
-          type="success"
-          description="文字说明文字说明文字说明文字说明文字说明文字说明"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="消息提示的文案"
-          type="info"
-          description="文字说明文字说明文字说明文字说明文字说明文字说明"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="警告提示的文案"
-          type="warning"
-          description="文字说明文字说明文字说明文字说明文字说明文字说明"
-          show-icon>
-        </el-alert>
-        <el-alert
-          title="错误提示的文案"
-          type="error"
-          description="文字说明文字说明文字说明文字说明文字说明文字说明"
-          show-icon>
-        </el-alert>
+        <div class="demo-fit">
+          <div class="block" v-for="fit in fits" :key="fit">
+            <span class="title">{{ fit }}</span>
+            <el-avatar shape="square" :size="100" :fit="fit" :src="url"></el-avatar>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -205,11 +94,17 @@
   export default {
     name: 'avatar',
     data() {
-      return {}
+      return {
+        circleUrl: "https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png",
+        squareUrl: "https://cube.elemecdn.com/9/c2/f0ee8a3c7c9638a54940382568c9dpng.png",
+        sizeList: ["large", "medium", "small"],
+        fits: ['fill', 'contain', 'cover', 'none', 'scale-down'],
+        url: 'https://fuss10.elemecdn.com/e/5d/4a731a90594a4af544c0c25941171jpeg.jpeg'
+      }
     },
     methods: {
-      hello() {
-        alert('Hello World!');
+      errorHandler() {
+        return true
       }
     }
   }
@@ -218,9 +113,5 @@
 <style>
   .page-avatar {
 
-  }
-
-  .page-avatar .demo-block.demo-alert .el-alert {
-    margin: 20px 0 0;
   }
 </style>
