@@ -184,6 +184,10 @@ let children = [
 		component: () => import('./views/zh-CN/breadcrumb.vue')
 	},
 	{
+		path: 'pageheader', name: 'pageheader', meta: {name: '页头'},
+		component: () => import('./views/zh-CN/pageheader.vue')
+	},
+	{
 		path: 'dropdown', name: 'dropdown', meta: {name: '下拉菜单'},
 		component: () => import('./views/zh-CN/dropdown.vue')
 	},

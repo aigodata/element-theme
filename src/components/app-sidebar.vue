@@ -81,6 +81,7 @@
                 <li class="nav-item"><a @click="handleNavigationChange('menu')" class="">NavMenu 导航菜单</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('tabs')" class="">Tabs 标签页</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('breadcrumb')" class="">Breadcrumb 面包屑</a></li>
+                <li class="nav-item"><a @click="handleNavigationChange('pageheader')" class="">PageHeader 页头</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('dropdown')" class="">Dropdown 下拉菜单</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('steps')" class="">Steps 步骤条</a></li>
               </ul>
