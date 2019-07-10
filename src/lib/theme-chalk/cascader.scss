@@ -384,11 +384,21 @@
 }
 
 .el-cascader-node:not(.is-disabled):focus .el-radio__inner, .el-cascader-node:not(.is-disabled):hover .el-radio__inner {
-  border: 1px solid #ffffff;
+  border: 1px solid #389fe3;
+  background: #ffffff;
 }
 
-.el-cascader-node:not(.is-disabled):focus .el-radio__inner, .el-cascader-node:not(.is-disabled):hover .el-checkbox__inner {
-  border: 1px solid #ffffff;
+.el-cascader-node:not(.is-disabled):focus .el-radio__inner::after, .el-cascader-node:not(.is-disabled):hover .el-radio__inner::after {
+  background-color: #389fe3;
+}
+
+.el-cascader-node:not(.is-disabled):focus .el-checkbox__inner, .el-cascader-node:not(.is-disabled):hover .el-checkbox__inner {
+  border: 1px solid #389fe3;
+  background-color: #ffffff;
+}
+
+.el-cascader-node:not(.is-disabled):focus .el-checkbox__inner::after, .el-cascader-node:not(.is-disabled):hover .el-checkbox__inner::after {
+  border-color: #389fe3;
 }
 
 .el-cascader-node.is-disabled {
