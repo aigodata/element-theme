@@ -13,7 +13,7 @@
           </a>
         </h1>
         <a href="https://github.com/aigodata/element-theme" target="_blank" title="访问github" class="github-logo">
-          <img src="../assets/github.png">
+          <!--<img src="../assets/github.png">-->
         </a>
         <ul class="nav">
           <!--<li class="nav-item nav-versions">-->
@@ -118,8 +118,11 @@
   }
 
   .headerWrapper .header .github-logo {
+    background: url("../assets/github.png") no-repeat;
+    width: 30px;
+    height: 30px;
     float: right;
-    margin: 8px 0 0 30px;
+    margin: 22px 0 0 30px;
   }
 
   .headerWrapper .header .github-logo img {
