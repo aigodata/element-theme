@@ -52,7 +52,7 @@
       <div class="source">
         <div>
           <el-link :underline="false">无下划线</el-link>
-          <el-link>有下划线</el-link>
+          <el-link type="primary">有下划线</el-link>
         </div>
       </div>
     </div>
@@ -67,6 +67,10 @@
         <div>
           <el-link icon="el-icon-edit">编辑</el-link>
           <el-link>查看<i class="el-icon-view el-icon--right"></i> </el-link>
+        </div>
+        <div>
+          <el-link type="primary" icon="el-icon-edit">编辑</el-link>
+          <el-link type="primary">查看<i class="el-icon-view el-icon--right"></i> </el-link>
         </div>
       </div>
     </div>

@@ -29,11 +29,11 @@
   right: 0;
   height: 0;
   bottom: 0;
-  border-bottom: 1px solid #409EFF
+  border-bottom: 1px solid #525a69
 }
 
 .el-link.el-link--default:after, .el-link.el-link--primary.is-underline:hover:after, .el-link.el-link--primary:after {
-  border-color: #66b1ff
+  border-color: #557df1
 }
 
 .el-link.is-disabled {
@@ -45,95 +45,95 @@
 }
 
 .el-link.el-link--default {
-  color: #333333
+  color: #757c89
 }
 
 .el-link.el-link--default:hover {
-  color: #409EFF
+  color: #525a69
 }
 
 .el-link.el-link--default.is-disabled {
-  color: #333333;
-  opacity: 0.5
+  color: #757c89;
+  opacity: 0.7
 }
 
 .el-link.el-link--primary {
-  color: #37acf8
+  color: #325cd8
 }
 
 .el-link.el-link--primary:hover {
-  color: #66b1ff
+  color: #557df1
 }
 
 .el-link.el-link--primary.is-disabled {
-  color: #37acf8;
-  opacity: 0.5
+  color: #325cd8;
+  opacity: 0.7
 }
 
 .el-link.el-link--danger.is-underline:hover:after, .el-link.el-link--danger:after {
-  border-color: #f78989
+  border-color: #f76468
 }
 
 .el-link.el-link--danger {
-  color: #f85d63
+  color: #e84a4e
 }
 
 .el-link.el-link--danger:hover {
-  color: #f78989
+  color: #f76468
 }
 
 .el-link.el-link--danger.is-disabled {
-  color: #f85d63;
-  opacity: 0.5
+  color: #e84a4e;
+  opacity: 0.7
 }
 
 .el-link.el-link--success.is-underline:hover:after, .el-link.el-link--success:after {
-  border-color: #85ce61
+  border-color: #40ce61
 }
 
 .el-link.el-link--success {
-  color: #55c83d
+  color: #18a739
 }
 
 .el-link.el-link--success:hover {
-  color: #85ce61
+  color: #40ce61
 }
 
 .el-link.el-link--success.is-disabled {
-  color: #55c83d;
-  opacity: 0.5
+  color: #18a739;
+  opacity: 0.7
 }
 
 .el-link.el-link--warning.is-underline:hover:after, .el-link.el-link--warning:after {
-  border-color: #ebb563
+  border-color: #fda53d
 }
 
 .el-link.el-link--warning {
-  color: #fd9334
+  color: #ef8d19
 }
 
 .el-link.el-link--warning:hover {
-  color: #ebb563
+  color: #fda53d
 }
 
 .el-link.el-link--warning.is-disabled {
-  color: #fd9334;
-  opacity: 0.5
+  color: #ef8d19;
+  opacity: 0.7
 }
 
 .el-link.el-link--info.is-underline:hover:after, .el-link.el-link--info:after {
-  border-color: #a6a9ad
+  border-color: #475161
 }
 
 .el-link.el-link--info {
-  color: #585b69
+  color: #919bb1
 }
 
 .el-link.el-link--info:hover {
-  color: #a6a9ad
+  color: #475161
 }
 
 .el-link.el-link--info.is-disabled {
-  color: #585b69;
-  opacity: 0.5
+  color: #919bb1;
+  opacity: 0.7
 }
