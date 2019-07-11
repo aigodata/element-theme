@@ -68,4 +68,46 @@
   #body-theme-mixiaoku .headerWrapper .header .github-logo {
     background: url("../../assets/github-white.png") no-repeat;
   }
+
+  /* border页面样式覆盖 */
+  #body-theme-mixiaoku .page-component .content > table {
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  #body-theme-mixiaoku .page-component .content > table td {
+    color: #ffffff;
+  }
+
+  #body-theme-mixiaoku .demo-border .line div {
+    border-top: 1px solid #333a46;
+  }
+
+  #body-theme-mixiaoku .demo-border .line .dashed {
+    border-top: 2px dashed #333a46;
+  }
+
+  #body-theme-mixiaoku .demo-radius .radius {
+    border-color: #474e59;
+  }
+
+  #body-theme-mixiaoku .page-border .demo-radius .radius {
+    box-shadow: none;
+  }
+
+  #body-theme-mixiaoku .demo-shadow {
+    border: none;
+    background-color: #2a3039;
+  }
+
+  #body-theme-mixiaoku .demo-shadow.demo-shadow-normal {
+    box-shadow: 0 5px 18px rgba(10, 15, 21, .32);
+  }
+
+  #body-theme-mixiaoku .demo-shadow-light {
+    box-shadow: 0 5px 18px rgba(10, 15, 21, .15);
+  }
+
+  #body-theme-mixiaoku .demo-radius .value {
+    color: #919bb1;
+  }
 </style>

@@ -68,11 +68,12 @@
       投影
     </h3>
     <p>我们提供了以下几种投影样式，以供选择。</p>
-    <div class="demo-shadow" style="box-shadow: 0 6px 13px rgba(126, 126, 126, .18);"></div>
-    <span class="demo-shadow-text">基础投影 box-shadow: 0 6px 13px rgba(126, 126, 126, .18)</span>
-    <div class="demo-shadow" style="box-shadow: 0 6px 16px rgba(126, 126, 126,.08);"></div>
-    <span class="demo-shadow-text">浅色投影 box-shadow: 0 6px 16px rgba(126, 126, 126,.08)</span>
-
+    <div class="demo-shadow demo-shadow-normal"></div>
+    <span class="demo-shadow-text">白垩纪基础投影 box-shadow: 0 6px 13px rgba(126, 126, 126, .18)</span>&nbsp;&nbsp;
+    <span class="demo-shadow-text" style="color: #919bb1;">日食基础投影 box-shadow: 0 5px 18px rgba(10, 15, 21, .32)</span>
+    <div class="demo-shadow demo-shadow-light"></div>
+    <span class="demo-shadow-text">白垩纪浅色投影 box-shadow: 0 6px 16px rgba(126, 126, 126,.08)</span>&nbsp;&nbsp;
+    <span class="demo-shadow-text" style="color: #919bb1;">日食浅色投影 box-shadow: 0 5px 18px rgba(10, 15, 21, .15)</span>
   </section>
 </template>
 
@@ -91,5 +92,13 @@
     border-color: #dbdbdb;
     -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
     box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.2) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
+  }
+
+  .page-border .demo-shadow-normal {
+    box-shadow: 0 6px 13px rgba(126, 126, 126, .18);
+  }
+
+  .page-border .demo-shadow-light {
+    box-shadow: 0 6px 16px rgba(126, 126, 126, .08);
   }
 </style>
