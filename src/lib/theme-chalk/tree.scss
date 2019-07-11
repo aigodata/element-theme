@@ -250,6 +250,10 @@
   border-color: #389fe3;
 }
 
+.el-tree-node__content:hover .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+  background-color: #389fe3;
+}
+
 .el-tree-node__content:hover .el-button--text {
   color: #fff
 }
