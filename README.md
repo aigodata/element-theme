@@ -34,7 +34,7 @@
         发布npm
       
 
-## 
+##  更新element-ui
 
       npm uninstall element-ui
       npm install element-ui --save
