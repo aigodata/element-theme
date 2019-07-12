@@ -24,6 +24,8 @@
 
       /element-theme/node_modules/element-ui
       
+      https://github.com/ElementUI/theme-default
+      
 ## npm发布
 
       1. npm login
