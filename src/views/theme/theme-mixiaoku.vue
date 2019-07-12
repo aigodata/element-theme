@@ -66,7 +66,11 @@
   }
 
   #body-theme-mixiaoku .headerWrapper .header .github-logo {
-    background: url("../../assets/github-white.png") no-repeat;
+    background: url("../../assets/github-white.svg") no-repeat;
+  }
+
+  #body-theme-mixiaoku .headerWrapper .aigodata-logo {
+    background: url("../../assets/logo-white.svg") no-repeat;
   }
 
   /* border页面样式覆盖 */

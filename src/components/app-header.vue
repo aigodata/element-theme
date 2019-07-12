@@ -118,7 +118,7 @@
   }
 
   .headerWrapper .header .github-logo {
-    background: url("../assets/github.png") no-repeat;
+    background: url("../assets/github-dark.svg") no-repeat;
     width: 30px;
     height: 30px;
     float: right;
@@ -164,8 +164,9 @@
   .headerWrapper .aigodata-logo {
     width: 152px;
     height: 30px;
-    background: url("../assets/aigodata-logo.svg") no-repeat;
+    background: url("../assets/logo-dark.svg") no-repeat;
     float: left;
+    margin: 24px 0 0 33px;
   }
 
   .headerWrapper .aigodata-logo img {
