@@ -1,8 +1,8 @@
 {
   "name": "@aigodata/element-theme",
-  "version": "2.10.0",
+  "version": "2.10.0-beta.1",
   "author": {
-    "name": "aigodata"
+    "name": "aigodata team"
   },
   "main": "docs/lib/theme-chalk/index.css",
   "style": "docs/lib/theme-chalk/index.css",
