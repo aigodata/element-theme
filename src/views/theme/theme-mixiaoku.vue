@@ -47,7 +47,7 @@
   }
 
   #body-theme-mixiaoku .demo-block {
-    border-color: rgba(255, 255, 255, 0.3);
+    border-color: #48494d;
   }
 
   /* 头部 */
@@ -113,5 +113,9 @@
 
   #body-theme-mixiaoku .demo-radius .value {
     color: #919bb1;
+  }
+
+  #body-theme-mixiaoku .page-component .content > table td, #body-theme-mixiaoku .page-component .content > table th {
+    border-bottom: 1px solid #333a46;
   }
 </style>

@@ -399,12 +399,12 @@
 .el-button--medium {
   padding: 10px 20px;
   font-size: 14px;
-  border-radius: 4px
+  border-radius: 0
 }
 
 .el-button--mini, .el-button--small {
   font-size: 12px;
-  border-radius: 3px
+  border-radius: 0
 }
 
 .el-button--medium.is-round {
@@ -507,74 +507,74 @@
 .el-button-group > .el-dropdown > .el-button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-left-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9
 }
 
 .el-button-group .el-button--primary:first-child {
-  border-right-color: rgba(255, 255, 255, .5);
+  border-right-color: #426ce9;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px
 }
 
 .el-button-group .el-button--primary:last-child {
-  border-left-color: rgba(255, 255, 255, .5);
+  border-left-color: #426ce9;
   border-top-right-radius: 24px;
   border-bottom-right-radius: 24px
 }
 
 .el-button-group .el-button--primary:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, .5);
-  border-right-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9;
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--success:first-child {
-  border-right-color: rgba(255, 255, 255, .5)
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--success:last-child {
-  border-left-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9
 }
 
 .el-button-group .el-button--success:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, .5);
-  border-right-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9;
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--warning:first-child {
-  border-right-color: rgba(255, 255, 255, .5)
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--warning:last-child {
-  border-left-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9
 }
 
 .el-button-group .el-button--warning:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, .5);
-  border-right-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9;
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--danger:first-child {
-  border-right-color: rgba(255, 255, 255, .5)
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--danger:last-child {
-  border-left-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9
 }
 
 .el-button-group .el-button--danger:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, .5);
-  border-right-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9;
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--info:first-child {
-  border-right-color: rgba(255, 255, 255, .5)
+  border-right-color: #426ce9
 }
 
 .el-button-group .el-button--info:last-child {
-  border-left-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9
 }
 
 .el-button-group .el-button--info:not(:first-child):not(:last-child) {
-  border-left-color: rgba(255, 255, 255, .5);
-  border-right-color: rgba(255, 255, 255, .5)
+  border-left-color: #426ce9;
+  border-right-color: #426ce9
 }
