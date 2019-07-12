@@ -3,6 +3,7 @@
 </template>
 
 <script>
+  import '@/lib/theme-mixiaoku/index.scss';
   export default {
     name: 'theme-mixiaoku',
     mounted() {
@@ -13,7 +14,7 @@
 </script>
 
 <style lang="scss">
-  @import '../../lib/theme-mixiaoku/index.scss';
+
 </style>
 
 

@@ -3,6 +3,7 @@
 </template>
 
 <script>
+  import '@/lib/theme-chalk/index.scss';
   export default {
     name: 'theme-chalk',
     mounted() {
@@ -13,6 +14,6 @@
 </script>
 
 <style lang="scss">
-   @import '../../lib/theme-chalk/index.scss';
+
 </style>
 
