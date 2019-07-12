@@ -1,9 +1,7 @@
 {
   "name": "@aigodata/element-theme",
-  "version": "2.10.0-beta.1",
-  "author": {
-    "name": "aigodata team"
-  },
+  "version": "2.10.0",
+  "author": "https://github.com/orgs/aigodata/people",
   "main": "docs/lib/theme-chalk/index.css",
   "style": "docs/lib/theme-chalk/index.css",
   "files": [

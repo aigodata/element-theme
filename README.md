@@ -23,6 +23,16 @@
 ## 寻找element-ui的css
 
       /element-theme/node_modules/element-ui
+      
+## npm发布
+
+      1. npm login
+        输入用户名, 密码, 邮箱(可能需要登录邮箱验证)
+        
+      2. npm publish --access=public
+      
+        发布npm
+      
 
 ## 
 
