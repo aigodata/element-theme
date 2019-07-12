@@ -9,7 +9,7 @@
           </a>
           <img src="../assets/clothes.svg" class="clothes">
           <a href="https://github.com/aigodata" target="_blank" class="aigodata-logo">
-            <img src="../assets/aigodata-logo.svg">
+            <!--<img src="../assets/aigodata-logo.svg">-->
           </a>
         </h1>
         <a href="https://github.com/aigodata/element-theme" target="_blank" title="访问github" class="github-logo">
@@ -151,6 +151,7 @@
   }
 
   .headerWrapper .router-link-active {
+
     float: left;
   }
 
@@ -161,6 +162,9 @@
   }
 
   .headerWrapper .aigodata-logo {
+    width: 152px;
+    height: 30px;
+    background: url("../assets/aigodata-logo.svg") no-repeat;
     float: left;
   }
 
