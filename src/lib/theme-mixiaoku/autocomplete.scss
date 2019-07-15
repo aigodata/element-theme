@@ -168,10 +168,8 @@
 
 .el-autocomplete-suggestion {
   margin: 5px 0;
-  -webkit-box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
-  border-radius: 4px;
-  border: 1px solid #e4e7ed;
+  border-radius: 0;
+  border: 1px solid #333a46;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box
@@ -183,7 +181,7 @@
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   overflow: auto;
-  background-color: #fff
+  background-color: #1a2029
 }
 
 .el-autocomplete-suggestion__list {
@@ -196,7 +194,7 @@
   margin: 0;
   line-height: 34px;
   cursor: pointer;
-  color: #606266;
+  color: #919bb1;
   font-size: 14px;
   list-style: none;
   white-space: nowrap;
@@ -206,9 +204,7 @@
 
 .el-autocomplete-suggestion li.highlighted, .el-autocomplete-suggestion li:hover {
   color: #fff;
-  -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+  background: #325cd8
 }
 
 .el-autocomplete-suggestion li.divider {

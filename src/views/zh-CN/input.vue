@@ -313,6 +313,7 @@
         input22: '',
         input23: '',
         // 文本域
+        text: '',
         textarea: '',
         // 可自适应文本高度的文本域
         textarea2: '',

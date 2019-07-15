@@ -288,7 +288,7 @@
 }
 
 .el-select .el-input .el-select__caret {
-  color: #ffffff;
+  color: #c0c4cc;
   font-size: 14px;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
@@ -297,6 +297,10 @@
   -webkit-transform: rotateZ(180deg);
   transform: rotateZ(180deg);
   cursor: pointer
+}
+
+.el-select .el-input .el-select__caret:hover {
+  color: #325cd8
 }
 
 .el-select .el-input .el-select__caret.is-reverse {

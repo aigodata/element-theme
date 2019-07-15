@@ -12,15 +12,13 @@
   line-height: 1.5;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0.1) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
   width: 100%;
   font-size: inherit;
-  color: #606266;
-  background-color: #fff;
+  color: #ffffff;
+  background-color: #1a2029;
   background-image: none;
-  border: 1px solid #dcdfe6;
-  border-radius: 4px;
+  border: 1px solid #333a46;
+  border-radius: 0;
   -webkit-transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
   transition: border-color .2s cubic-bezier(.645, .045, .355, 1)
 }
@@ -39,15 +37,11 @@
 
 .el-textarea__inner:hover {
   border-color: #557df1;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea__inner:focus {
   outline: 0;
   border-color: #557df1;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0.1) inset,0px 2px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(62, 172, 249, 0.2) inset,0px 4px 8px rgba(62, 172, 249, 0.2)
 }
 
 .el-textarea.is-disabled .el-textarea__inner {
@@ -118,7 +112,7 @@
 }
 
 .el-input .el-input__clear:hover {
-  color: #909399
+  color: #325cd8
 }
 
 .el-input__inner {
@@ -291,27 +285,24 @@
 
 .el-input-group > .el-input__inner {
   vertical-align: middle;
-  display: table-cell
+  display: table-cell;
 }
 
 .el-input-group__append, .el-input-group__prepend {
-  background: linear-gradient(to top, #f7f7f7 , #fff);
+  background: #2a303b;
   color: #909399;
   vertical-align: middle;
   display: table-cell;
   position: relative;
-  border: 1px solid #dcdfe6;
-  border-radius: 4px;
+  border: 1px solid #333a46;
+  border-radius: 0;
   padding: 0 20px;
   width: 1px;
-  -webkit-box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
-  box-shadow: 0px 2px 8px rgba(204, 204, 204, 0.4);
   white-space: nowrap
 }
 
 .el-input-group--prepend .el-input__inner, .el-input-group__append {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0
+
 }
 
 .el-input-group--append .el-input__inner, .el-input-group__prepend {
@@ -329,11 +320,10 @@
 }
 
 .el-input-group__append button.el-button, .el-input-group__append div.el-select .el-input__inner, .el-input-group__append div.el-select:hover .el-input__inner, .el-input-group__prepend button.el-button, .el-input-group__prepend div.el-select .el-input__inner, .el-input-group__prepend div.el-select:hover .el-input__inner {
-  border-color: transparent;
-  background-color: transparent;
+  border-color: #333a46;
+  background-color: #2a303b;
   color: inherit;
-  border-top: 0;
-  border-bottom: 0;
+  border: 1px solid #333a46;
   border-left: 0;
   border-right: 0;
   box-shadow: none
@@ -359,4 +349,12 @@
   display: none;
   width: 0;
   height: 0
+}
+
+.el-input .el-input__count .el-input__count-inner {
+  background: #1a2029;
+}
+
+.el-textarea .el-input__count {
+  background: #1a2029;
 }

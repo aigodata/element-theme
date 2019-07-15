@@ -120,4 +120,9 @@
   #body-theme-mixiaoku .page-component .content > table td, #body-theme-mixiaoku .page-component .content > table th {
     border-bottom: 1px solid #333a46;
   }
+
+  /* input */
+  #body-theme-mixiaoku .demo-input-suffix {
+    color: #919bb1;
+  }
 </style>
