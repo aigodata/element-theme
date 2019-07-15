@@ -104,6 +104,10 @@
   width: 6px
 }
 
+.el-select .el-input.is-disabled .el-select__caret {
+  cursor: not-allowed;
+}
+
 .el-input .el-input__clear {
   color: #c0c4cc;
   font-size: 14px;
