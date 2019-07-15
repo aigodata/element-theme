@@ -1,9 +1,7 @@
 {
   "name": "@aigodata/element-theme",
   "version": "2.10.0",
-  "author": {
-    "name": "aigodata"
-  },
+  "author": "https://github.com/orgs/aigodata/people",
   "main": "docs/lib/theme-chalk/index.css",
   "style": "docs/lib/theme-chalk/index.css",
   "files": [
@@ -13,7 +11,7 @@
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "publish": "./node_modules/.bin/gulp build"
+    "publish": "gulp build"
   },
   "repository": {
     "type": "git",
@@ -54,5 +52,10 @@
     "sass-loader": "^7.0.1",
     "style-loader": "^0.23.1",
     "vue-template-compiler": "^2.5.17"
+  },
+  "description": "基于ElementUI的定制主题",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
   }
 }

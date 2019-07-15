@@ -27,6 +27,7 @@ function copyfont(theme) {
 	return src('./src/lib/' + theme + '/fonts/**')
 		.pipe(cssmin())
 		.pipe(dest('./lib/' + theme + '/' + version + '/fonts/'))
+		.pipe(dest('./lib/' + theme + '/fonts/'))
 }
 
 function copyLib() {
