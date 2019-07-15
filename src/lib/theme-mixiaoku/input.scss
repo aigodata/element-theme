@@ -119,13 +119,13 @@
 
 .el-input__inner {
   -webkit-appearance: none;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #191f29;
   background-image: none;
   border-radius: 0;
   border: 1px solid #333a46;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #606266;
+  color: #ffffff;
   display: inline-block;
   font-size: inherit;
   height: 40px;
@@ -208,8 +208,6 @@
   border-color: #e4e7ed;
   color: #c0c4cc;
   cursor: not-allowed;
-  -webkit-box-shadow: 0px 0px 5px rgba(13, 5, 9, 0) inset,0px 3px 8px rgba(204, 204, 204, 0.3);
-  box-shadow: 0px 1px 4px rgba(13, 5, 9, 0) inset,0px 3px 8px rgba(204, 204, 204, 0.2)
 }
 
 .el-input.is-disabled .el-input__inner::-webkit-input-placeholder {

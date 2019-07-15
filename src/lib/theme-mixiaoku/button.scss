@@ -76,7 +76,6 @@
   background-image: none;
   background-color: #3c4451;
   border-color: #3c4451;
-  opacity: 0.7;
 }
 
 .el-button.is-disabled.el-button--text {
@@ -84,11 +83,9 @@
 }
 
 .el-button.is-disabled.is-plain, .el-button.is-disabled.is-plain:focus, .el-button.is-disabled.is-plain:hover {
-  background-color: #2a303b;
-  background-color: #2a303b;
-  border-color: #707987;
-  color: #707987;
-  opacity: 0.7;
+  background-color: #282e39;
+  border-color: #434954;
+  color: #68707e;
 }
 
 .el-button.is-loading {
@@ -141,15 +138,14 @@
 }
 
 .el-button--primary.is-disabled, .el-button--primary.is-disabled:active, .el-button--primary.is-disabled:focus, .el-button--primary.is-disabled:hover {
-  color: #789bff;
+  color: #5c76bf;
   background-color: #2b4aa4;
   border-color: #2b4aa4;
-  opacity: 0.7;
 }
 
 .el-button--primary.is-plain {
   color: #325cd8;
-  background: rgba(50, 92, 216, 0.2);
+  background: #1f2c4c;
   border: 1px solid #325cd8
 }
 
@@ -167,10 +163,9 @@
 }
 
 .el-button--primary.is-plain.is-disabled, .el-button--primary.is-plain.is-disabled:active, .el-button--primary.is-plain.is-disabled:focus, .el-button--primary.is-plain.is-disabled:hover {
-  color: #325cd8;
-  background: rgba(50, 92, 216, 0.2);
-  border-color: #325cd8;
-  opacity: 0.7;
+  color: #294799;
+  background: #1e2842;
+  border-color: #2b4aa4;
 }
 
 .el-button--success {
@@ -196,15 +191,14 @@
 }
 
 .el-button--success.is-disabled, .el-button--success.is-disabled:active, .el-button--success.is-disabled:focus, .el-button--success.is-disabled:hover {
-  color: #b7f2c7;
+  color: #88b398;
   background-color: #197f34;
   border-color: #197f34;
-  opacity: 0.7;
 }
 
 .el-button--success.is-plain {
   color: #18a739;
-  background: rgba(24, 167, 57, 0.2);
+  background: #1a3b2c;
   border: 1px solid #18a739
 }
 
@@ -222,10 +216,9 @@
 }
 
 .el-button--success.is-plain.is-disabled, .el-button--success.is-plain.is-disabled:active, .el-button--success.is-plain.is-disabled:focus, .el-button--success.is-plain.is-disabled:hover {
-  color: #169133;
-  background: rgba(24, 167, 57, 0.2);
-  border-color: #169133;
-  opacity: 0.7;
+  color: #176f30;
+  background: #1a332b;
+  border-color: #197f34;
 }
 
 .el-button--warning {
@@ -251,15 +244,14 @@
 }
 
 .el-button--warning.is-disabled, .el-button--warning.is-disabled:active, .el-button--warning.is-disabled:focus, .el-button--warning.is-disabled:hover {
-  color: #fed5a4;
+  color: #ba9f7f;
   background-color: #b06d1e;
   border-color: #b06d1e;
-  opacity: 0.7;
 }
 
 .el-button--warning.is-plain {
   color: #ef8d19;
-  background:rgba(239, 141, 25, 0.2);
+  background: #453626;
   border: 1px solid #ef8d19
 }
 
@@ -276,10 +268,9 @@
 }
 
 .el-button--warning.is-plain.is-disabled, .el-button--warning.is-plain.is-disabled:active, .el-button--warning.is-plain.is-disabled:focus, .el-button--warning.is-plain.is-disabled:hover {
-  color: #a5681f;
-  background: rgba(239, 141, 25, 0.2);
-  border-color: #a5681f;
-  opacity: 0.7
+  color: #785022;
+  background: #382f27;
+  border-color: #965b15;
 }
 
 .el-button--danger {
@@ -305,15 +296,14 @@
 }
 
 .el-button--danger.is-disabled, .el-button--danger.is-disabled:active, .el-button--danger.is-disabled:focus, .el-button--danger.is-disabled:hover {
-  color: #ffa7ac;
+  color: #bb7f85;
   background-color: #ab3d43;
   border-color: #ab3d43;
-  opacity: 0.7;
 }
 
 .el-button--danger.is-plain {
   color: #e84a4e;
-  background: rgba(232, 74, 78, 0.2);
+  background: #432830;
   border: 1px solid #e84a4e
 }
 
@@ -331,10 +321,9 @@
 }
 
 .el-button--danger.is-plain.is-disabled, .el-button--danger.is-plain.is-disabled:active, .el-button--danger.is-plain.is-disabled:focus, .el-button--danger.is-plain.is-disabled:hover {
-  color: #cc3e41;
-  background: rgba(232, 74, 78, 0.2);
-  border-color: #cc3e41;
-  opacity: 0.7
+  color: #97353a;
+  background: #37262e;
+  border-color: #ab3d43;
 }
 
 .el-button--info {
@@ -363,7 +352,6 @@
   color: #758297;
   background-color: #3c4759;
   border-color: #3c4759;
-  opacity: 0.7;
 }
 
 .el-button--info.is-plain {
@@ -387,9 +375,8 @@
 
 .el-button--info.is-plain.is-disabled, .el-button--info.is-plain.is-disabled:active, .el-button--info.is-plain.is-disabled:focus, .el-button--info.is-plain.is-disabled:hover {
   color: #707786;
-  background: #282e39;
-  border-color: #707786;
-  opacity: 0.7
+  background: #2a303b;
+  border-color: #4a5164;
 }
 
 .el-button--text, .el-button--text.is-disabled, .el-button--text.is-disabled:focus, .el-button--text.is-disabled:hover, .el-button--text:active {
