@@ -204,22 +204,26 @@
 }
 
 .el-input.is-disabled .el-input__inner {
-  background-color: #f5f7fa;
-  border-color: #e4e7ed;
-  color: #c0c4cc;
+  background-color: #252c37;
+  border-color: #333a46;
+  color: #646c7d;
   cursor: not-allowed;
 }
 
+.el-select .el-input.is-disabled .el-select__caret {
+  color: #646c7d;
+}
+
 .el-input.is-disabled .el-input__inner::-webkit-input-placeholder {
-  color: #c0c4cc
+  color: #646c7d
 }
 
 .el-input.is-disabled .el-input__inner:-ms-input-placeholder {
-  color: #c0c4cc
+  color: #646c7d
 }
 
 .el-input.is-disabled .el-input__inner::placeholder {
-  color: #c0c4cc
+  color: #646c7d
 }
 
 .el-input.is-disabled .el-input__icon {
