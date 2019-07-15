@@ -47,14 +47,15 @@
   }
 
   #body-theme-mixiaoku .demo-block {
-    border-color: #48494d;
+    border-color: #292f3a;
+    border-radius: 0;
   }
 
   /* 头部 */
   #body-theme-mixiaoku .headerWrapper .header {
     background-color: #151a20;
     box-shadow: none;
-    border-bottom: 3px solid #325cd8;
+    border-bottom: 2px solid #325cd8;
   }
 
   #body-theme-mixiaoku .headerWrapper .header .nav-item {

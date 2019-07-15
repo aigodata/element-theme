@@ -9,7 +9,7 @@
   line-height: 1;
   white-space: nowrap;
   vertical-align: middle;
-  background: rgba(0, 0, 0, 0);
+  background: #1a2029;
   border: 1px solid #474e59;
   font-weight: 500;
   border-left: 0;
@@ -62,7 +62,7 @@
 .el-radio-button__orig-radio:checked + .el-radio-button__inner {
   color: #fff;
   background: #325cd8;
-  border-color: #474e59;
+  border-color: #325cd8;
 }
 
 .el-radio-button__orig-radio:disabled + .el-radio-button__inner {
@@ -79,7 +79,9 @@
 }
 
 .el-radio-button__orig-radio:checked+.el-radio-button__inner {
-  box-shadow: none;
+  background-color: #325cd8;
+  border-color: #325cd8;
+  box-shadow: -1px 0 0 0 #325cd8;
 }
 
 .el-radio-button--medium .el-radio-button__inner {

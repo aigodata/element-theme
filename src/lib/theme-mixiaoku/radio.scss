@@ -24,6 +24,7 @@
 }
 
 .el-radio.is-bordered {
+  background-color: #1a2029;
   padding: 12px 20px 0 10px;
   border-radius: 0;
   border: 1px solid #474e59;
@@ -43,7 +44,7 @@
 }
 
 .el-radio__input.is-disabled .el-radio__inner, .el-radio__input.is-disabled.is-checked .el-radio__inner {
-  background: rgba(0, 0, 0, 0);
+  background: #2a303b;
   border-color: #454c57
 }
 
@@ -142,7 +143,7 @@
   border-radius: 100%;
   width: 14px;
   height: 14px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #1a2029;
   cursor: pointer;
   -webkit-box-sizing: border-box;
   box-sizing: border-box

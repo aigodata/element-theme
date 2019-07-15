@@ -28,6 +28,7 @@
   border: 1px solid #474e59;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  background: #1a2029;
   line-height: normal;
   height: 40px
 }
@@ -198,7 +199,7 @@
   box-shadow: none;
   width: 14px;
   height: 14px;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #1a2029;
   z-index: 1;
   -webkit-transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
   transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46)
@@ -262,7 +263,7 @@
   line-height: 1;
   font-weight: 500;
   cursor: pointer;
-  background: rgba(0, 0, 0, 0);
+  background: #1a2029;
   border: 1px solid #474e59;
   border-left: 0;
   color: #606266;
@@ -308,9 +309,9 @@
 .el-checkbox-button.is-checked .el-checkbox-button__inner {
   color: #fff;
   background: #325cd8;
-  border-color: #474e59;
-  -webkit-box-shadow: none;
-  box-shadow: none
+  border-color: #325cd8;
+  -webkit-box-shadow:  -1px 0 0 0 #426ce9;
+  box-shadow:  -1px 0 0 0 #426ce9;
 }
 
 .el-checkbox-button.is-checked:first-child .el-checkbox-button__inner {
@@ -339,7 +340,7 @@
 }
 
 .el-checkbox-button.is-focus .el-checkbox-button__inner {
-  border-color: #474e59
+  border-color: #325cd8
 }
 
 .el-checkbox-button:last-child .el-checkbox-button__inner {

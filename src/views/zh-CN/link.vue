@@ -90,6 +90,6 @@
   }
 
   .page-link .el-link {
-    padding: 0 6px;
+    margin: 0 6px;
   }
 </style>
