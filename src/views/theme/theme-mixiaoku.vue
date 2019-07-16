@@ -125,4 +125,13 @@
   #body-theme-mixiaoku .demo-input-suffix {
     color: #919bb1;
   }
+
+  #body-theme-mixiaoku .demo-input.demo-zh-CN .demo-autocomplete .el-col:not(:last-child) {
+    border-right: 1px solid #292f3a;
+  }
+
+  /* cascader */
+  #body-theme-mixiaoku .demo-cascader .block {
+    border-right: 1px solid #292f3a;
+  }
 </style>

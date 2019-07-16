@@ -85,14 +85,14 @@
             <span class="demonstration">默认显示所有Tag</span>
             <el-cascader
               :options="options03"
-              :props="props"
+              :props="props01"
               clearable></el-cascader>
           </div>
           <div class="block">
             <span class="demonstration">折叠展示Tag</span>
             <el-cascader
               :options="options03"
-              :props="props"
+              :props="props01"
               collapse-tags
               clearable></el-cascader>
           </div>
@@ -220,7 +220,7 @@
     data() {
       return {
         // 多选
-        props: { multiple: true },
+        props01: { multiple: true },
         options03: [{
           value: 1,
           label: '东南',
