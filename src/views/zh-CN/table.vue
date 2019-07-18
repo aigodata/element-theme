@@ -512,9 +512,9 @@
             :filter-method="filterTag"
             filter-placement="bottom-end">
             <template slot-scope="scope">
-              <el-tag
-                :type="scope.row.tag === '家' ? 'primary' : 'success'"
-                disable-transitions>{{scope.row.tag}}</el-tag>
+              <el-button
+                size="mini" plain :type="scope.row.tag === '家' ? 'primary' : 'success'"
+                disable-transitions>{{scope.row.tag}}</el-button>
             </template>
           </el-table-column>
         </el-table>

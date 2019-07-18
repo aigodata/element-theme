@@ -66,6 +66,11 @@
   height: 85px
 }
 
+.el-calendar-table td.is-selected .el-calendar-day:hover {
+  color: #ffffff;
+  background: linear-gradient(to top, #2aa1ef , #3eb1fc)
+}
+
 .el-calendar-table .el-calendar-day:hover {
   cursor: pointer;
   background-color: #f2f8fe;
