@@ -33,6 +33,11 @@
   height: 40px
 }
 
+.el-checkbox.is-bordered .el-checkbox__label {
+  position: relative;
+  top: 1px;
+}
+
 .el-checkbox.is-bordered.is-checked {
   border-color: #325cd8
 }
@@ -203,6 +208,11 @@
   z-index: 1;
   -webkit-transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
   transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46)
+}
+
+.el-checkbox__input.is-indeterminate + .el-checkbox__label {
+  position: relative;
+  top: 1px;
 }
 
 .el-checkbox__inner:hover {

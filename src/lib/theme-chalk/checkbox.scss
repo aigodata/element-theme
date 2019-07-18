@@ -32,6 +32,11 @@
   height: 40px
 }
 
+.el-checkbox.is-bordered .el-checkbox__label {
+  position: relative;
+  top: 1px;
+}
+
 .el-checkbox.is-bordered.is-checked {
   border-color: #2aa1ef
 }
@@ -166,7 +171,7 @@
 }
 
 .el-checkbox__input.is-focus .el-checkbox__inner {
-  border-color: #2aa1ef
+  border-color: #dcdfe6
 }
 
 .el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
@@ -201,6 +206,11 @@
   z-index: 1;
   -webkit-transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46);
   transition: border-color .25s cubic-bezier(.71, -.46, .29, 1.46), background-color .25s cubic-bezier(.71, -.46, .29, 1.46)
+}
+
+.el-checkbox__input.is-indeterminate + .el-checkbox__label {
+  position: relative;
+  top: 1px;
 }
 
 .el-checkbox__inner:hover {
@@ -338,7 +348,7 @@
 }
 
 .el-checkbox-button.is-focus .el-checkbox-button__inner {
-  border-color: #2aa1ef
+  border-color: #dcdfe6
 }
 
 .el-checkbox-button:last-child .el-checkbox-button__inner {

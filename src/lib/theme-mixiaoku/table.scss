@@ -121,7 +121,7 @@
 }
 
 .el-table td, .el-table th {
-  padding: 12px 0;
+  padding: 4px 0;
   min-width: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -212,6 +212,7 @@
 }
 
 .el-table th > .cell {
+  font-size: 13px;
   position: relative;
   word-wrap: normal;
   text-overflow: ellipsis;
@@ -247,6 +248,7 @@
 }
 
 .el-table .cell {
+  font-size: 13px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   white-space: normal;
@@ -287,6 +289,10 @@
 .el-table--border {
   border-right: none;
   border-bottom: none
+}
+
+.el-table.el-table--border  th.is-leaf {
+  border-top: none;
 }
 
 .el-table--border.el-loading-parent--relative {

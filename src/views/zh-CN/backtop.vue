@@ -30,23 +30,7 @@
       <div class="source">
         Scroll down to see the bottom-right button.
         <el-backtop target=".page-component__scroll .el-scrollbar__wrap" :bottom="100">
-          <div
-            style="{
-              height: 100%;
-              width: 100%;
-              border: 1px solid #2aa1ef;
-              -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-              box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
-              background: linear-gradient(to top, #2aa1ef , #3eb1fc);
-              text-align: center;
-              line-height: 40px;
-              color: #fff;
-              border-radius: 50%;
-              font-size: 15px;
-            }"
-          >
-            UP
-          </div>
+          <div class="back-top">UP</div>
         </el-backtop>
       </div>
     </div>
@@ -63,4 +47,25 @@
   .page-backtop {
     height: 1000px;
   }
+
+  .back-top {
+    height: 100%;
+    width: 100%;
+    border: 1px solid #2aa1ef;
+    -webkit-box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+    box-shadow: 0px 2px 8px rgba(42, 161, 239, 0.4);
+    background: linear-gradient(to top, #2aa1ef , #3eb1fc);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 15px;
+  }
+
+  .back-top:hover {
+    border-color: #2aa1ef;
+    background: linear-gradient(to top, #1284cf , #3eb1fc)
+  }
+
+
 </style>

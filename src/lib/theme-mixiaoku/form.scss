@@ -93,6 +93,16 @@
   font-size: 14px
 }
 
+.el-form-item__content .el-radio__input {
+  position: relative;
+  top: -1px;
+}
+
+.el-form-item__content .el-radio.is-bordered .el-radio__input {
+  position: relative;
+  top: 0;
+}
+
 .el-form-item__content::after, .el-form-item__content::before {
   display: table;
   content: ""
