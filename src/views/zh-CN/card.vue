@@ -133,8 +133,6 @@
   .page-card .demo-block.demo-card .time {
     font-size: 13px;
     color: #999;
-    width: calc(100% - 66px);
-    float: left;
     line-height: 20px;
   }
 </style>
