@@ -613,6 +613,10 @@
   margin: 5px 0
 }
 
+.el-picker-panel.time-select {
+  padding-top: 6px;
+}
+
 .el-picker-panel__body-wrapper::after, .el-picker-panel__body::after {
   content: "";
   display: table;
