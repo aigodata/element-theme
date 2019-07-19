@@ -68,12 +68,12 @@
 }
 
 .el-carousel__indicators--outside .el-carousel__indicator:hover button {
-  opacity: .64
+  opacity: .64;
 }
 
 .el-carousel__indicators--outside button {
   background-color: #c0c4cc;
-  opacity: .24
+  opacity: .24;
 }
 
 .el-carousel__indicators--labels {
@@ -99,17 +99,20 @@
   display: inline-block;
   background-color: transparent;
   padding: 12px 4px;
-  cursor: pointer
+  cursor: pointer;
+}
+
+.el-carousel__indicator button {
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15);
 }
 
 .el-carousel__indicator:hover button {
-  background: #ffffff;
+  opacity: .72;
 }
 
 .el-carousel__indicator.is-active button {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1)
+  opacity: 1;
 }
 
 .el-carousel__button {
@@ -117,16 +120,13 @@
   opacity: .48;
   width: 30px;
   height: 2px;
-  background: #c6ced8;
-  -webkit-box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
   border: none;
-  outline: 0;
+  outline: none;
   padding: 0;
   margin: 0;
   cursor: pointer;
-  -webkit-transition: .3s;
-  transition: .3s
+  transition: .3s;
 }
 
 .carousel-arrow-left-enter, .carousel-arrow-left-leave-active {
