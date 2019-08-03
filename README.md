@@ -35,6 +35,10 @@
       
         发布npm
       
+      3. git tag -a v2.10.1 -m 'my version 2.10.1'
+        
+        打版本
+      
 
 ##  更新element-ui
 

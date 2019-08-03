@@ -1,6 +1,6 @@
 {
   "name": "@aigodata/element-theme",
-  "version": "2.10.1",
+  "version": "2.10.2",
   "author": "https://github.com/orgs/aigodata/people",
   "main": "docs/lib/theme-chalk/index.css",
   "style": "docs/lib/theme-chalk/index.css",
