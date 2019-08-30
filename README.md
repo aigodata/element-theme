@@ -27,6 +27,8 @@
       https://github.com/ElementUI/theme-default
       
 ## npm发布
+      0. npm run publish  
+         npm run build
 
       1. npm login
         输入用户名, 密码, 邮箱(可能需要登录邮箱验证)
@@ -38,6 +40,10 @@
       3. git tag -a v2.10.1 -m 'my version 2.10.1'
         
         打版本
+        
+      4. git push --tags
+      
+        提交到github
       
 
 ##  更新element-ui
