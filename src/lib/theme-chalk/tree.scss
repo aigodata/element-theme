@@ -332,5 +332,6 @@
 }
 
 .el-tree--highlight-current .el-tree-node.is-current > .el-tree-node__content {
-  background-color: #f0f7ff
+  color: #ffffff;
+  background: linear-gradient(to top, #2aa1ef, #3eb1fc);
 }

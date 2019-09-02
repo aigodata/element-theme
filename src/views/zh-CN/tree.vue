@@ -13,7 +13,7 @@
     <p>基础的树形结构展示。</p>
     <div class="demo-block demo-zh-CN demo-tree">
       <div class="source">
-        <el-tree :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
+        <el-tree highlight-current="true" :data="data" :props="defaultProps" @node-click="handleNodeClick"></el-tree>
       </div>
     </div>
 
