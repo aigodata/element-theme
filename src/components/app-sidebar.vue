@@ -101,6 +101,7 @@
                 <li class="nav-item"><a @click="handleNavigationChange('image')" class="">Image 图片</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('backtop')" class="">Backtop 回到顶部</a></li>
                 <li class="nav-item"><a @click="handleNavigationChange('infiniteScroll')" class="">InfiniteScroll 无限滚动</a></li>
+                <li class="nav-item"><a @click="handleNavigationChange('drawer')" class="">Drawer 抽屉</a></li>
               </ul>
             </div>
           </li>

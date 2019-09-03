@@ -242,6 +242,10 @@ let children = [
 	{
 		path: 'infiniteScroll', name: 'infiniteScroll', meta: {name: '无限滚动'},
 		component: () => import('./views/zh-CN/infiniteScroll.vue')
+	},
+	{
+		path: 'drawer', name: 'drawer', meta: {name: '抽屉'},
+		component: () => import('./views/zh-CN/drawer.vue')
 	}
 ]
 
