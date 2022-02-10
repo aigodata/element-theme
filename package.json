@@ -47,7 +47,7 @@
     "gulp-cssmin": "^0.1.7",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^3.1.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "raw-loader": "^3.0.0",
     "sass-loader": "^7.0.1",
     "style-loader": "^0.23.1",
